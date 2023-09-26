@@ -3,6 +3,7 @@ body{
 }
 #header{
     width: 100%;
+    margin-top: 20px;
 }
 
 .immagine-testo{
@@ -12,7 +13,7 @@ body{
 
 #nav-bar{
     width: 100%;
-    height: 25px;
+    height: 50px;
    color: white;
     background: linear-gradient(175deg, #ff2751, #00d9da);
 }
@@ -30,6 +31,8 @@ body{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    font-size: 25px;
+    align-items: center;
 }
 #nav-bar ul li:hover{
     text-decoration: underline;
@@ -37,7 +40,8 @@ body{
 }
 #contenuto-pagina{
     max-width: 500px;
-    margin: auto;
+    margin: 30px auto;
+    
 }
 #contenuto-pagina h1{
     margin: 0;
@@ -59,15 +63,99 @@ body{
     max-width: 400px;
     margin: 20px auto;
 }
+#tabella caption{
+    margin-bottom:10px;
+}
+iframe{
+    margin-bottom: 10px;
+    
+}
 #footer{
-    background: linear-gradient(35deg, #ff2751, #00d9da);
+    background: linear-gradient(35deg, hsl(348, 100%, 58%), #00d9da);
     color: white;
 }
-a{
+.head-foot{
+    max-width: 500px;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.head-foot h3{
+    margin: 5px 5px;
+}
+#newsletter{
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+}
+#email{
+    display: block;
+    width: 55%;
+    text-align: left;
+    margin: auto;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.button{
+    text-align: -webkit-center;
+    width: 30%;
+    display: block;
+    margin: 7px auto;
+    height: 50px;
+    background-color: #0cd0d3;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000000;
+    border: 2px solid white;
+    font-size: 15px;
+    
+}
+.button:hover{
+    box-shadow: none;
+    background-color: #ec365d;
+    color: white;
+    transition-duration: 0.5s;
+}
+.articoli-correlati{
+    max-width: 600px;
+    margin: auto;
+}
+.articoli-correlati h4 {
+       text-align: center;
+       height: 10;
+       font-size: 20px;
+       margin-bottom: 15px;
+}
+.sezioni{
+    text-align: center;
+}
+.sezioni section a{
+    font-style: italic;
+    color: white;
     text-decoration: none;
 }
-a:hover{
+.sezioni section a:hover{
     cursor: pointer;
     text-decoration: underline;
+    
+    color: #0cd0d3;
+    transition-duration: 0.3s;
 }
+.footer-finale{
+    text-align: center;
+}
+.footer-finale p a{
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+.footer-finale p a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0cd0d3;
+    transition-duration: 0.3s;
+}
+
     

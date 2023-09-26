@@ -17,7 +17,7 @@
     </header>
     <nav id="nav-bar">
         <ul>
-            
+
             <li>Home</li>
             <li>Articoli</li>
             <li>Lavora con noi</li>
@@ -104,6 +104,9 @@
             </tr>
         </tbody>
     </table>
+
+    <hr>
+
     <p>Un test di validazione potrà essere fatto tramite il tool online che troverai
        <a href="https://www.cssportal.com/css-validator/">cliccando qui</a>. 
         Una volta ottimizzato il tutto, 
@@ -116,17 +119,21 @@
  </article>
 </main>
 <footer id="footer">
-    <h4>Vuoi rimanere aggiornato su altre novità del blog? <span>Iscriviti alla nostra newsletter</span></h4>
-    
+    <div class="head-foot">
+    <h3 style="padding-top: 10px;">Vuoi rimanere aggiornato su altre novità del blog?</h3>
+        <h3>Iscriviti alla nostra newsletter</h3>
+    </div>
     <form onsubmit="alert ('Compliemtni, Ti sei iscritto correttamente!')"  id="newsletter">
             <!--<label for="email">Inserisci la tua email &#8595;</label>-->
         <input type="email" required  placeholder="Inserisci la tua email" id="email">
-        <button type="submit"> Iscriviti </button>
+        <button type="submit" class="button"> ISCRIVITI </button>
     </form>
 
     <hr>
 
+     <article class="articoli-correlati">
         <h4>Articoli correlati</h4>
+        <div class="sezioni">
             <section>
             <a href="#" class="link">Validare il codice HTML</a>
             <b>Categoria:</b> develop
@@ -144,12 +151,14 @@
             <b>Categoria:</b> ottimizzazione
             <b>Data:</b> 30-9-2020
             </section>
-
+        </div>
+        <div class="footer-finale">
             <p>Blog Epicode &copy;2023</p>
             <p>Testata online di Mario Rossi, 
                 registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. 
-               <a href="mailto:info@epicode.school">info@epicode.school </a></p>
-
+                <a href="mailto:info@epicode.school">info@epicode.school </a></p>
+        </div>
+            </article>
 </footer>
 
 
