@@ -42,16 +42,19 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 3.7rem;
 }
 .testo-immagine-main{
-    width: 60%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
+}
+.testo-immagine-main h1{
+    font-size: 2.5rem;
 }
 .contenuto-immagine{
     width: 100%;
     margin: auto;
 }
 .contenuto-immagine figcaption{
-    font-size: 0.5em;
+    font-size: 1.1rem;
     text-align: left;
     margin-bottom: 1em;
 }
@@ -65,4 +68,45 @@ h1,h2,h3,h4,h5,h6{
     margin: 0.5em 0em 1em;
     color: #b2abab;
     font-size: 0.7em;
+}
+.featured{
+    border-left: 1px solid yellow;
+    padding-left: 0.8em;
+}
+.featured h5{
+    margin-bottom: 0;
+    color: orange;
+    font-family: roboto;
+}
+.featured p{
+    margin-top: 0;
+    margin-bottom: 5rem;
+    color: #107777;
+    font-size: 0.83em;
+}
+.featured a {
+    text-decoration: underline;
+    color: #107777;
+}
+.ingredients-topping h3 {
+    border-bottom: 0.1em ridge #ccbaba2b;
+    padding-bottom: 0.7em;
+}
+.ingredients-topping p {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.method h3{
+    margin-top: 2rem;
+    border-bottom: 0.1em ridge #ccbaba2b;
+    padding-bottom: 0.7em;
+}
+.lista-method li{
+    font-weight: bold;
+}
+.lista-method p{
+    margin-bottom: 2rem;
+}
+#footer a{
+   color: #009688;
 }
