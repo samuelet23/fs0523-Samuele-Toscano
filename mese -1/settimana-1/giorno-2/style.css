@@ -1,5 +1,8 @@
+
+
 body{
     margin:0;
+
 }
 #header{
     width: 100%;
@@ -151,7 +154,7 @@ iframe{
     color: white;
     text-decoration: none;
 }
-.footer-finale p a:hover{
+.footer-finale p a:hover{ 
     cursor: pointer;
     text-decoration: underline;
     color: #0cd0d3;
