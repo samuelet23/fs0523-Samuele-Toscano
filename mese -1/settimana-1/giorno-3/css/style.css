@@ -58,10 +58,14 @@ h1,h2,h3,h4,h5,h6{
     text-align: left;
     margin-bottom: 1em;
 }
-.contenuto-immagine img{
+.video{
     box-shadow: 3px 3px 10px gray;
     width: 100%;
     border-radius: 10px;
+}
+.video:hover{
+    box-shadow: none;
+    border: 2px solid orange;
 }
 
 .contenuto-immagine p{
