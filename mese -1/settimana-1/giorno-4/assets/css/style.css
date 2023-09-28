@@ -1,11 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body{
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     background-image: url(../img/sfondo.png);
 }
 p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+    font-family: 'Poppins', sans-serif;
 }
 #header{
     height: 20rem;
@@ -22,7 +26,7 @@ p{
 }
 #header h2{
     color: white;
-    font-family: poppins;
+   
     text-align: center;
     margin-top: 1em;
 }
@@ -44,9 +48,31 @@ p{
     padding: 1em;
 }
 #main h1{
-    font-size: 3em;
+    font-size: 2.2em;
+    line-height: 3rem;
     font-weight: bold;
     margin-bottom: 0.7em;
+}
+.lista-non-ordinata{
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.lista-non-ordinata span {
+    color: black;
+    background-color: #d9cfcf;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+ul{
+    list-style-type: disc;
+}
+ol{
+    list-style-type: decimal
+}
+ul, ol {
+    padding-left: 2.5rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.3rem;
 }
 i{
     color: gray;
@@ -59,6 +85,11 @@ i{
 .paragrafo-span{
     font-size: 1.4rem;
 }
+span{
+    color: #ff2751;
+}
+
+
 iframe{
     width: 100%;
 }
