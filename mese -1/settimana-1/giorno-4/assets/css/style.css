@@ -1,11 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body{
-    background-color: green;
+    font-size: 1rem;
     background-image: url(../img/sfondo.png);
 }
+p{
+    font-size: 1.4rem;
+}
 #header{
-    height: 18em;
+    height: 20rem;
+    line-height: 1.2rem;
     background-color: #307ca9;
     margin: 2em;
     background: linear-gradient(225deg, rgb(0,160,198), rgba(3,109,134,1));
@@ -27,17 +31,48 @@ body{
     text-align: center;
     font-size: 1.3em;
 }
+#nav-bar li{
+    margin: 0.4rem;
+}
 #nav-bar a{
     color: white;
     text-decoration: none;
 }
-#main{
+#sfondo-bianco{
     background-color: white;
     margin: 2em;
     padding: 1em;
 }
-
-
+#main h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+i{
+    color: gray;
+}
+.icone{
+    font-size: 1.5rem;
+    color: #808080ad;
+    margin-bottom: 1.2rem;
+}
+.paragrafo-span{
+    font-size: 1.4rem;
+}
+iframe{
+    width: 100%;
+}
+#footer{
+    background: linear-gradient(225deg, rgb(0,160,198), rgba(3,109,134,1));
+    height: 9rem;
+    margin-bottom: 0.2rem;
+}
+#footer p{
+    font-family: Poppins;
+    padding: 0.6rem 0.3rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
 
 /* IMPOSTAZIONI GENERALI */
 /* font-family: 'Poppins', sans-serif; */
