@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body{
+    background-color: green;
+    background-image: url(../img/sfondo.png);
+}
+#header{
+    height: 18em;
+    background-color: #307ca9;
+    margin: 2em;
+    background: linear-gradient(225deg, rgb(0,160,198), rgba(3,109,134,1));
+}
+#logo-epicode{
+    width: 70%;
+    text-align: center;
+    display: block;
+    padding: 1.2em 1.2em 1.2em 4em;
+}
+#header h2{
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    margin-top: 1em;
+}
+#nav-bar{
+    margin: 1.5em;
+    text-align: center;
+    font-size: 1.3em;
+}
+#nav-bar a{
+    color: white;
+    text-decoration: none;
+}
+#main{
+    background-color: white;
+    margin: 2em;
+    padding: 1em;
+}
+
+
+
+/* IMPOSTAZIONI GENERALI */
+/* font-family: 'Poppins', sans-serif; */
+/* rgb(0,160,198) chiaro */
+/* rgba(3,109,134,1) scuro*/
+/* body{
+    font-size: 20px;
+    background-image: url(../img/sfondo.png);*\
+
+/* HEADER */
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
