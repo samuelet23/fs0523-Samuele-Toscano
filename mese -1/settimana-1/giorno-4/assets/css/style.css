@@ -19,7 +19,7 @@ p{
     background: linear-gradient(225deg, rgb(0,160,198), rgba(3,109,134,1));
 }
 #logo-epicode{
-    width: 70%;
+    width: 20rem;
     text-align: center;
     display: block;
     padding: 1.2em 1.2em 1.2em 4em;
@@ -33,6 +33,7 @@ p{
 #nav-bar{
     margin: 1.5em;
     text-align: center;
+    padding-right: 1.8rem;
     font-size: 1.3em;
 }
 
@@ -49,6 +50,12 @@ p{
     background-color: white;
     margin: 2em;
     padding: 1em;
+    box-shadow: 3px 3px 10px;
+}
+
+#main{
+    margin-bottom: 3rem;
+
 }
 #main h1{
     font-size: 2.2em;
@@ -93,7 +100,14 @@ span{
 }
 
 #table{
-    border: 1px solid black;
+   
+    text-align: center;
+    padding-left: 2rem;
+    border-bottom: 3px solid #037b98;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 2rem;
+
 }
 #table caption{
     font-weight: bold;
@@ -105,14 +119,79 @@ span{
     color: white;
     height: 3.2rem;
 }
+.paragrafo-youtube p a {color: rgb(0,160,198);
 
+}
 iframe{
     width: 100%;
+    border-radius: 1.8rem;
+    height: 15rem;
+}
+.insert-email{
+    background-color: #d9cfcf;
+    box-shadow: 1px 1px 5px;
+    height: 13.5rem;
+    margin-bottom: 2.5rem;
+}
+.insert-email h3{
+    padding: 1rem 2rem 2rem 8rem;
+    font-size: 2rem;
+}
+.insert-email p {
+    padding: 0 1.2rem;
+}
+.form-button{
+
+    padding: 0 3rem;
+    height: 1.4rem;
+}
+.email-input{
+    height: 100%;
+    box-shadow: 1px 1px 3px gray;
+    border: 1px solid gray;
+    padding-left: 0.4em;
+}
+ button{
+    height: 100%;
+    background-color: #1d1d99;
+    color: white;
+    border: 0;
+ }
+.articoli-correlati h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.article{
+    background-color: #d9cfcf;
+    height: 7rem;
+    box-shadow: 1px 1px 3px gray;
+    margin-bottom: 1.6rem;
+}
+.article p{
+    padding-top: 1.3rem;
+    font-size: 1.2rem;
+    margin-bottom:0;
+}
+.article a {
+    color:rgb(0,160,198) ;
+    padding: 1.2rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom:0;
+}
+#icona-1{
+    padding: 0 1.4rem;
+}
+.icona-2{
+    text-align: right;
 }
 #footer{
     background: linear-gradient(225deg, rgb(0,160,198), rgba(3,109,134,1));
     height: 9rem;
     margin-bottom: 0.2rem;
+    color: white;
 }
 #footer p{
     font-family: Poppins;
@@ -120,6 +199,8 @@ iframe{
     text-align: center;
     font-size: 1.3rem;
 }
+margin: 0;
+    padding: 0 1.4rem;
 
 /* IMPOSTAZIONI GENERALI */
 /* font-family: 'Poppins', sans-serif; */
