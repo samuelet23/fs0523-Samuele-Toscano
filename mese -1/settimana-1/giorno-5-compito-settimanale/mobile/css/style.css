@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+
+body{
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+}
+#headings{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: black;
+    height: 7.6rem;
+}
+#headings img{
+    text-align: center;
+    width: 11rem;
+    padding: 1.6rem 10rem;
+}
+.sezione-web-developer{
+    color: #25a2c3 ;
+}
+
+
+button{
+background-color:#f04c2f;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+color: white;
+border-radius: 3px;
+}
+
+
+#testimonianze{
+    background-color:#e22d0e ;
+    color: white;
+}
+
+.article{
+   border: 1px solid #dee1e3;
+   
+}
+
+#footer{
+    color: #c8e7f0 ;
+    background-color: #25a2c3;
+}
+#footer h2{
+  color:  white;
+}
+.footer-link{
+    color: #c8e7f0;
+}
