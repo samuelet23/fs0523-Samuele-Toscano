@@ -298,6 +298,7 @@ text-decoration: none;
 #aside{
 margin: 3rem 1.6rem;
 display: flex;
+align-items: center;
 }
 #aside a{
     text-decoration: none;

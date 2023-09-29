@@ -162,3 +162,204 @@ margin: 3rem 1.6rem
     border-top: 1px solid white;
     padding: 1.5rem 0 4rem 0;
 }
+
+/* larghezza minima di 1100px */
+@media screen and (min-width: 1100px) {
+   
+
+    body{
+        color: #393d41;
+        font-size: 1.2rem;
+        line-height: 1.65;
+        font-family: 'Open Sans', sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6{
+        color: #25a2c3;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+       
+    }
+    
+    a:hover{
+        cursor: pointer;
+        
+    }
+    #headings{
+        color: #25a2c3;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+        background-color: black;
+        height: 7.6rem;
+    }
+    #headings img{
+        width: 15rem;
+        padding: 1rem 0 0.7rem 2rem;
+    }
+    .sezione-web-developer {
+        text-align: center;
+        background-image: url(../images/banner.jpg);
+        background-size:cover ;
+    }
+    .sezione-web-developer h1{
+        padding-top: 7.6rem;
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+    .sezione-web-developer p{
+        font-size: 0.7rem;
+        padding: 0 21rem;
+        margin-bottom: 1rem;
+    }
+    .button{
+        padding-bottom: 2rem;
+        height: 15rem;
+    }
+    
+    button {
+    background-color:#f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    height: 2.7rem;
+    width: 8.2rem;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .button a {
+    color: white;
+    text-decoration: none;
+    }
+    #flex{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 7rem;
+        margin: 2rem 0;
+    }
+    
+    .titoli-paragrafi{
+        padding-left: 2.5rem;
+        text-align: left;
+        font-size: 0.5rem;
+        padding-top: 1.7rem;
+    }
+    .titoli-paragrafi div {
+        margin-bottom: 1.3rem;
+    }
+    .titoli-paragrafi h3{
+        margin-bottom: 0.6rem;
+        font-size: 1.3rem;
+    }
+    .titoli-paragrafi p{
+        font-size: 1rem;
+    }
+    .immagine-paragrafi{
+        height: 25rem;
+    }
+    .immagine-paragrafi img{
+        height: 100%;
+        border-radius: 100%;
+    }
+    #testimonianze{
+        background-color:#e22d0e ;
+        color: white;
+        height: 16.5rem;
+        margin: 3.5rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    #testimonianze h2{
+        color: white;
+        padding-top: 3rem;
+        font-size: 1.5rem;
+    }
+    #testimonianze p {
+        font-style: italic;
+        margin: 1.4rem 0;
+    }
+    .testimonianze-nomi h4{
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 1rem;
+    }
+    #testimonianze .testimonianze-nomi p {
+       margin: 0;
+       font-size: 0.5rem;
+    }
+    #aside{
+    margin: 3rem 1.6rem;
+    display: flex;
+    align-items: center;
+    }
+    #aside a{
+        text-decoration: none;
+        color: #393d41;
+    }
+    .article{
+        border: 1px solid #dee1e3;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        display: flex;
+        margin: 2rem;
+        height: 100%;
+        padding-bottom: 1.2rem
+    
+    }
+    .article img{
+        width: 100%;
+    }
+    .article div{
+        padding: 0 0.3rem 0 0.3rem;
+        font-size: 1.1rem
+    }
+    .article h4{
+        font-size: 0.9rem;
+    }
+    .article p{
+        font-size: 0.9rem
+    }
+    #footer{
+        color: #c8e7f0 ;
+        background-color: #25a2c3;
+        text-align: center;
+    }
+    .contenitore-footer{
+        max-width: 300px;
+        margin: 0 auto;
+    
+    }
+    #footer h2{
+      color:  white;
+      font-size: 2rem;
+      padding: 2rem 0 1rem 0;
+    }
+    .footer-link{
+        color: #c8e7f0;
+        font-size: 0.8rem;
+        padding: 0 5.6em;
+        text-align: left;
+    }
+    .footer-link address{
+        font-size: 0.6rem;
+    }
+    .footer-link a {
+        color: #c8e7f0;
+    }
+    .footer-link i{
+        color: #ffffff;
+    }
+    .copyright{
+        font-size: 0.8rem;
+        margin: 1.6rem 0 0 0;
+       
+        border-top: 1px solid white;
+         padding: 1.5rem 0 4rem 0; 
+    } 
+    .copyright p{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    }
