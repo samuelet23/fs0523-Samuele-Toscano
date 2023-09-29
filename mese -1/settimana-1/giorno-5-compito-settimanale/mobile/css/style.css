@@ -10,6 +10,12 @@ body{
     line-height: 1.65;
     font-family: 'Open Sans', sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+   
+}
 #headings{
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
@@ -22,10 +28,25 @@ body{
     width: 11rem;
     padding: 1.6rem 10rem;
 }
-.sezione-web-developer{
-    color: #25a2c3 ;
-}
 
+.sezione-web-developer {
+    text-align: center;
+    background-image: url(../images/banner.jpg);
+    background-size:cover ;
+}
+.sezione-web-developer h1{
+    padding-top: 2.6rem;
+    line-height: 3rem;
+    margin-bottom: 1.2rem;
+    font-size: 3.5rem;
+}
+.sezione-web-developer p{
+    padding: 0 5rem;
+    margin-bottom: 1.5rem;
+}
+.button{
+    padding-bottom: 2rem;
+}
 
 button{
 background-color:#f04c2f;
@@ -33,12 +54,54 @@ font-family: 'Montserrat', sans-serif;
 font-weight: bold;
 color: white;
 border-radius: 3px;
+height: 2.7rem;
+width: 8.2rem;
 }
 
-
+.titoli-paragrafi{
+    margin: 2.5rem 0;
+    text-align: center;
+    padding: 0 3.8rem;
+}
+.titoli-paragrafi div {
+    margin-bottom: 1.3rem;
+}
+.titoli-paragrafi h3{
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+}
+.immagine-paragrafi{
+    height: 17rem;
+}
+.immagine-paragrafi img{
+    height: 100%;
+    border-radius: 100%;
+}
 #testimonianze{
     background-color:#e22d0e ;
     color: white;
+    height: 21.5rem;
+    margin: 3.5rem 0;
+    text-align: center;
+}
+#testimonianze h2{
+    color: white;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+}
+#testimonianze p {
+    font-style: italic;
+    margin: 1.4rem 0;
+}
+.testimonianze-nomi h4{
+    padding-top: 1.8rem;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+}
+#testimonianze .testimonianze-nomi p {
+   margin: 0;
+   font-size: 1rem;
 }
 
 .article{
