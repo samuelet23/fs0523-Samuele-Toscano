@@ -52,7 +52,7 @@ let x = 12;
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-// let name = 'Toscano'; "Identifier 'name' has already been declared (at D1.js:44:7)"
+name = 'Toscano'; "Identifier 'name' has already been declared (at D1.js:44:7)"
 
 
 
