@@ -5,13 +5,15 @@
 {
 let numero1 = 25;
 let numero2 = 39;
-let risultato = numero1 >  numero2;
+let risultato1 = numero1 >  numero2;
+let risultato2 = numero < numero2
 
-
-if(risultato){
+if(risultato1){
   console.log ( `il ${numero1} è il numero più grande tra i due `);
-  } else {
+  } else if (risultato2) {
     console.log (`il ${numero2} è il numero più grande tra i due`)
+}else {
+  console.log('I numero sono uguali');
 }
 }
 /* ESERCIZIO 2
