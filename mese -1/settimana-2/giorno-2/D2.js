@@ -30,7 +30,7 @@ if (numeroInterno !=5){
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+{
 let numero = 41
 
 if (numero % 5 === 0) {
@@ -39,17 +39,7 @@ if (numero % 5 === 0) {
     console.log("non è divisibile per 5");
 }
 
-// {
-//   let numero = 21
-
-//  if(numero / 5) {
-// console.log( 'divisibile per 5')  
-//  } else {
-//   console.log (' non divisibile per 5')
-//  }
-// }
-// NON È FINITO
- 
+}
 
 
 
