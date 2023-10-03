@@ -119,11 +119,28 @@ if (totalShoppingCart>50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let valore1 = 10;
+  let valore2 = 14;
+  let valore3 = 22;
 
-let valore1 = 10
-let valore2 = 5
-let valore3 = 7
+  if (valore1 > valore2 && valore1 > valore3) {
+    if (valore2 >= valore3) {}
 
+    console.log(valore1, valore2, valore3);
+  } else if (valore2 >= valore1 && valore2 >= valore3) {
+    if (valore1 >= valore3) {}
+
+    console.log(valore2, valore1, valore3);
+  } else {
+    if (valore2 >= valore1) {
+      console.log(valore3, valore2, valore1);
+    } else {
+      if (valore1 >= valore2) 
+      console.log(valore3, valore1, valore2);
+    }
+  }
+}
 
 
 
