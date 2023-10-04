@@ -113,19 +113,20 @@ let characters = [];
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for (let nome = 0; nome < starWarsCharacters.length; nome++) {
-  characters.push(starWarsCharacters[nome].name);
+for (i = 0 ; i< starWarsCharacters.length; i++){
+characters.push (starWarsCharacters[i].name)
+
 }
 console.log(characters);
-
 // }
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
 let femaleCharacters = [];
 
-for (let femminile = 0; femminile < starWarsCharacters.length; femminile++) {
-  femaleCharacters.push(starWarsCharacters[femminile].gender);
+for (i = 0; i<starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender == 'female')
+femaleCharacters.push (starWarsCharacters[i])
 }
 console.log(femaleCharacters);
 /* ESERCIZIO 4
