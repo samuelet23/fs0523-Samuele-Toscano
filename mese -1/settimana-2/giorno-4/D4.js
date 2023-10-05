@@ -75,13 +75,8 @@ console.log(crazySum(3, 3));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-// // function epify () {
-// //     let stringa = ''
-// //     if (stringa === ''){
-// // let stringa1 = 'EPICODE'
-// //     } else if (stringa === 'EPICODE'){
-// // let stringa 
-// //     }
+
+   
 
 // // }
 
@@ -131,28 +126,22 @@ function reverseString (stringa) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// {
-// function upperFirst( stringa ) {
-// let maiuscolo = stringa.charAt (0)
-// }
+{
+function upperFirst( stringa ) {
+let maiuscolo = stringa.charAt (0)
+}
 
-// console.log(upperFirst ('ciao mondo, mi chiamo samuele'))
-// }
+console.log(upperFirst ('ciao mondo, mi chiamo samuele'))
+}
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 {
 function cutString( stringa ) {
-    let lett = stringa.indexOf(1)
-    let lett1 = stringa.lastIndexOf (stringa.slice(-1))
-    let rimuovi = stringa.slice (lett + 2)
-    let rimuovi1= stringa.slice ( lett1 -1)
-    return rimuovi1
+  return stringa.slice (1,-1)
 }
-
-console.log(cutString ('Epicode'))
-
+console.log(cutString ( 'Epicode'))
 }
 
 
@@ -163,3 +152,15 @@ console.log(cutString ('Epicode'))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+// {
+
+let numeri = []
+function giveMeRandom(n) {
+    for (let i = 0; i <= 10; i++) {
+      let  numero =Math.round( Math.random () *10);
+      numeri.push (numero)
+    }
+ return numeri 
+}
+
+console.log (giveMeRandom ())
