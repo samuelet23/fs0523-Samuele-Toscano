@@ -113,9 +113,8 @@ let characters = [];
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for (i = 0 ; i< starWarsCharacters.length; i++){
-characters.push (starWarsCharacters[i].name)
-
+for (i = 0; i < starWarsCharacters.length; i++) {
+  characters.push(starWarsCharacters[i].name);
 }
 console.log(characters);
 // }
@@ -124,9 +123,9 @@ console.log(characters);
 */
 let femaleCharacters = [];
 
-for (i = 0; i<starWarsCharacters.length; i++) {
-  if (starWarsCharacters[i].gender == 'female')
-femaleCharacters.push (starWarsCharacters[i])
+for (i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender == "female")
+    femaleCharacters.push(starWarsCharacters[i]);
 }
 console.log(femaleCharacters);
 /* ESERCIZIO 4
@@ -147,55 +146,54 @@ console.log(eyeColor);
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
+for (i = 0; i < starWarsCharacters.length; i++) {
+  switch (starWarsCharacters[i].eye_color) {
+    case "blue":
+      eyeColor.blue.push(starWarsCharacters[i]);
 
-{
- for( let colori of starWarsCharacters) {
-    switch (colori.eye_color) {
-      case "brown":
-        eyeColor.brown.push(colori);
+      break;
+    case "yellow":
+      eyeColor.yellow.push(starWarsCharacters[i]);
+      break;
 
-        break;
+    case "brown":
+      eyeColor.brown.push(starWarsCharacters[i]);
+      break;
 
-      case "blue":
-        eyeColor.blue.push(colori);
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i]);
+      break;
 
-        break;
+    case "blue-gray":
+      eyeColor["blue-gray"].push(starWarsCharacters[i]);
+      break;
 
-      case "yellow":
-        eyeColor.yellow.push(colori);
-       
-        break;
-
-      case "red":
-        eyeColor.red.push(colori);
-        
-        break;
-
-      case "blue-gray":
-        eyeColor["blue-gray"].push(colori);
-       
-        break;
-
-      default:
-       
-        break;
-        
-    }
+    default:
+      break;
   }
   
 }
-
+console.log(eyeColor);
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-let crewMass = 0;
-let index = 0;
-while (index < starWarsCharacters.length) {
-  crewMass += starWarsCharacters[index].mass;
-  index++;
+{
+let crowMass = 0;
+i = 0
+while(i<starWarsCharacters.length){
+
+  let personaggio = starWarsCharacters[i]
+
+
+crowMass += (personaggio.mass)
+
+i++
 }
-console.log(crewMass);
+console.log(crowMass);
+}
+
+
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
 
@@ -207,38 +205,30 @@ console.log(crewMass);
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-if (crewMass < 500) {
-  console.log("c");
-} else if (crewMass >= 500 && crewMass < 700) {
-  console.log("Ship is half loaded");
-} else if (crewMass >= 700 && crewMass < 900) {
-  console.log("Warning Loa is over 700");
-} else if (crewMass >= 900 && crewMass < 1000) {
-  console.log(`Critical Load : Over 900`);
-} else if (crewMass >= 1000) {
-  console.log(`DANGER! OVERLOAD ALERT: escape from ship now!`);
-}
-
+// {
+// if (crewMass < 500) {
+//   console.log("c");
+// } else if (crewMass >= 500 && crewMass < 700) {
+//   console.log("Ship is half loaded");
+// } else if (crewMass >= 700 && crewMass < 900) {
+//   console.log("Warning Loa is over 700");
+// } else if (crewMass >= 900 && crewMass < 1000) {
+//   console.log(`Critical Load : Over 900`);
+// } else if (crewMass >= 1000) {
+//   console.log(`DANGER! OVERLOAD ALERT: escape from ship now!`);
+// }
+// }
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" 
   (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
-// {
-// for ( i= 0 ; i <starWarsCharacters.length; i++) {
-
-// let i= starWarsCharacters.findIndex ('n/a')
-// starWarsCharacters.splice (i,8, 'robot')
-
-// console.log (i );
-// }
-// }
-
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  if (starWarsCharacters[i].gender === "n/a") {
-    starWarsCharacters[i].gender = "robot";
-  }
+for (i = 0; i<starWarsCharacters.length; i++){
+if (starWarsCharacters[i].gender === 'n/a'){
+  starWarsCharacters [i].gender = 'robot'
+}
 }
 console.log(starWarsCharacters);
+// }
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
