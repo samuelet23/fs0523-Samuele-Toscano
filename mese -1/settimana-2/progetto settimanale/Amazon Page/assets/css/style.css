@@ -1,1 +1,134 @@
 /* Your styles here */
+.margini {
+    margin: 2rem 0;
+    
+    }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #e9edee;
+}
+
+#header{
+    background-color: rgba(34,47,63,255);
+    height: 5rem;
+}
+#header img{
+padding: 0.2rem 1rem;
+    height: 85%;
+}
+
+#nav-bar {
+    height: 1.5rem;
+    background-color: rgba(54,71,87,255);
+    color: white;
+}
+#nav-bar ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0.2rem 0;
+}
+
+#nav-bar ul a {
+    color: white;
+    text-decoration: none;
+}
+#main{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#orange-bar {
+    height: 1.5rem;
+    margin-top: 0;
+    background-color: #f76402;
+}
+#orange-bar p{
+    color: white;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.holiday-gift{
+    background-image: url(../images/bg-image.png);
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.holiday-gift h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.immagini4 {
+    background-color: white;
+    height: 25rem;
+}
+.frase-link{
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    font-weight: bold;
+    padding: 1rem;
+}
+.frase-link a {
+    color: rgba(48,110,99,255);
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+    height: 20rem;
+    justify-content: space-around;
+}
+.flex img {
+    height: 13rem;
+    border-radius: 2rem;
+    width: 13rem;
+    box-shadow: 1px 5px 10px black;
+}
+
+.altezza-immagine {
+    height: 20rem;
+    padding: 1rem 0;
+}
+.altezza-immagine img{
+    height: 100%;
+    width: 100%;
+}
+.frase-link-immagini {
+    display: flex;
+    font-weight:bold ;
+    padding: 0.2rem;
+    justify-content: center;
+}
+.frase-link-immagini p {
+    margin-right: 1.6rem;
+}
+.frase-link-immagini a{
+    color: #306e63;
+    text-decoration: none;
+}
+#back-to-top{
+    background-color: #364759;
+    text-align: center;
+    height: 2rem;
+}
+#back-to-top p{
+    padding-top: 0.4rem;
+}
+#back-to-top a{
+    color: white;
+}
+#footer {
+    background-color: rgba(34,47,63,255);
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer img{
+    height: 40%;
+}
