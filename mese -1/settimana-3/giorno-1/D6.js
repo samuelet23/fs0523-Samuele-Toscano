@@ -236,15 +236,9 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-function vecchiofilm( movies ) {
-  movies.forEach( index  => {
-    let anno = parseInt (index.year)
-    let risultao = movies.sort ((a,b) => a-b)
 
-    return anno
-  });
-}
-console.log(vecchiofilm (movies))
+
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
@@ -285,11 +279,38 @@ console.log(filmCorrenti());
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+{
 
+function sommaAnni() {
+  let anniFilm = []
+for (let anni  of movies) {
+ anniFilm.push(anni.Year)
+}
+let sommaFilm = anniFilm.reduce ((Totale, ValoreCorrente) => Totale + ValoreCorrente, 0)
+return sommaFilm 
+}
+console.log(sommaAnni());
+
+
+
+
+}
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+function specificoFilm(imdbID) {
+  let film = movies.find (n => n.imdbID ===  imdbID)
+  return film
+}
+console.log(specificoFilm ('tt0087365'));
+
+
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+function indice(year) {
+ let firstMovie= movies.findIndex (n => n.Year === year)
+ return firstMovie
+}
+console.log(`L'indice del tuo film è ${indice ('2005')}`);
