@@ -2,39 +2,44 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
-// stringhe = (str1, str2) => {
-// return (str1.substring (0,2) + str2.substring (str2.length - 3)).toUpperCase()
-// }
+{
+  stringhe = (str1, str2) => {
+return (str1.substring (0,2) + str2.substring (str2.length - 3)).toUpperCase()
+}
+
+}
 // console.log(stringhe('hello', 'pianeta'));
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+{
+randomArray = () => {
+  let gruppo = []
+  for (let i = 0; i <= 10; i++) {
+    gruppo.push(Math.floor (Math.random()*101))
+}
+return gruppo
+console.log(gruppo);
+}  
 
-// randomArray = () => {
-//   let gruppo = []
-//   for (let i = 0; i <= 10; i++) {
-//     gruppo.push(Math.floor (Math.random()*101))
-// }
-// return gruppo
-// console.log(gruppo);
-// }  
+console.log(randomArray());
 
-// console.log(randomArray());
+}
 
 // /* ESERCIZIO 3 (filter)
 //   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 // */
+{
+function pari (arr) {
+let arrayNumeri = [12, 35, 49, 392, 1928, 28, 2, 38, 19, 28, 19, 12]
 
-// function pari (arr) {
-// let arrayNumeri = [12, 35, 49, 392, 1928, 28, 2, 38, 19, 28, 19, 12]
+let numeriPari = arrayNumeri.filter (n => n % 2 === 0 )
+return numeriPari
 
-// let numeriPari = arrayNumeri.filter (n => n % 2 === 0 )
-// return numeriPari
+}
 
-// }
-
-// console.log(pari ());
-
+console.log(pari ());
+}
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -112,8 +117,6 @@ function dispari () {
 
 console.log(dispari());
 }
-
-// da fare anche con il foreach
 
 
 
@@ -237,8 +240,14 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-
-
+// function vecchioFilm() {
+//   movies.forEach( n  => {
+//   movies.sort (n.Year)  
+//   })
+  
+ 
+// }
+// console.log(vecchioFilm());
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
