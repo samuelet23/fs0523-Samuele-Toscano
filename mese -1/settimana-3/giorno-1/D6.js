@@ -240,14 +240,20 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-// function vecchioFilm() {
-//   movies.forEach( n  => {
-//   movies.sort (n.Year)  
-//   })
-  
+// {
+//  let vecchioFilm=  movies.forEach( n  => {
+//  let numero = parseInt (n.Year)
+//  let numero1 = parseInt (movies.length)
+//  if (numero > numero1) {
+//  numero = film 
+//  }
+//  return numero 
  
+//   })
+
 // }
-// console.log(vecchioFilm());
+
+// console.log(vecchioFilm(film));
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
