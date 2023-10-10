@@ -19,7 +19,6 @@ randomArray = () => {
     gruppo.push(Math.floor (Math.random()*101))
 }
 return gruppo
-console.log(gruppo);
 }  
 
 console.log(randomArray());
@@ -31,14 +30,14 @@ console.log(randomArray());
 // */
 {
 function pari (arr) {
-let arrayNumeri = [12, 35, 49, 392, 1928, 28, 2, 38, 19, 28, 19, 12]
+
 
 let numeriPari = arrayNumeri.filter (n => n % 2 === 0 )
 return numeriPari
 
 }
-
-console.log(pari ());
+let arr = [12, 35, 49, 392, 1928, 28, 2, 38, 19, 28, 19, 12]
+console.log(pari (arr));
 }
 
 /* ESERCIZIO 4 (forEach)
