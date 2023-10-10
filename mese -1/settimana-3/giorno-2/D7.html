@@ -202,8 +202,33 @@
        La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
     */
 
-      const generateTable = function () {};
+      const generateTable = function () {
+        let tabella = document.querySelector("#tableArea");
+        let table = document.createElement ('table')
+        let tablehead = document.createElement ('thead')
+        let tableBody = document.createElement ('tbody')
+        
 
+        for (let i = 0; i < 4; i++) {
+          let row = document.createElement('tr');
+let rowText = document.createTextNode  (`nuovo ${i}`)
+          for (let x = 0; x < 4; x++) {
+          let cell = document.createElement('td')
+          let cellText = document.createTextNode (`immagini '${i}'}`)
+          cell.append (cellText)
+          row.append(cell)
+        }
+        tableBody.append(row)
+       
+      }
+      tablehead.append(tableBody)
+table.append(tablehead)
+tabella.append(table)
+tablehead.style.border= '1px, solid, green'
+tableBody.style.border = '1px solid  black'
+table.style.border = '1px solid  black'
+      };
+      generateTable()
       /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
@@ -219,14 +244,34 @@
       /* EXTRA ESERCIZIO 15
       Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
     */
+// NON RISOLTO
 
-      const changeColorWithRandom = function () {};
+      //       const changeColorWithRandom = function () {
+      //     let secondoTitolo = document.querySelectorAll (' #changeMyColor ')
+      // for (let colore of secondoTitolo) {
+      //   colore
+      //         }
 
+      //         secondoTitolo.addEventListener ('click', (c) => { c =
+      //           Math.floor (Math.random())
+      //         })
+      //       };
+      // changeColorWithRandom()
       /* EXTRA ESERCIZIO 16
       Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
     */
-
-      const deleteVowels = function () {};
+// NON RISOLTO
+//       const deleteVowels = function () {
+//         let tuttaPagina = Array.from(
+//           (document.querySelectorAll = "*:not(script)")).filter((test) => test.textContent);
+//         tuttaPagina.forEach((element) => {
+//           let testo = element.textContent;
+//           testo.replace(`a,e,i,,o,u`, "");
+//           let risultato = element.textContent = testo.replace;
+//         });
+// console.log(risultato);
+//         deleteVowels();
+//       };
     </script>
   </body>
 </html>
