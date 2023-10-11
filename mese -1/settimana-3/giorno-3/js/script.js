@@ -6,9 +6,9 @@
        
         butttone.addEventListener('click', (e) => {
                 e.defaultPrevented()
-            const taskInput = document.getElementById('taskInput');
+            
             const lista = document.getElementById('lista');
-            const taskText = taskInput.value;
+           
             
             if (!taskText) { 
                 alert ('Inserisci il testo')
