@@ -3,30 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task list in Javascript</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>My task</title>
-
-</head>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista dei Task</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <h2 id="firstH2">Aggiungi i Tuoi Task </h2>
+ <div class="form">
+    <input type="text" id="input">
 
-    <h1 class="title">AGGIUNGI IL TUO TASK </h1>
-
-    <div>
-        <input type="text" id="taskInput" placeholder="Inserisci un nuovo task">
-        <button id="bottone">Aggiungi</button>
-        <ul id="lista"></ul>
-    </div>
-
-    <script src="js/script.js">
-     
-       </script>
+    <button id="button" >Aggiungi</button>
+ </div>
+    <ol id="lista"></ol>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

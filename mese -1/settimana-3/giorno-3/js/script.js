@@ -1,35 +1,35 @@
-  
-        const taskInput = document.getElementById('taskInput');
-        const butttone = document.getElementById('bottone');
-        const lista = document.getElementById('lista');
+let bottone = document.getElementById('button')
+let input = document.getElementById ('input')
+let lista = document.getElementById ('lista')
 
+
+
+bottone.addEventListener ('click', () => {
+   if(input.value == ''){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Ti sei dimenticato di scrivere il Task',
        
-        butttone.addEventListener('click', (e) => {
-                e.defaultPrevented()
-            
-            const lista = document.getElementById('lista');
-           
-            
-            if (!taskText) { 
-                alert ('Inserisci il testo')
-            } else{
-                const liTask = document.createElement('li');
-                liTask.textContent = taskText;
-                lista.appendChild(liTask);
-                liTask.classList.add ('clickMouse')
-                
-
-                const buttonTask = document.createElement ("button")
-                buttonTask.textContent = 'Elimina Task'
-                buttonTask.classList.add ('buttonTask')
-                buttonTask.addEventListener ('click', () => {
-                liTask.remove()
-                })
-                liTask.appendChild(buttonTask)
+      })
+   }
 
 
-              
-            }
-        });
-   
+    let li = document.createElement ('li');
+    li.textContent = input.value;
+    lista.prepend (li);
+    li.classList.add ('li-decoration')
+    li.addEventListener('click', () => {
+    li.classList.add ('click-li');
+    })
 
+    let buttonLi = document.createElement ('button')
+    buttonLi.innerHTML= 'Elimina Task'
+    li.append (buttonLi)
+    buttonLi.classList.add ('button-li')
+    buttonLi.addEventListener ('click', () => {
+        li.remove ();
+    })
+
+    input.value =''
+})
