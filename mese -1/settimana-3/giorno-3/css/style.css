@@ -1,0 +1,36 @@
+body {
+text-align: center;
+}
+h1 {
+    font-size: 5rem;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+#myform{
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+}
+#taskInput{
+font-size: 5rem;
+display: block;
+}
+#bottone{
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+.clickMouse{
+
+    text-decoration: line-through
+}
+.buttonTask{
+
+
+}
