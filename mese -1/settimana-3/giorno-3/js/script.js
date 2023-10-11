@@ -5,7 +5,7 @@
 
        
         butttone.addEventListener('click', (e) => {
-                // e.defaultPrevented()
+                e.defaultPrevented()
             const taskInput = document.getElementById('taskInput');
             const lista = document.getElementById('lista');
             const taskText = taskInput.value;

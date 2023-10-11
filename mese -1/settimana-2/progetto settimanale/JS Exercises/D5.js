@@ -84,7 +84,7 @@ cars.push({
 
 //eliminati tutti i valori 'trims
 for (let i = 0; i < cars.length; i++) {
-delete cars[i].trims
+cars.trims.pop ()
 }
 
 console.log(cars);
