@@ -5,9 +5,11 @@
 
        
         butttone.addEventListener('click', (e) => {
-                e.defaultPrevented()
+                // e.defaultPrevented()
+            const taskInput = document.getElementById('taskInput');
+            const lista = document.getElementById('lista');
             const taskText = taskInput.value;
-
+            
             if (!taskText) { 
                 alert ('Inserisci il testo')
             } else{
@@ -19,13 +21,14 @@
 
                 const buttonTask = document.createElement ("button")
                 buttonTask.textContent = 'Elimina Task'
+                buttonTask.classList.add ('buttonTask')
                 buttonTask.addEventListener ('click', () => {
                 liTask.remove()
                 })
                 liTask.appendChild(buttonTask)
 
 
-                taskInput.value = '';
+              
             }
         });
    

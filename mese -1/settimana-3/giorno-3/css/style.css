@@ -2,22 +2,23 @@ body {
 text-align: center;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     position: absolute;
-    top: 10rem;
-    left: 20rem;
+    top: 3rem;
+    left: 25rem;
 }
+
 #myform{
     position: absolute;
-    top: 20rem;
-    left: 20rem;
+    top: 10rem;
+    left: 28rem;
 }
 #taskInput{
-font-size: 5rem;
-display: block;
+    font-size: 3rem;
+    display: block;
 }
 #bottone{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 2rem;
     padding: 1rem;
     background-color: green;
@@ -25,12 +26,27 @@ display: block;
     border-radius: 1rem;
     box-shadow: 1px 1px 10px black;
 }
+#lista {
+    margin-top: 8rem;
+    font-size: 4rem;
+}
+#footer {
+    height: 10rem ;
+    background-color: black
+}
 
 .clickMouse{
-
-    text-decoration: line-through
+    list-style-type: disc;
+    text-decoration: line-through;
+    text-align: left;
+    margin-bottom: 3rem;
 }
+
 .buttonTask{
 
-
+    margin-left: 6rem;
+    font-size: 3rem;
+    background: transparent;
+    color: red;
+    text-shadow: 1px 2px 2px black;
 }
