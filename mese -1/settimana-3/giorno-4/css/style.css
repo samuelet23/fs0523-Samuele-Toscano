@@ -1,0 +1,93 @@
+#tombola{
+    background-color: rgba(236, 236, 15, 0.804);
+    width: 40rem;
+height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+#tombola h2{
+    font-size: 4rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+    color:  rgb(234, 246, 7);
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cella{
+    border: 1px solid rgb(234, 246, 7);
+    background-color: black;
+  height: 2.8rem;
+ text-align: center;
+ padding-top: 0.5rem;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+ margin: 1rem 1rem ;
+  font-size: 2rem;
+    flex: 0 1 calc(100% / 7) ;
+}
+.evidenziata{
+    border: 1px solid rgb(234, 246, 7);
+    background-color: rgb(232, 144, 13);
+  height: 2.8rem;
+  text-shadow: 1px 1px 3px black;
+ text-align: center;
+ padding-top: 0.5rem;
+  color: white;
+ margin: 1rem 1rem ;
+  font-size: 2rem;
+    flex: 0 1 calc(100% / 7) ; 
+}
+.button-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+
+.button-estrazione {
+    padding: 15px 25px;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(17, 195, 17);
+    border: none;
+    box-shadow: 1px 2px  5px #000000;
+    border-radius: 1rem;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 3rem;
+  }
+  
+  .button-estrazione:hover {
+    background-color:rgb(17, 195, 17);
+    box-shadow: none;
+}
+  
+  .button-estrazione:active {
+    background-color: #1e7221;
+   
+    transform: translateY(4px);
+}
+.listaNumeriEstratti{
+   
+
+}
+.numeroEstratto{
+    font-size: 2rem;
+    border: 1px solid rgb(234, 246, 7);
+    background-color: black;
+    height: 3.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+    width: 5rem;
+    margin: 2.5rem 0;
+}
