@@ -47,20 +47,21 @@ cellaGenerate()
 
 
 
-function cellaGenerateWithButton () {
+function cellaGenerateWithButton (numeriCelle) {
 button.addEventListener('click', ()=>{
     let numeroEstratto = document.createElement('li')
     numeroEstratto.classList.add('numeroEstratto')
-    let random = Math.floor(Math.random()*77)
+    let random = Math.floor(Math.random()*76) +1
     numeroEstratto.innerText = random
     listaNumeriEstratti.append(numeroEstratto)
-
-for (let i = 0; i < numeriCelle.length; i++) {    
-    if (i === numeroEstratto) {
-        numeroEstratto.classList.add ('evidenziata')
+    
+    for (let numeroCella of numeriCelle) {
+       if (numeroCella.innerText == numeroEstratto.innerText) {
+        numeroCella.classList.add ('evidenziata')
+        return
+       }
     }
-}
+    }
+)}
+ cellaGenerateWithButton(numeriCelle)
 
- })
-}
- cellaGenerateWithButton()
