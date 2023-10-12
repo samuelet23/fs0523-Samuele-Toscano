@@ -49,19 +49,18 @@ cellaGenerate()
 
 function cellaGenerateWithButton () {
 button.addEventListener('click', ()=>{
-
-for (let i = 0; i < numeriCelle.length; i++) {
     let numeroEstratto = document.createElement('li')
     numeroEstratto.classList.add('numeroEstratto')
     let random = Math.floor(Math.random()*77)
     numeroEstratto.innerText = random
     listaNumeriEstratti.append(numeroEstratto)
-    
-    if (i === random) {
+
+for (let i = 0; i < numeriCelle.length; i++) {    
+    if (i === numeroEstratto) {
         numeroEstratto.classList.add ('evidenziata')
     }
 }
-    
+
  })
 }
  cellaGenerateWithButton()
