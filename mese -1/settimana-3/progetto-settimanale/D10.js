@@ -161,7 +161,16 @@ function rollTheDices(n) {
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
+function howManyDays(date) {
+  let dateInsert = new Date(date);
+  console.log(dateInsert);
+  let currentDate = new Date();
+  let difference = dateInsert - currentDate;
 
+  let giornoMillisecondi = 1000 * 60 * 60 * 24;
+  let day = Math.floor(difference / giornoMillisecondi);
+}
+howManyDays("2023-10-24");
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
@@ -494,4 +503,3 @@ function addClass() {
 */
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
-
