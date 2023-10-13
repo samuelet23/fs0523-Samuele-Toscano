@@ -38,21 +38,28 @@ cellaGenerate();
 
 function cellaGenerateWithButton() {
   button.addEventListener("click", () => {
-    let numeroEstratto = document.createElement("li");
-    numeroEstratto.classList.add("evidenziata");
-    let random = Math.floor(Math.random() * 76) + 1;
+    if (numeriCelle.length>0) {
+      
 
+
+  
+    let random = Math.floor(Math.random() * 77) 
+
+    let newRandom = numeriCelle.splice(random, 1, '')
+    numeroEstratto.classList.add("evidenziata")
     listaNumeriEstratti.append(numeroEstratto);
     numeroEstratto.innerText = random;
-    numeroEstratto.innerText
 
 
-    listaNumeriEstratti.splice(random, 1)[0]
+
+ console.log(numeriCelle);
      let cella1 = document.querySelector("#cel" + random);
     if (cella1) {
       cella1.classList.add("evidenziata");
     }
-
+  }
   });
 }
+
+
 cellaGenerateWithButton();
