@@ -145,11 +145,14 @@
    
   }
   .flex div{
-    border: none ;
+    border: none;
     border-right: 1px solid #c3c3c3;
     width: 100%;
+    padding: 1.5rem 1.3rem;
 }
-  
+  aside h2{
+    font-weight: bold;
+  }
   address{
     padding: 0 34rem;
   }
