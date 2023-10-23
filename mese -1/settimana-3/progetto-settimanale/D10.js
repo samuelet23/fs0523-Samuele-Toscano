@@ -188,6 +188,7 @@ function isTodayMyBirthday(date) {
     return false;
   }
 }
+console.log(isTodayMyBirthday(6/12/2021));
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file

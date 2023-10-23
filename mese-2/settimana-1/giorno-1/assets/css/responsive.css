@@ -1,0 +1,157 @@
+/* da 768px avverranno queste modifiche*/
+@media screen and (min-width: 576px) {
+  header p {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem;
+  }
+  article h1 {
+    line-height: 5.3rem;
+    font-size: 4.6rem;
+  }
+  .border-blue {
+    border: 4px solid #009fc5;
+    width: 8.2rem;
+    height: 8rem;
+  }
+  .border-viola {
+    border: 4px solid #ab357e;
+    width: 9rem;
+    height: 8.7rem;
+    margin-bottom: 0.4rem;
+  }
+  #html-Logo {
+    width: 7rem;
+    padding: 0.2rem;
+  }
+  article h2 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+  ul {
+    font-size: 1.7rem;
+  }
+  ol {
+    font-size: 1.7rem;
+  }
+
+  section h2 {
+    background-color: #a3a3a3;
+    height: 3rem;
+    padding: 0.3rem;
+  }
+  aside a {
+    font-size: 1.7rem;
+  }
+}
+/* da 768px avverranno queste modifiche*/
+@media screen and (min-width: 768px) {
+  header p {
+    font-size: 1.7rem;
+  }
+  article h1 {
+    line-height: 6.3rem;
+    font-size: 6rem;
+  }
+  article h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  ul {
+    font-size: 2rem;
+  }
+  ol {
+    font-size: 2rem;
+  }
+  .tableRespo {
+    padding: 0 9rem;
+  }
+  table {
+    margin: 8rem auto;
+  }
+  form input {
+    width: 70%;
+    height: 4rem;
+  }
+  form button {
+    height: 4rem;
+    width: 12rem;
+  }
+}
+/* da 1200px avverranno queste modifiche*/
+@media screen and (min-width: 1200px) {
+    main{
+        padding: 2rem 2rem;
+    }
+  header {
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 1.5rem;
+    align-items: center;
+  }
+  header div {
+    display: flex;
+    align-items: center;
+  }
+  header p{
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .border-blue {
+    border: 4px solid #009fc5;
+    width: 9.6rem;
+    height: 9rem;
+  }
+  .border-viola {
+    border: 4px solid #ab357e;
+    width: 10.2rem;
+    height: 9.7rem;
+    margin-bottom: 0.4rem;
+  }
+  #html-Logo {
+    width: 8.3rem;
+    padding: 0.6rem;
+  }
+  .tableRespo {
+    padding: 0 11rem;
+  }
+ table{
+    width: 100%;
+ }
+ iframe{
+    width: 50%s;
+ }
+  .video-form{
+    display: flex;
+  }
+  .video-form section{
+    border-radius: 2rem;
+    width: 50%;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .flex div{
+    border: none ;
+    border-right: 1px solid #c3c3c3;
+    width: 100%;
+}
+  
+  address{
+    padding: 0 34rem;
+  }
+  
+}
