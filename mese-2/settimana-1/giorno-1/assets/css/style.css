@@ -13,7 +13,6 @@ hr {display: none;} /* rimuove l'elemento */
 
 /* HEADER */
 header {
-    position: -webkit-sticky;
     position: sticky;
     top:0;
     width: 100%;
@@ -204,27 +203,9 @@ footer {
     padding: 1em;
     text-align: center;
     font-size: 1.6rem;
-    height: 15rem;
+    height: 20rem;
 }
 footer a {
     color: fuchsia;
 }
-/* ICONE  */
-.icons-blue{
 
-}
-.button-icons{
-    position: relative;
-}
-#icon-red{
-    font-size: 4rem;
-    color: #e95b5a;
-    padding: 2rem;
-    border: 2px solid white;
-    border-radius: 5px;
-    background: white;
-    opacity: 0.7;
-    position: absolute;
-    bottom:0;
-    right: 0;
-}

@@ -24,11 +24,51 @@
 }
 
 
-/* da 768px avverranno queste modifiche*/
+/* da 576px avverranno queste modifiche*/
 @media screen and (min-width: 576px) {
   header p {
     font-size: 1.5rem;
   }
+  .icons-blue-calendar{
+    font-size: 3rem;
+    color: #3368b9;
+    padding: 1rem;
+    border: 4px solid white;
+    border-radius: 5px;
+    background: #dedede;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 143px;
+    right: -25px;
+}
+.icons-blue-plus{
+    font-size: 3rem;
+    color: #3368b9;
+    padding: 1rem;
+    border: 4px solid white;
+    border-radius: 5px;
+    background: #dedede;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 74px;
+    right: -25px;
+}
+
+.button-icons{
+    position: relative;
+}
+#icon-red{
+    font-size: 3rem;
+    color: #e95b5a;
+    padding: 1rem;
+    border: 4px solid white;
+    border-radius: 5px;
+    background: #dedede;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0px;
+    right: -25px;
+}
   nav ul {
     display: flex;
     justify-content: center;
@@ -99,9 +139,47 @@ article h1 {
   header p {
     font-size: 1.7rem;
   }
+  .button-icons{
+    position:inherit;
+  }
+  .icons-blue-plus{
+    font-size: 3rem;
+    color: #3368b9;
+    padding: 1rem;
+    border: 4px solid white;
+    border-radius: 5px;
+    background: #dedede;
+    opacity: 0.8;
+    position: absolute;
+    top: 15px;
+    bottom: auto;
+    right: -15px;
+    z-index: 4;
+  }
+  .icons-blue-calendar{
+    font-size: 3rem;
+    color: #3368b9;
+    padding: 1rem;
+    border: 4px solid white;
+    border-radius: 5px;
+    background: #dedede;
+    opacity: 0.8;
+    position: absolute;
+bottom: auto;
+    top: 86px;
+    right: -15px;
+    z-index: 4;
+  }
+.underline{
+  bottom: -21px;
+}
+  .underline-container{
+    width: 55rem;
+  }
   article h1 {
     line-height: 6.3rem;
     font-size: 6rem;
+  
   }
   article h2 {
     font-weight: bold;
@@ -150,6 +228,7 @@ article h1 {
     padding: 1.6rem 1.5rem;
     align-items: center;
   }
+ 
   header div {
     display: flex;
     align-items: center;
@@ -157,6 +236,17 @@ article h1 {
   header p{
     font-size: 2rem;
     margin-bottom: 0;
+  }
+  .underline-container{
+    width: auto;
+  }
+  .underline{
+    position: absolute;
+    bottom: -24px;
+    opacity: 0.7;
+    width: 53rem;
+    left: 47rem;
+    z-index: 1;
   }
   .border-blue {
     border: 4px solid #009fc5;
