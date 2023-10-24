@@ -261,9 +261,7 @@ bottom: auto;
     main{
         padding: 2rem 2rem;
     }
-    #icon-red{
-      right: -140px;
-    }
+    
   header {
     height: 11rem;
     display: flex;
