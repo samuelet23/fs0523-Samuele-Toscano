@@ -4,6 +4,7 @@
 
 .container-general {
   padding: 10px 17px;
+  font-family: 'Roboto', sans-serif;
 }
 #header {
   background-color: #fef7e2;
@@ -15,19 +16,19 @@
   display: flex;
   background-color: #ffdf7f;
   align-items: center;
-  padding: 15px;
+  padding: 29px 75px;
   font-size: 2rem;
   border-radius: 50px;
   margin: 20px;
-  column-gap: 55px;
+  column-gap: 20px;
   order: 5;
 }
 
 .logo {
-  width: 6rem;
+  width: 3rem;
 }
 .container-logo p {
-  font-size: 4rem;
+  font-size: 1.5rem;
   color: #721f03;
   font-weight: bold;
 }
@@ -47,20 +48,25 @@
   color: #701e03;
   align-items: center;
   text-decoration: none;
-  padding: 10px 30px;
+
   font-size: 1.4rem;
 }
 .el4 {
   order: 4;
+  padding: 10px 35px;
+
 }
 .el3 {
   order: 3;
+  padding: 10px 30px;
 }
 .el2 {
   order: 2;
+  padding: 10px 40px;
 }
 .el1 {
   order: 1;
+  padding: 10px 42px;
 }
 
 /* card product */
@@ -69,6 +75,7 @@
   flex-wrap: wrap;
   row-gap: 35px;
   column-gap: 35px;
+  margin-bottom: 3rem;
 }
 .product {
   display: flex;
@@ -114,4 +121,33 @@
 }
 .price {
   font-size: 22px;
+}
+/* aside */
+#aside h3{
+    text-align: center;
+    color: #721f02;
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.container-article{
+    background: #fef7e2;
+    padding: 20px;
+    border-radius: 2rem;
+}
+#aside h4{
+    font-weight: bold;
+    font-size: 21px;
+    color: #731f00;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.didascalia{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
+}
+.honey-aside{
+    width: 100%;
 }
