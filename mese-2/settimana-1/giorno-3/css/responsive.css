@@ -1,3 +1,36 @@
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
+    #tablet{
+        padding: 0;
     
+    }
+    #header{
+        border-radius: 0px;
+    }
+    .padding-tablet{
+        padding: 10px 17px;
+    }
+    #nav-bar{
+        flex-wrap: nowrap;
+    }
+    .el4 {
+        order: 1;
+        padding: 10px 35px;
+      
+      }
+      .el3 {
+        order: 2;
+        padding: 10px 30px;
+      }
+      .el2 {
+        order: 4;
+        padding: 10px 40px;
+      }
+      .el1 {
+        order: 5;
+        padding: 10px 42px;
+      }
+      .container-logo{
+        order: 3;
+      }
+
 }
