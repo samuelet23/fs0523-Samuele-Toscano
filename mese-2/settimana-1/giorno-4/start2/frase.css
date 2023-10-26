@@ -8,20 +8,69 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+#testoAlternato {
+  border: 3px solid grey;
+  width: 58%;
+  padding: 27px;
+  font-size: 30px;
+  line-height: 38px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-weight: bold;
+  color: #4c4c4c;
+  text-shadow: 0px 0px 2px #c7c7c7;
+}
 
-#testoAlternato{
-    border: 3px solid grey;
-    width: 58%;
-    padding: 27px;
-    font-size: 30px;
-    line-height: 38px;
+.parole {
+  color: #67859a;
+}
+.parole i {
     position: absolute;
-    top: 20%;
-    left: 20%;
-    font-weight: bold;
-    color: #4c4c4c;
-    text-shadow: 0px 0px 2px #c7c7c7;
+    top: 61%;
+    left: 45%;
+    transition: dissolvenza 1s;
 }
-.parole{
-    color: #67859a;
+.primo,.secondo,.terzo {
+  animation-name: dissolvenza;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
+.primo{
+    animation-delay: 0s;
+}
+.secondo {
+ animation-delay: 5s;
+}
+.terzo {
+ 
+  animation-delay: 10s;
+ 
+}
+
+
+@keyframes dissolvenza {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  0% {
+    opacity: 0%;
+  }
+
+  from {
+    top: 0;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+
