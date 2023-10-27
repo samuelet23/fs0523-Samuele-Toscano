@@ -96,13 +96,22 @@ list-style-type: none;
 .right-hero{
     position: relative;
 }
-.m-position {
-    opacity: 0; /* Inizialmente nascosto */
-    transition: opacity 1s; /* Aggiungi una transizione */
-  }
-  
+  /* animazione delle M */
+.animation{
+    animation: fadeIn 2s infinite; 
+    transition: all 1s;
+}
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
 
 /*  MAIN */
+
 
 #main{
     padding: 4rem 15rem ;

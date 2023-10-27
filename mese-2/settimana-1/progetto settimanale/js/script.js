@@ -59,3 +59,18 @@ profiloPersona.forEach((elemento) => {
 });
 
 
+
+//  animazione delle m da completare
+
+let m = document.getElementsByTagName("g")
+let l = document.getElementsByTagName("svg")
+console.log(m, l);
+// Scorri gli elementi selezionati
+for (let i = 0; i < m.length; i++) {
+  if (m[i].style.opacity='0') {
+    m[i].classList.add('animation')
+  } else if (!(m[i].style.opacity ='0')){
+    m[i].style.opacity='1'
+  }
+
+}
