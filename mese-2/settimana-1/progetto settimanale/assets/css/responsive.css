@@ -15,4 +15,10 @@
 #main{
     padding-left: 5rem;
 }
+.flex-article{
+    max-width: (100% /2);
+}
+.articoli{
+    max-width: calc(100% / 2);
+}
 }
