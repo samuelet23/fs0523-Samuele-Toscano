@@ -57,3 +57,5 @@ profiloPersona.forEach((elemento) => {
         miniProfiloPersona.style.display = 'none';
     });
 });
+
+

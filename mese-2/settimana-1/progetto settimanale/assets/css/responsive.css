@@ -1,0 +1,18 @@
+@media screen and (max-width: 1500px) {
+    .logo{
+        padding-left: 5rem;
+    }
+    .container-link-nav{
+        padding-right: 7rem;
+    }
+.left-hero{
+    padding-left: 9rem;
+}
+.m-position{
+    width: 500;
+    height: 300;
+}
+#main{
+    padding-left: 5rem;
+}
+}

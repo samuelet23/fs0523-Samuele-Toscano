@@ -96,10 +96,14 @@ list-style-type: none;
 .right-hero{
     position: relative;
 }
-.m-position{
-    position: absolute
-}
+.m-position {
+    opacity: 0; /* Inizialmente nascosto */
+    transition: opacity 1s; /* Aggiungi una transizione */
+  }
+  
+
 /*  MAIN */
+
 #main{
     padding: 4rem 15rem ;
     border-bottom: 1px solid #80808042;
@@ -114,6 +118,9 @@ list-style-type: none;
     font-size: 20px;
     font-family: var(--roboto);
 }
+
+
+
 
 .flex-article{
     display: flex;
@@ -309,4 +316,13 @@ list-style-type: none;
 }
 .hidden{
 display: none;
+}
+@keyframes fadein {
+    0% { opacity: 1;}
+    50% {
+        opacity: 0.5
+    }
+    100%{
+        opacity: 0;
+    }
 }
