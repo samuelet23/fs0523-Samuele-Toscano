@@ -89,7 +89,16 @@ list-style-type: none;
     font-size: 1.7rem;
     border-radius: 4rem;
 }
+.button-left-hero:hover{
+    cursor: pointer;
+}
 
+.right-hero{
+    position: relative;
+}
+.m-position{
+    position: absolute
+}
 /*  MAIN */
 #main{
     padding: 4rem 15rem ;
@@ -130,6 +139,7 @@ list-style-type: none;
     flex-direction: column;
     row-gap: 13px;
     font-family: 'Roboto';
+    position: relative;
 
 }
 .name-photo{
@@ -269,8 +279,34 @@ list-style-type: none;
     color: #6b6b6b;
 }
 
-
+.profilopersona{
+    border: 1px solid;
+    width: 250px;
+    height: 133px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    box-shadow: 1px 1px 10px black;
+    background-color: white;
+}
+.name-photo-pop{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.paragraph-pop{
+    font-size: 0.7rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+.profilopersona p{
+    padding: 15px 0;
+}
+.profilopersona a {
+    color: green;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
 .hidden{
-    display: none;
-
+display: none;
 }
