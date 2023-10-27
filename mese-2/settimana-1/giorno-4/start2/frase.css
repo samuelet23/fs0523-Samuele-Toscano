@@ -63,7 +63,7 @@
   }
  
   from {
-    top: 40%;
+    top: 0;
   }
   to {
     bottom: 0;
