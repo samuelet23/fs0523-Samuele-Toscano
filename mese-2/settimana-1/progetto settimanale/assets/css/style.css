@@ -20,6 +20,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 999;
+background-color: var(--giallo);
 }
 
 .logo{
@@ -87,6 +92,7 @@ list-style-type: none;
 /*  MAIN */
 #main{
     padding: 4rem 15rem ;
+    border-bottom: 1px solid #80808042;
 }
 .title-main{
     display: flex;
@@ -148,18 +154,98 @@ list-style-type: none;
     display: flex;
     column-gap: 0.3rem;
     font-size: 13px;
+    align-items: center;
+    position: relative
+}
+/* articoli generali */
+
+
+.container-articles-aside-footer{
+    display: flex;
+    margin-top: 5rem;
+    column-gap: 6rem;
+    padding: 0 15rem;
+}
+.container-articoli{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+#general-article{
+    display: flex;
+    column-gap: 30px;
 }
 
+.article{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.title-article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.title-bold{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.paragraph{
+    font-size: 1.2rem;
+    color: #6b6b6b;
+}
 
+.date a{
+    text-decoration: none;
+    color: #6b6b6b;
+    background: #f2f2f2;
+    padding: 11px;
+    border-radius: 20px
+}
+.bookmark{
+    position: absolute;
+    right: 0;
+}
 
+/* aside */
+.container-aside-footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+}
 
+#aside h4{
+    font-size: 1.4rem;
+    font-family: var(--roboto);
+    margin-bottom: 1rem;
+}
 
-
-
-
-
-
-
+.aside-links{
+    margin-bottom: 3.5rem 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+.link-aside{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: var(--roboto);
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: calc(100% / 3);
+    text-align: center;
+    height: 20px;
+    max-width: 150px;
+}
+/* footer */
+#footer{
+    border-top: 1px solid grey;
+    padding-top: 3rem;
+} 
 
 
 
