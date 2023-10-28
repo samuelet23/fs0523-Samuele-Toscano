@@ -56,14 +56,14 @@ profiloPersona.forEach((elemento) => {
 
 //  animazione delle m da completare
 
-// let m = document.querySelectorAll("g")
+let m = document.querySelectorAll("g")
+console.log(m);
+m.forEach(e => {
+  if (e.style.opacity='0') {
+    e.classList.add('animation')
+  } else if (!(e.style.opacity='1')){
+  e.classList.add('animation')
+  }
 
-// m.forEach(e => {
-//   if (e.style.opacity='0') {
-//     e.classList.add('animation')
-//   } else if (!(e.style.display ='inherit')){
-//   e.classList.remove('animation')
-//   }
-
-// });
+});
 // console.log(m);

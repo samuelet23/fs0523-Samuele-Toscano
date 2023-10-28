@@ -100,7 +100,9 @@ list-style-type: none;
 
 .m-right-hero{
     position: absolute;
-right: -41rem;
+right: -50rem;
+overflow: visible;
+
 }
 
 
