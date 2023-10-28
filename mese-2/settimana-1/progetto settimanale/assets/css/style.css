@@ -96,6 +96,13 @@ list-style-type: none;
 .right-hero{
     position: relative;
 }
+
+.m-right-hero{
+    position: absolute;
+right: -41rem;
+}
+
+
   /* animazione delle M */
 .animation{
     animation: fadeIn 2s infinite; 
@@ -114,7 +121,7 @@ to {
 
 
 #main{
-    padding: 4rem 15rem ;
+    padding: 4rem 9rem ;
     border-bottom: 1px solid #80808042;
 }
 .title-main{
@@ -137,7 +144,9 @@ to {
     flex-wrap: wrap;
     row-gap: 65px;
 }
-
+.flex-artciel:hover{
+cursor: pointer;
+}
 .articoli{
     display: flex;
     column-gap: 25px;
@@ -180,7 +189,7 @@ to {
 .date{
     display: flex;
     column-gap: 0.3rem;
-    font-size: 13px;
+    font-size: 10px;
     align-items: center;
     position: relative
 }
@@ -190,8 +199,8 @@ to {
 .container-articles-aside-footer{
     display: flex;
     margin-top: 5rem;
-    column-gap: 6rem;
-    padding: 0 15rem;
+    column-gap: 13rem;
+    padding: 0 9rem;
 }
 .container-articoli{
    display: flex;
@@ -201,13 +210,14 @@ to {
 #general-article{
     display: flex;
     column-gap: 30px;
+    align-items: center;
 }
 
 .article{
     font-family: 'Roboto';
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 16px;
 }
 .title-article{
     display: flex;
@@ -215,11 +225,11 @@ to {
     row-gap: 10px;
 }
 .title-bold{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 .paragraph{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: #6b6b6b;
 }
 
@@ -233,6 +243,10 @@ to {
 .bookmark{
     position: absolute;
     right: 0;
+}
+.img-article img {
+    width: 261px;
+    height: 242px;
 }
 
 /* aside */
@@ -257,16 +271,16 @@ to {
 }
 .link-aside{
     text-decoration: none;
-    color: black;
+    color: grey;
     font-weight: bold;
     font-family: var(--roboto);
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 1rem;
-    border-radius: 2rem;
-    width: calc(100% / 3);
     text-align: center;
     height: 20px;
-    max-width: 150px;
+    border: 1px solid grey;  
+    width: calc(100% /3 - 50px);
+    
 }
 .green-link{
     text-decoration: none;
@@ -297,12 +311,14 @@ to {
 
 .profilopersona{
     border: 1px solid;
-    width: 250px;
-    height: 133px;
+    width: 170px;
+    height: 100px;
     padding: 20px;
     position: absolute;
+    top: 0;
     right: 0;
     box-shadow: 1px 1px 10px black;
+    z-index: 998;
     background-color: white;
 }
 .name-photo-pop{

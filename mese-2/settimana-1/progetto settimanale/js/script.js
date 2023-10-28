@@ -62,15 +62,14 @@ profiloPersona.forEach((elemento) => {
 
 //  animazione delle m da completare
 
-let m = document.getElementsByTagName("g")
-let l = document.getElementsByTagName("svg")
-console.log(m, l);
-// Scorri gli elementi selezionati
-for (let i = 0; i < m.length; i++) {
-  if (m[i].style.opacity='0') {
-    m[i].classList.add('animation')
-  } else if (!(m[i].style.opacity ='0')){
-    m[i].style.opacity='1'
-  }
+// let m = document.querySelectorAll("g")
 
-}
+// m.forEach(e => {
+//   if (e.style.opacity='0') {
+//     e.classList.add('animation')
+//   } else if (!(e.style.display ='inherit')){
+//   e.classList.remove('animation')
+//   }
+
+// });
+// console.log(m);
