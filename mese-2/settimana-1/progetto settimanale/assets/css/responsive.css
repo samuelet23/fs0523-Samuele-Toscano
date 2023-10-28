@@ -21,46 +21,185 @@
    width: 300px;
    height: 57px;
 }
-.m-position{
+.m-right-hero{
     width: 500;
     height: 300;
 }
+.name-photo p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.article-name{
+    font-size: 1rem;
+}
+.date{
+    font-size: 0.8rem;
+}
+.profilo-persona{
+    height: 89px;
+}
+.profilo-persona img {
+    width: 30px;
+}
+.paragraph-pop {
+    font-size: 0.5rem;
+}
+.profilo-persona p {
+    padding: 5px;
+    font-size: 0.8rem;
+}
+.container-articles-aside-footer{
+    padding: 0 6rem;
+    column-gap: 4rem;
+}
+.general-article{
+    width: 560px;
+}
+.title-bold{
+    font-size: 1.4rem;
+}
+.paragraph{
+    font-size: 1rem;
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+}
 
 
 }
-@media screen and (max-width: 1420px) {
+@media  screen and (min-width: 1500px) and (max-width: 2560px) {
     .link-aside{
-        width: auto;
+        width: 25%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .nav-bar{
-        overflow: hidden;
+
+    .logo{
+        padding-left: 6rem;
+    }
+    .container-link-nav{
+        padding-right: 6rem;
     }
     #header{
         overflow: hidden;
     }
+.left-hero{
+    padding-left: 6rem;
+    row-gap: 45px;
+}
+.h2-left-hero{
+    font-size: 6.5rem;
+}
+.p-left-hero{
+    font-size: 1.5rem;
+}
+.button-left-hero{
+   width: 300px;
+   height: 57px;
+}
+.m-right-hero{
+    width: 500;
+    height: 300;
+    position: absolute;
+    right: -29rem;
+}
+#main {
+    padding: 4rem 6rem;
+}
+.articoli{
+    max-width: 50%;
+}
+.flex-date{
+    display: flex;
+  column-gap: 150px;
+}
     .container-articles-aside-footer{
         display: flex;
         flex-direction: column-reverse;
         padding: 0 7rem;
+    
+     }
+     .container-articoli{
+        max-width: none;
+     }
+     .container-aside-footer{
+        max-width: none;
+     }
+     #aside {
+        position: inherit;
+     }
+     
+     #aside h4 {
+        font-weight: bold;
+     }
+     #aside p {
+        display: none ;
+     }
+     .aside-links{
+        margin: 1.5rem 0.2rem 0;
      }
      .link-aside{
          border: 1px solid grey;
          color: grey;
          background-color: white;
          border-radius: 0;
-         width: 100%;
      }
      #footer{
          margin-bottom: 0.7rem;
+         position: inherit;
      }
+    
     }
+    @media screen and (max-width: 929px) {
+        .logo{
+            padding-left: 3.5rem;
+
+        }
+        .container-link-nav{
+            padding-right:2rem ;
+        }
+    }
+@media screen and (max-width: 795px) {
+    .m-right-hero{
+        display: none;
+    }
+    .link-nav li:nth-of-type(1),
+    .link-nav li:nth-of-type(2),
+    .link-nav li:nth-of-type(3){
+        display: none;
+    }
+    .left-hero{
+        padding: 3rem;
+    }
+    #main{
+        padding: 3rem 3rem ;
+    }
+    .articoli{
+        max-width: 100%;
+    }
+    .container-articles-aside-footer{
+        padding: 0 3rem;
+    }
+    .article .name-photo img {
+        width: 25px;
+    }
+    .article .name-photo p{
+        font-size: 0.9rem;
+    }
+    .title-bold{
+        font-size: 1.4rem;
+    }
+    .paragraph{
+        font-size: 1rem;
+    }
+.title-article .date{
+    font-size: 0.8rem;
+    column-gap: 1rem;
+}
 
 
-@media screen and (max-width: 756px) {
-    .m-postion{
-display: none;   
 }
-}
+
