@@ -56,13 +56,13 @@ profiloPersona.forEach((elemento) => {
 
 //  animazione delle m da completare
 
-let m = document.querySelectorAll("g")
-console.log(m);
+let m = document.querySelectorAll("g  path")
+
 m.forEach(e => {
-  if (e.style.opacity='0') {
+  if (e.style.opacity='1') {
     e.classList.add('animation')
-  } else if (!(e.style.opacity='1')){
-  e.classList.add('animation')
+  } else if (e.style.opacity='1'){
+
   }
 
 });
