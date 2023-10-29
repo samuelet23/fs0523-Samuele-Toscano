@@ -54,16 +54,26 @@ profiloPersona.forEach((elemento) => {
   });
 });
 
-//  animazione delle m da completare
 
-let m = document.querySelectorAll("g  path")
 
-m.forEach(e => {
-  if (e.style.opacity='1') {
-    e.classList.add('animation')
-  } else if (e.style.opacity='1'){
+// let interval = 1000; 
+// let svg = document.querySelectorAll("g"); 
 
-  }
+// var isOpacity = true;
+// function changeOpacity() {
+  
+//   svg.forEach((e) =>{
+//     if (e.style.display = 'none') {
+//         e.style.display = 'block'
+//         e.style.color = 'green'
+//     } 
+//     isOpacity = !isOpacity;
+//     }
+//     )
+// }
+//   setInterval(changeOpacity, interval);
 
-});
-// console.log(m);
+let g = document.querySelector('g')
+
+
+console.log(g);

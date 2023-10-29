@@ -8,6 +8,7 @@
 }
 
 
+
 /* header  */
 
 #header{
@@ -106,20 +107,10 @@ overflow: visible;
 }
 
 
-  /* animazione delle M */
-.animation{
-    animation: fadeIn 2s infinite; 
-    transition: all 1s;
+.date-article{
+    display: flex;
+    column-gap: 30px;
 }
-@keyframes fadeIn {
-from {
-    opacity: 0;
-}
-to {
-    opacity: 1;
-}
-}
-
 /*  MAIN */
 
 
@@ -361,13 +352,4 @@ cursor: pointer;
 }
 .hidden{
 display: none;
-}
-@keyframes fadein {
-    0% { opacity: 1;}
-    50% {
-        opacity: 0.5
-    }
-    100%{
-        opacity: 0;
-    }
 }
