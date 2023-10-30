@@ -55,25 +55,23 @@ profiloPersona.forEach((elemento) => {
 });
 
 
+// m animation script
+let g = document.querySelectorAll('g[stroke-linecap="butt"]');
+let currentIndex = 0;
+let fadeOut = false;
 
-// let interval = 1000; 
-// let svg = document.querySelectorAll("g"); 
+function changeOpacity(element, opacity) {
+  element.style.transition = 'opacity 0.5s';
+  element.style.opacity = opacity;
+}
 
-// var isOpacity = true;
-// function changeOpacity() {
-  
-//   svg.forEach((e) =>{
-//     if (e.style.display = 'none') {
-//         e.style.display = 'block'
-//         e.style.color = 'green'
-//     } 
-//     isOpacity = !isOpacity;
-//     }
-//     )
-// }
-//   setInterval(changeOpacity, interval);
+function animation() {
+  currentIndex = Math.floor(Math.random() * g.length);
+  changeOpacity(g[currentIndex], fadeOut ? '0' : '1');
+  fadeOut = !fadeOut;
+  currentIndex = (currentIndex + 1) % g.length;
+}
 
-let g = document.querySelector('g')
+animation();
 
-
-console.log(g);
+setInterval(animation, 15); 

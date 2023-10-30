@@ -13,6 +13,7 @@
 
 #header{
     background-color: var(--giallo);
+    overflow: hidden;
 }
 
 
@@ -64,6 +65,7 @@ list-style-type: none;
 
 #hero {
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid black;
 }
 
@@ -95,21 +97,13 @@ list-style-type: none;
     cursor: pointer;
 }
 
-.right-hero{
-    position: relative;
-}
-
-.m-right-hero{
-    position: absolute;
-right: -50rem;
-overflow: visible;
-
-}
-
-
 .date-article{
     display: flex;
     column-gap: 30px;
+}
+.m-right-hero{
+    transform: initial;
+    top: -1rem;
 }
 /*  MAIN */
 
