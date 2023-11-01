@@ -4,6 +4,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
     <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
 
 In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
@@ -140,7 +141,7 @@ EXTRAS
     <main>
         <!-- card  iniziale -->
         <div class="container">
-            <section class="card text-center mb-3 bg-light border border-white my-5 p-3 rounded-3">
+            <section class="text-center mb-3 bg-light border border-white my-5 p-3 rounded-3">
                 <div class="card-body text-lg-start">
                     <h2 class="card-title d-inline-block text-muted fs-1 fw-normal pb-3">Odissea Trip - </h2>
                     <h6 class="d-inline-block text-muted fs-6 text-center pb-3"> Scatta la tua avventura</h6>
@@ -157,9 +158,10 @@ EXTRAS
         <div class="container my-5">
             <div class="row">
                 <h3 class="col-3 ">Saldi </h3>
-                <p class=" col-4 offset-5 text-info"> Cancella Sezione</p>
+                <a class=" col-4 offset-5 text-info pe-auto Cancella "> Cancella Sezione</a>
+                
             </div>
-            <section class="row row-cols-2 row-cols-md-3 g-2 row-cols-lg-4">
+            <section class="row row-cols-2 row-cols-md-3 g-2 row-cols-lg-4 daCancellare">
                 <div class="col">
                     <div class="card h-100 border border-3 border border-info">
                         <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
@@ -209,13 +211,12 @@ EXTRAS
             <!-- sezione welcome summer  -->
             <div class="container my-5">
                 <div class="row">
-                    <h3 class="col-6 "> Welcome Summer </h3>
-                    <p class=" col-4 offset-2 text-info"> Cancella Sezione</p>
+                    <h3 class="col-5 ">Welcome Summer </h3>
+                    <a class=" col-4 offset-3 text-info Cancella "> Cancella Sezione</a>
                 </div>
-                <div class="row row-cols-2 row-cols-md-2 g-2 row-cols-lg-3 row-cols-xl-6">
-                    <div class="col">
-                        <div class="card h-100 position-relative">
-
+                <div class="row row-cols-2 row-cols-md-2 g-3 row-cols-lg-3 row-cols-xl-6 daCancellare" id="badge">
+                    <div class="col ">
+                        <div class="card shadow-lg bg-body rounded">
                             <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -226,7 +227,7 @@ EXTRAS
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card shadow-lg bg-body rounded">
                             <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -237,7 +238,7 @@ EXTRAS
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card shadow-lg bg-body rounded">
                             <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -248,7 +249,7 @@ EXTRAS
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card shadow-lg bg-body rounded">
                             <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -259,7 +260,7 @@ EXTRAS
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card shadow-lg bg-body rounded">
                             <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -270,7 +271,7 @@ EXTRAS
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card shadow-lg bg-body rounded">
                             <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -280,11 +281,15 @@ EXTRAS
                             </div>
                         </div>
                     </div>
+                </div>
                     <!-- offerta del giorno  -->
 
 
-                    <div class="row w-100 my-5">
-                        <h3>Offerta del giorno</h3>
+                    <div class="row w-100 my-5 d-sm-none ">
+                        <div class="row">
+                            <h3 class="col-3 ">Offerta del giorno </h3>
+                        </div>
+                   
                         <div class=" col-7">
                             <img src="imgs/place.2.jpg" alt="" class=" rounded-3 w-100">
                         </div>
@@ -295,11 +300,14 @@ EXTRAS
                             <a href="#" class="bg-black text-white  rounded-5 p-3"> Best offer </a>
                         </div>
                     </div>
-
-                    <!-- lasti minnute -->
-                    <div class="row w-100">
-                        <h3>Last Minute</h3>
-                        <div class="row row-cols-2 row-cols-md-3 g-2 row-cols-lg-6">
+              
+                    <!-- last minnute -->
+                    <div class="row w-100 my-5">
+                        <div class="row">
+                            <h3 class="col-5 ">Last Minute </h3>
+                            <a class=" col-4 offset-3 text-info Cancella "> Cancella Sezione</a>
+                        </div>
+                        <div class="row row-cols-2 row-cols-md-3 g-2 row-cols-lg-6 daCancellare">
                             <div class="col">
                                 <div class="card">
                                     <img src="imgs/place.2.jpg" class="card-img-top" alt="...">
@@ -334,56 +342,96 @@ EXTRAS
                     </div>
     </main>
     <aside>
+        <!-- dicono di  noi -->
         <div class="container">
-<h3 class="text-center">Dicono di noi </h3>
-<div class="row my-4">
-    <div class="col-2">
-        <img class="w-100 rounded-circle border border-info" src="imgs/person.jpg" alt="">
-    </div>
-    <div class="col-6">
-        <p class="fw-bold"> Username</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum repellat quis numquam libero autem modi deserunt voluptatem architecto quisquam amet nemo, natus odit minima, nostrum earum vitae hic expedita?</p>
+            <h3 class="text-center">Dicono di noi </h3>
+            <div class="row my-4">
+                <div class="col-2">
+                    <img class="w-100 rounded-circle border border-info border border-2" src="imgs/person.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <p class="fw-bold"> Username</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum repellat quis
+                        numquam libero autem modi deserunt voluptatem architecto quisquam amet nemo, natus odit minima,
+                        nostrum earum vitae hic expedita?</p>
 
-    </div>
-</div>
+                </div>
+            </div>
 
-<div class="row my-4">
-    <div class="col-2">
-        <img class="w-100 rounded-circle border border-info" src="imgs/person.jpg" alt="">
-    </div>
-    <div class="col-6">
-        <p class="fw-bold"> Username</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum repellat quis numquam libero autem modi deserunt voluptatem architecto quisquam amet nemo, natus odit minima, nostrum earum vitae hic expedita?</p>
+            <div class="row my-4">
+                <div class="col-2">
+                    <img class="w-100 rounded-circle border border-info border border-2" src="imgs/person.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <p class="fw-bold"> Username</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum repellat quis
+                        numquam libero autem modi deserunt voluptatem architecto quisquam amet nemo, natus odit minima,
+                        nostrum earum vitae hic expedita?</p>
 
-    </div>
-</div>
+                </div>
+            </div>
 
-<div class="row my-4">
-    <div class="col-2">
-        <img class="w-100 rounded-circle border border-info" src="imgs/person.jpg" alt="">
-    </div>
-    <div class="col-6">
-        <p class="fw-bold"> Username</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum repellat quis numquam libero autem modi deserunt voluptatem architecto quisquam amet nemo, natus odit minima, nostrum earum vitae hic expedita?</p>
+            <div class="row my-4">
+                <div class="col-2">
+                    <img class="w-100 rounded-circle border border-info border border-2" src="imgs/person.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <p class="fw-bold"> Username</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatum repellat quis
+                        numquam libero autem modi deserunt voluptatem architecto quisquam amet nemo, natus odit minima,
+                        nostrum earum vitae hic expedita?</p>
 
-    </div>
-</div>
-</aside>
+                </div>
+            </div>
+    </aside>
 
-<footer>
-    <footer class="py-3 my-4 bg-dark ">
-        <ul class="nav justify-content-center  pb-3 mb-3">
-          <li class="nav-itemv pt-5"><a href="#" class="nav-link px-2 text-white-50 border border-muted rounded-3">Contattaci</a></li>
-        </ul>
-        <p class="text-center text-white">© 2022 Company, Inc</p>
-      </footer>
-</footer>
+    
+        <footer class="py-3 my-4 bg-dark ">
+            <button class="col-4 offset-4 bg-dark text-light p-2" id="count"> Conta i viaggi disponibili </button>
+            <ul class="nav justify-content-center  pb-3 mb-3">
+               
+
+                        <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Contattaci </button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Inserisci la tua email</label>
+                                    <input type="email" class="form-control" id="recipient-name" required>
+                    
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:  (optional)</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                                <button type="button" class="btn btn-primary" id="send">Send message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            </ul>
+            <button class="col-2 offset-5 mb-4 bg-danger text-white rounded-3" id="rimuovi"> Rimuovi tutte le card </button>
+            <p class="text-center text-white">© 2022 Company, Inc</p>
+        </footer>
+    
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-</body>
+
 </body>
 
 </html>
