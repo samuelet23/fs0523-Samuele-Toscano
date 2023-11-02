@@ -1,0 +1,14 @@
+@mixin fadeinComparsa($durata: 2s, $startPoint: -40px, $endPoint: 0, $delay: 1s, $name: '') {
+    @keyframes #{$name} {
+      0% {
+        opacity: 0;
+        transform: translateY(#{$startPoint});
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(#{$endPoint});
+      }
+    }
+  
+    animation: #{$name} $durata ease-in-out $delay 1 forwards;
+  }

@@ -21,42 +21,42 @@ $responsive: (
 
 
 
-@each $p in $padding{
-    .p-#{$p}{
-        padding: $p + px ;
-    }
-    .pt-#{$p}{
-        padding-top: $p + px ;
-    }
-    .pl-#{$p}{
-        padding-left: $p + px  ;
-    }
-    .pb-#{$p}{
-        padding-bottom: $p + px ;
-    }
-    .pr-#{$p}{
-        padding-right: $p + px ;
-    }
-} 
+// @each $p in $padding{
+//     .p-#{$p}{
+//         padding: $p + px ;
+//     }
+//     .pt-#{$p}{
+//         padding-top: $p + px ;
+//     }
+//     .pl-#{$p}{
+//         padding-left: $p + px  ;
+//     }
+//     .pb-#{$p}{
+//         padding-bottom: $p + px ;
+//     }
+//     .pr-#{$p}{
+//         padding-right: $p + px ;
+//     }
+// } 
 
 
-@each $m in $margin{
-    .m-#{$m}{
-        margin: $m + px ;
-    }
-    .mt-#{$m}{
-        margin-top: $m + px ;
-    }
-    .ml-#{$m}{
-        margin-left: $m + px  ;
-    }
-    .mb-#{$m}{
-        margin-bottom: $m + px ;
-    }
-    .mr-#{$m}{
-        margin-right: $m + px ;
-    }
-} 
+// @each $m in $margin{
+//     .m-#{$m}{
+//         margin: $m + px ;
+//     }
+//     .mt-#{$m}{
+//         margin-top: $m + px ;
+//     }
+//     .ml-#{$m}{
+//         margin-left: $m + px  ;
+//     }
+//     .mb-#{$m}{
+//         margin-bottom: $m + px ;
+//     }
+//     .mr-#{$m}{
+//         margin-right: $m + px ;
+//     }
+// } 
 
 @each $breakpoint, $value in $responsive{
     $minWidth: map-get($value, min-width );
