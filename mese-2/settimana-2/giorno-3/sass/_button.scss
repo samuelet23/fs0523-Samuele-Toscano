@@ -1,0 +1,12 @@
+$coloreBottone: #0e6cff, #ff8700, #4caf50;
+
+
+    .primary-color-button{
+        color: nth($coloreBottone, 1);
+    }
+    .secondary-color-button{
+        color: nth($coloreBottone, 2);
+    }
+    .general-color-button{
+        color: nth($coloreBottone, 3);
+    }

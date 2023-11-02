@@ -1,0 +1,23 @@
+@import 'colors';
+@import 'reset';
+// @import 'animations';
+@import 'button';
+@import 'fonts';
+@import 'genericMixin';
+@import 'spacing';
+
+
+.container{
+    background-color: $coloreBgHero;
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: $p-10;
+}
+
+
+.flex{
+    @include grid (4) //potrei fare un ciclo con js e mettere qui dentro la lunghezza del div
+}

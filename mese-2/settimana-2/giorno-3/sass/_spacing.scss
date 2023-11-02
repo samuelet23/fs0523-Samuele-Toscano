@@ -1,0 +1,123 @@
+$padding: 3, 5, 10, 15;
+$margin: 3, 5, 10, 15, 20, 30;
+$responsive: (
+  sm: (
+    min-width: 380px
+  ),
+  md: (
+    min-width: 577px
+  ),
+  lg: (
+    min-width: 768px
+  ),
+  xl: (
+    min-width: 1200px
+  ),
+  xxl: (
+    min-width: 1500px
+  )
+);
+
+
+
+
+@each $p in $padding{
+    .p-#{$p}{
+        padding: $p + px ;
+    }
+    .pt-#{$p}{
+        padding-top: $p + px ;
+    }
+    .pl-#{$p}{
+        padding-left: $p + px  ;
+    }
+    .pb-#{$p}{
+        padding-bottom: $p + px ;
+    }
+    .pr-#{$p}{
+        padding-right: $p + px ;
+    }
+} 
+
+
+@each $m in $margin{
+    .m-#{$m}{
+        margin: $m + px ;
+    }
+    .mt-#{$m}{
+        margin-top: $m + px ;
+    }
+    .ml-#{$m}{
+        margin-left: $m + px  ;
+    }
+    .mb-#{$m}{
+        margin-bottom: $m + px ;
+    }
+    .mr-#{$m}{
+        margin-right: $m + px ;
+    }
+} 
+
+@each $breakpoint, $value in $responsive{
+    $minWidth: map-get($value, min-width );
+
+    @each $p in $padding{
+        .p-#{$p}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                padding: $p + px;
+            }
+        }
+        .pt-#{$p}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                padding-top: $p + px;
+            }
+        }
+        .pb-#{$p}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                padding-bottom: $p + px;
+            }
+        }
+        .pl-#{$p}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                padding-left: $p + px;
+            }
+        }
+        .pr-#{$p}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                padding-right: $p + px;
+            }
+        }
+    }
+}
+
+@each $breakpoint, $value in $responsive{
+    $minWidth: map-get($value, min-width );
+
+    @each $m in $margin{
+        .m-#{$m}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                margin: $m + px;
+            }
+        }
+        .mt-#{$m}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                margin-top: $m + px;
+            }
+        }
+        .mb-#{$m}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                margin-bottom: $m + px;
+            }
+        }
+        .ml-#{$m}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                margin-left: $m + px;
+            }
+        }
+        .mr-#{$m}-#{$breakpoint}{
+            @media (min-width: #{$minWidth}){
+                margin-right: $m + px;
+            }
+        }
+    }
+}
