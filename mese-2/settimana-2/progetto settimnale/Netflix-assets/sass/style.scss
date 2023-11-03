@@ -8,6 +8,7 @@
 .bg-container{
     background-color: map-get($bg-color, container);
 }
+// nav-bar
 .navbar-toggler{
     background-color: white;
     border: none;
@@ -21,6 +22,18 @@
     color: white;
 }
 
+// select
+#Genres-select{
+    height: 36px;
+}
+// icone
+.icona-fix{
+    padding-top: 6px;
+    border: 1px solid 515151;
+}
+.icone-tab{
+    width: 100px;
+}
 
 // grandezze
 #avatar{
@@ -29,6 +42,4 @@
 .img-container{
     width: 150px;
 }
-.grandezza{
-    width: 55vw;
-}
+
