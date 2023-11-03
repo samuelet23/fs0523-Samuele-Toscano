@@ -1,0 +1,32 @@
+.body-bg {
+  background-color: #0e0e0e;
+}
+
+.bg-container {
+  background-color: #141414;
+}
+
+.navbar-toggler {
+  background-color: white;
+  border: none;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+#avatar {
+  width: 30px;
+}
+
+.img-container {
+  width: 150px;
+}
+
+.grandezza {
+  width: 55vw;
+}/*# sourceMappingURL=style.css.map */

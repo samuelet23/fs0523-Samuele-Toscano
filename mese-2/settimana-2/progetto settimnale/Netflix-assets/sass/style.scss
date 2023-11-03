@@ -1,0 +1,34 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import 'variables';
+@import 'colors';
+
+.body-bg{
+    background-color: map-get($bg-color, body );
+}
+.bg-container{
+    background-color: map-get($bg-color, container);
+}
+.navbar-toggler{
+    background-color: white;
+    border: none;
+    &:focus {
+        text-decoration: none;
+        outline: 0;
+       
+      }
+    }
+.navbar-nav .nav-link{
+    color: white;
+}
+
+
+// grandezze
+#avatar{
+    width: 30px;
+}
+.img-container{
+    width: 150px;
+}
+.grandezza{
+    width: 55vw;
+}
