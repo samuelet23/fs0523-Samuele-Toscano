@@ -33,6 +33,11 @@
 .bi-caret-down-fill{
     cursor: pointer;
 }
+
+// avatar
+#profile{
+    cursor: pointer;
+}
 // select
 .tv-shows{
     font-size: 2rem;
@@ -100,6 +105,9 @@ footer{
 }
 
 // edit profile page
+#page-2{
+    display: none;
+}
 .spacing{
     color: $secondary;
     width: 531px;
@@ -108,6 +116,10 @@ footer{
         font-size: 2.5rem;
         padding-bottom: 0.2rem
     }
+}
+
+#logo{
+    cursor: pointer;;
 }
 .flex-img-text{
     display: flex;
@@ -219,6 +231,9 @@ footer{
                 font-size: 14ì3px;
             }
         }
+    }
+    .hidden{
+        visibility: hidden;
     }
 }
 .container-button{

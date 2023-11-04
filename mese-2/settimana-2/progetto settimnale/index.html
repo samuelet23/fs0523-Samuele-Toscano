@@ -18,9 +18,9 @@
 
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid p-0 text-white">
-                    <a class="navbar-brand img-container m-0" href="#" id="logo">
-                        <img src="assets/netflix_logo.png" alt="Logo" id="logo" class="d-inline-block align-text-top w-100 m-0">
-                    </a>
+                    <div class="navbar-brand img-container m-0"  id="logo">
+                        <img src="assets/netflix_logo.png" alt="Logo"  class="d-inline-block align-text-top w-100 m-0">
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -60,9 +60,10 @@
                                 </li>
                                 <li class="nav-item ">
                                     <div class="nav-link d-flex ">
-                                       <a href="profile.html" id="profile"> <img src="assets/avatar.png" alt="" id="avatar"> 
+                                       <div id="profile"> 
+                                        <img src="assets/avatar.png" alt="" id="avatar"> 
                                         <i class="bi bi-caret-down-fill me-2 text-white"><!--Freccia in giu Icone--></i>
-                                    </a>
+                                    </div>
                                     </div>
                                 </li>
                             </ul>
@@ -294,11 +295,11 @@
     </div>
 <!-- fine page-1 -->
  <!-- inizio page-2  -->
- <div class="bg-container d-none" id="page-2">
+ <div class="bg-container" id="page-2">
     <nav class="navbar ">
-        <a class="navbar-brand img-container m-0" href="#">
-            <img src="assets/netflix_logo.png" alt="Logo"   class="d-inline-block align-text-top w-100 m-0  logo-Netflix">
-        </a>
+        <div class="navbar-brand img-container m-0" id="logo">
+            <img src="assets/netflix_logo.png" alt="Logo"   class="d-inline-block align-text-top w-100 m-0 ">
+        </div>
     </nav>
     <div class="spacing">
         <h2>
@@ -350,7 +351,7 @@
                         <div class="section-checkbox">
                             <div class="checkbox">
                                 <i class="bi bi-square quadrato"></i>
-                                <i class="bi bi-check2 check invisible"></i>
+                                <i class="bi bi-check2 check hidden"></i>
                                 <p>
                                     Autoplay next episode in a series on all devices
                                 </p>
@@ -358,7 +359,7 @@
                             <div class="section-checkbox">
                                 <div class="checkbox">
                                     <i class="bi bi-square quadrato"></i>
-                                    <i class="bi bi-check2 check invisible"></i>
+                                    <i class="bi bi-check2 check hidden"></i>
                                     <p>
                                         Autoplay next episode in a series on all devices
                                     </p>
@@ -384,8 +385,8 @@
         </div>
        
     </div>
-    <script src="js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

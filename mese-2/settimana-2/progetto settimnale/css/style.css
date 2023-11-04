@@ -83,6 +83,10 @@ table {
   cursor: pointer;
 }
 
+#profile {
+  cursor: pointer;
+}
+
 .tv-shows {
   font-size: 2rem;
   font-weight: bold;
@@ -105,11 +109,6 @@ table {
 
 .img-carousel {
   width: 14.2857142857%;
-}
-@media screen and (max-width: 1200px) {
-  .img-carousel {
-    width: 33.3333333333%;
-  }
 }
 
 .icona-fix {
@@ -155,6 +154,10 @@ footer {
   text-decoration: underline;
 }
 
+#page-2 {
+  display: none;
+}
+
 .spacing {
   color: #ffffff;
   width: 531px;
@@ -163,6 +166,10 @@ footer {
 .spacing h2 {
   font-size: 2.5rem;
   padding-bottom: 0.2rem;
+}
+
+#logo {
+  cursor: pointer;
 }
 
 .flex-img-text {
@@ -289,6 +296,9 @@ footer {
   align-items: center;
   color: white;
   font-size: 14ì3px;
+}
+.container-3 .hidden {
+  visibility: hidden;
 }
 
 .container-button {
