@@ -6,7 +6,9 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
+$roboto:'Roboto', sans-serif;
+
+$white:    #ffffff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -299,13 +301,13 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #ffff !default;
+$secondary:     $white !default;;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $gray-600 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
