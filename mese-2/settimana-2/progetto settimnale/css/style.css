@@ -103,6 +103,15 @@ table {
   font-weight: bold;
 }
 
+.img-carousel {
+  width: 14.2857142857%;
+}
+@media screen and (max-width: 1200px) {
+  .img-carousel {
+    width: 33.3333333333%;
+  }
+}
+
 .icona-fix {
   border: 1px solid #6c757d;
   color: #6c757d;
