@@ -1,0 +1,25 @@
+@mixin titoli {
+    color: $grigioEditPage;
+        font-size: 14px;
+}
+
+@mixin checkbox{
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    color: grey;
+}
+
+@mixin buttonEditPage{
+    border: $border;
+    color: $grigioEditPage;
+    background: transparent;
+    padding:5px 17px;
+}
+@mixin buttonEditPageHover{
+    background-color: white;
+    color: $dark;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+}

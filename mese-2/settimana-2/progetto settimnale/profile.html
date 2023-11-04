@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Profile</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-bg">
+    <div class="bg-container" id="page-2">
+        <nav class="navbar ">
+            <a class="navbar-brand img-container m-0" href="#">
+                <img src="assets/netflix_logo.png" alt="Logo" class="d-inline-block align-text-top w-100 m-0">
+            </a>
+        </nav>
+        <div class="spacing">
+            <h2>
+                Edit Profile
+            </h2>
+            <div class="general-container"> <!-- contenitore da dopo edit profile -->
+                <div class="flex-img-text"> <!-- flex per immagine e scrittura -->
+                    <div class="img-icon">
+                        <img src="assets/avatar.png" alt=""     >
+                        <i class="bi bi-pencil-square"></i> <!--position absolute-->
+                    </div>
+
+                    <div class="containers"> <!--margin bottom e gap fra i due div  -->
+                        <div class="container-1">
+                            <div class="name-profile">
+                                <p>
+                                    Strive Student
+                                </p>
+                            </div>
+                            <div class="language">
+                                <p>
+                                    Language:
+                                </p>
+                                <select name="Language" id="Language">
+                                    <option value="English">English</option>
+                                    <option value="Italian">Italian</option>
+                                    <option value="French">French</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="container-2">
+                            <h5 >
+                                Maturity Settings:
+                            </h5>
+                            <a href="#">
+                                ALL MATURITY RATINGS
+                            </a>
+                            <p>
+                                Show titles of <span class="text-white">all maturity ratings</span> for this profile
+                            </p>
+                            <button class="edit">
+                                EDIT
+                            </button>
+                        </div>
+                        <div class="container-3">
+                            <h5>
+                                Autoplay controls
+                            </h5>
+                            <div class="section-checkbox">
+                                <div class="checkbox">
+                                    <i class="bi bi-square quadrato"></i>
+                                    <i class="bi bi-check2 check invisible"></i>
+                                    <p>
+                                        Autoplay next episode in a series on all devices
+                                    </p>
+                                </div>
+                                <div class="section-checkbox">
+                                    <div class="checkbox">
+                                        <i class="bi bi-square quadrato"></i>
+                                        <i class="bi bi-check2 check invisible"></i>
+                                        <p>
+                                            Autoplay next episode in a series on all devices
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container-button">
+                    <button class="save">
+                        SAVE
+                    </button>
+                    <button class="cancel">
+                        CANCEL
+                    </button>
+                    <button class="delete-profile">
+                        DELETE PROFILE
+                    </button>
+                </div>
+            </div>
+           
+        </div>
+        <script src="js/script.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

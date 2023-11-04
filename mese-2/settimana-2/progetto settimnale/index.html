@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="#">
+    
     <title>Netflix-Page</title>
 </head>
 
 <body class="body-bg">
-    <div class="container-lg bg-container px-lg-5">
+    <div class="container-lg bg-container px-lg-5" id="page-1">
         <header>
             <!-- sezione home page header sinistra Deskstop -->
 
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid p-0 text-white">
-                    <a class="navbar-brand img-container m-0" href="#">
-                        <img src="assets/netflix_logo.png" alt="Logo" class="d-inline-block align-text-top w-100 m-0">
+                    <a class="navbar-brand img-container m-0" href="#" id="logo">
+                        <img src="assets/netflix_logo.png" alt="Logo" id="logo" class="d-inline-block align-text-top w-100 m-0">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,8 +60,9 @@
                                 </li>
                                 <li class="nav-item ">
                                     <div class="nav-link d-flex ">
-                                       <a href="profile.html"> <img src="assets/avatar.png" alt="" id="avatar"> </a>
+                                       <a href="profile.html" id="profile"> <img src="assets/avatar.png" alt="" id="avatar"> 
                                         <i class="bi bi-caret-down-fill me-2 text-white"><!--Freccia in giu Icone--></i>
+                                    </a>
                                     </div>
                                 </li>
                             </ul>
@@ -104,19 +105,19 @@
                             <div class="carousel-item active" data-bs-interval="1000">
                                 <img src="assets/media/media9.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="000">
                                 <img src="assets/media/media1.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="3000">
                                 <img src="assets/media/media10.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="4000">
                                 <img src="assets/media/media11.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="3000">
                                 <img src="assets/media/media12.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="assets/media/media13.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -157,19 +158,19 @@
                             <div class="carousel-item active" data-bs-interval="1000">
                                 <img src="assets/media/media9.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="assets/media/media1.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="3000">
                                 <img src="assets/media/media10.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="4000">
                                 <img src="assets/media/media11.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="3000">
                                 <img src="assets/media/media12.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="assets/media/media13.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -310,6 +311,99 @@
     
         <!-- scrivere sempre qui sopra, sotto è la chiusura container -->
     </div>
+<!-- fine page-1 -->
+ <!-- inizio page-2  -->
+ <div class="bg-container d-none" id="page-2">
+    <nav class="navbar ">
+        <a class="navbar-brand img-container m-0" href="" >
+            <img src="assets/netflix_logo.png" alt="Logo"   class="d-inline-block align-text-top w-100 m-0  logo-Netflix">
+        </a>
+    </nav>
+    <div class="spacing">
+        <h2>
+            Edit Profile
+        </h2>
+        <div class="general-container"> <!-- contenitore da dopo edit profile -->
+            <div class="flex-img-text"> <!-- flex per immagine e scrittura -->
+                <div class="img-icon">
+                    <img src="assets/avatar.png" alt=""     >
+                    <i class="bi bi-pencil-square"></i> <!--position absolute-->
+                </div>
+
+                <div class="containers"> <!--margin bottom e gap fra i due div  -->
+                    <div class="container-1">
+                        <div class="name-profile">
+                            <p>
+                                Strive Student
+                            </p>
+                        </div>
+                        <div class="language">
+                            <p>
+                                Language:
+                            </p>
+                            <select name="Language" id="Language">
+                                <option value="English">English</option>
+                                <option value="Italian">Italian</option>
+                                <option value="French">French</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container-2">
+                        <h5 >
+                            Maturity Settings:
+                        </h5>
+                        <a href="#">
+                            ALL MATURITY RATINGS
+                        </a>
+                        <p>
+                            Show titles of <span class="text-white">all maturity ratings</span> for this profile
+                        </p>
+                        <button class="edit">
+                            EDIT
+                        </button>
+                    </div>
+                    <div class="container-3">
+                        <h5>
+                            Autoplay controls
+                        </h5>
+                        <div class="section-checkbox">
+                            <div class="checkbox">
+                                <i class="bi bi-square quadrato"></i>
+                                <i class="bi bi-check2 check invisible"></i>
+                                <p>
+                                    Autoplay next episode in a series on all devices
+                                </p>
+                            </div>
+                            <div class="section-checkbox">
+                                <div class="checkbox">
+                                    <i class="bi bi-square quadrato"></i>
+                                    <i class="bi bi-check2 check invisible"></i>
+                                    <p>
+                                        Autoplay next episode in a series on all devices
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container-button">
+                <button class="save">
+                    SAVE
+                </button>
+                <button class="cancel">
+                    CANCEL
+                </button>
+                <button class="delete-profile">
+                    DELETE PROFILE
+                </button>
+            </div>
+        </div>
+       
+    </div>
+    <script src="js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
