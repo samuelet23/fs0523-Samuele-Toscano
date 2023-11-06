@@ -28,81 +28,79 @@ console.log(confronto);
 
 
 //secondo esercizio 
+
 class Pet {
-  constructor(petName, ownerName, species, breed) {
-    this.petName = petName;
-    this.ownerName = ownerName;
-    this.species = species;
-    this.breed = breed;
-  }
-
-  formCreation(id) {
-    this.form = document.getElementById(id);
-  }
-  inputCreation() {
-    this.petNameInput = document.createElement("input");
-    this.petNameInput.placeholder = "Insert Pet Name";
-
-    this.ownerNameInput = document.createElement("input");
-    this.ownerNameInput.placeholder = "Insert Owner Name";
-
-    this.speciesInput = document.createElement("input");
-    this.speciesInput.placeholder = "Insert the Species";
-
-    this.breedInput = document.createElement("input");
-    this.breedInput.placeholder = "Insert the Breed";
-  }
-  appendInput(id) {
-    this.formCreation(id);
-    this.inputCreation();
-
-    this.form.appendChild(this.petNameInput);
-    this.form.appendChild(this.ownerNameInput);
-    this.form.appendChild(this.speciesInput);
-    this.form.appendChild(this.breedInput);
-  }
-  buttonCreation(id) {
-    this.formCreation(id);
-    this.button = document.createElement("button");
-    this.button.textContent = "Crea Animale";
-    this.form.appendChild(this.button);
-  }
-  clickButtonAndCreateList(id) {
-    this.buttonCreation("pet");
-    this.button.addEventListener("click", () => {
-      let list = document.createElement("ul");
-      let listItem = document.createElement("li");
+    constructor(id) {
+      this.form = document.getElementById(id);
+      this.petNameInput = this.createInput("Insert Pet Name");
+      this.ownerNameInput = this.createInput("Insert Owner Name");
+      this.speciesInput = this.createInput("Insert the Species");
+      this.breedInput = this.createInput("Insert the Breed");
+      this.button = this.createButton("Crea Animale");
+  
+      this.form.appendChild(this.petNameInput);
+      this.form.appendChild(this.ownerNameInput);
+      this.form.appendChild(this.speciesInput);
+      this.form.appendChild(this.breedInput);
+      this.form.appendChild(this.button);
+  
+      this.button.addEventListener("click", () => {
+        this.createAnimalList();
+      });
+    }
+  
+    createInput(placeholderText) {
+      const input = document.createElement("input");
+      input.placeholder = placeholderText;
+      return input;
+    }
+  
+    createButton(buttonText) {
+      const button = document.createElement("button");
+      button.textContent = buttonText;
+      return button;
+    }
+  
+    createAnimalList() {
+      const list = document.createElement("ul");
+      const listItem = document.createElement("li");
       listItem.classList.add("list-item");
+  
       if (
-        !(
-          this.petNameInput.value == "" &&
-          this.ownerNameInput.value == "" &&
-          this.speciesInput.value == "" &&
-          this.breedInput.value == ""
-        )
+        this.petNameInput.value &&
+        this.ownerNameInput.value &&
+        this.speciesInput.value &&
+        this.breedInput.value
       ) {
         listItem.innerText = `L'animale si chiama ${this.petNameInput.value}, Il Padrone si chiama ${this.ownerNameInput.value},
-                la specie dell'animale è ${this.speciesInput.value}, la breed dell'animale è${this.breedInput.value}`;
+            la specie dell'animale è ${this.speciesInput.value}, la breed dell'animale è ${this.breedInput.value}`;
+        list.appendChild(listItem);
+        this.form.appendChild(list);
+        this.clearInputFields();
       } else {
-        alert("compila il form per creare un animale");
+        alert("Compila il form per creare un animale");
       }
-      list.appendChild(listItem);
-      this.formCreation(id);
-      this.form.appendChild(list);
+    }
+  
+    clearInputFields() {
       this.petNameInput.value = "";
       this.ownerNameInput.value = "";
       this.speciesInput.value = "";
       this.breedInput.value = "";
-    });
+    }
+  
+    ownerCompare(animal) {
+      return this.ownerName === animal.ownerName;
+    }
   }
+  
+ 
+let animal = new Pet ('pet')
+let animal1 = new Pet ('pet2')
 
-  ownerCompare(animal) {
-    this.ownerName == animal.ownerName;
-  }
-}
+
 let animale = new Pet("animale", "Rossi", "dog", "labrador");
 let animale2 = new Pet("animale2", "Francesco", "dog", "labrador");
-animale.appendInput("pet");
-animale.clickButtonAndCreateList("pet");
-
-animale.ownerCompare(animale2);
+if (animale.ownerCompare(animale2)) {
+    console.log(' sono la stessa persona');
+}
