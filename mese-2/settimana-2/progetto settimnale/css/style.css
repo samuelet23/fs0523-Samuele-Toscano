@@ -56,11 +56,18 @@ table {
 
 .body-bg {
   background-color: #0e0e0e;
-  font-family: "Roboto", sans-serif;
 }
 
 .bg-container {
+  font-family: "Roboto", sans-serif;
   background-color: #141414;
+  width: 100vw;
+}
+
+@media screen and (max-width: 575px) {
+  #header {
+    width: 90vw;
+  }
 }
 
 .navbar-toggler {
@@ -85,6 +92,55 @@ table {
 
 #profile {
   cursor: pointer;
+}
+
+.pop-up-delay {
+  position: absolute;
+  top: 9%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(31, 196, 31);
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  color: white;
+  border: 1px solid #ffffff;
+  padding: 20px;
+  z-index: 999;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+}
+
+.pop-up {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 200px;
+  padding: 10px 0 10px 10px;
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 10;
+  z-index: 999;
+}
+.pop-up img {
+  width: 60px;
+  border-radius: 100%;
+}
+.pop-up p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 2px solid #242424;
+  width: 150px;
+}
+.pop-up button {
+  margin: 10px 0;
+  background-color: green;
+  border-radius: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: 2px 2px 5px black;
+}
+.pop-up button:hover {
+  box-shadow: none;
 }
 
 .tv-shows {
@@ -126,7 +182,7 @@ table {
   font-size: 11px;
 }
 
-#avatar {
+.avatar-img {
   width: 30px;
 }
 
@@ -137,6 +193,11 @@ table {
 footer {
   width: 800px;
   margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100vw;
+  }
 }
 
 .icons-footer {

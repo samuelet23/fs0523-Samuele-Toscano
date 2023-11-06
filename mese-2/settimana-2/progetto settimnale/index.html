@@ -7,26 +7,24 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <title>Netflix-Page</title>
 </head>
 
 <body class="body-bg">
     <div class=" container bg-container px-lg-5" id="page-1">
-        <header>
+        <header id="header">
             <!-- sezione home page header sinistra Deskstop -->
-
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid p-0 text-white">
-                    <div class="navbar-brand img-container m-0"  id="logo">
-                        <img src="assets/netflix_logo.png" alt="Logo"  class="d-inline-block align-text-top w-100 m-0">
+                    <div class="navbar-brand img-container m-0" id="logo">
+                        <img src="assets/netflix_logo.png" alt="Logo" class="d-inline-block align-text-top w-100 m-0">
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between  row"
-                        id="navbarNav">
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between  row" id="navbarNav">
                         <div class="d-flex justify-content-between grandezza"> <!--container due nav -->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -46,7 +44,7 @@
                                 </li>
 
                             </ul>
-                            <ul class="navbar-nav  ">
+                            <ul class="navbar-nav" id="nav-avatar">
                                 <li class="nav-item">
                                     <a class="nav-link " aria-current="page" href="#"><i
                                             class="bi bi-search text-white"><!--Cerca Icone--></i></a>
@@ -60,10 +58,15 @@
                                 </li>
                                 <li class="nav-item ">
                                     <div class="nav-link d-flex ">
-                                       <div id="profile"> 
-                                        <img src="assets/avatar.png" alt="" id="avatar"> 
-                                        <i class="bi bi-caret-down-fill me-2 text-white"><!--Freccia in giu Icone--></i>
-                                    </div>
+                                        <div>
+                                            <img src="assets/avatar.png" alt="" class="avatar-img" id="profile">
+                                            <div class="pop-up hidden">
+                                                <img src="assets/avatar.png" alt="">
+                                                <p> Name profile</p>
+                                                <button class="button-popUp"> Go to Edit Profile</button>
+                                            </div>
+                                            <i class="bi bi-caret-down-fill me-2 text-white" id="avatar"></i>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -89,7 +92,7 @@
                         <option value="Altro"> Altro</option>
                     </select>
                 </div>
-                <div class="icone-tab text-white d-flex ">
+                <div class="icone-tab text-white d-none d-md-flex ">
                     <i class="bi bi-layout-text-window-reverse px-3 icona-fix   "></i>
                     <i class="bi bi-grid  px-3 icona-fix "></i>
                 </div>
@@ -127,7 +130,7 @@
                                 <img src="assets/media/media12.jpg" class=" img-carousel" alt="...">
                                 <img src="assets/media/media13.jpg" class=" img-carousel" alt="...">
                             </div>
-                    
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                             data-bs-slide="prev">
@@ -141,7 +144,7 @@
                         </button>
                     </div>
                 </div>
-        
+
             </section>
             <section class="my-5 sezione-film">
                 <h4 class="text-white">
@@ -174,7 +177,7 @@
                                 <img src="assets/media/media12.jpg" class=" img-carousel" alt="...">
                                 <img src="assets/media/media13.jpg" class=" img-carousel" alt="...">
                             </div>
-                    
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                             data-bs-slide="prev">
@@ -188,8 +191,8 @@
                         </button>
                     </div>
                 </div>
-               
-            </section >
+
+            </section>
             <section class="my-5 sezione-film">
                 <h4 class="text-white">
                     New Releases
@@ -221,7 +224,7 @@
                                 <img src="assets/media/media12.jpg" class=" img-carousel" alt="...">
                                 <img src="assets/media/media13.jpg" class=" img-carousel" alt="...">
                             </div>
-                    
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                             data-bs-slide="prev">
@@ -239,123 +242,128 @@
         </main>
 
 
-        
-                <footer class=" py-5 ">
-                    <div class="">
-                    <ul class="d-flex icons-footer">
-                        <li><a href="#"> <i class="bi bi-facebook  text-secondary underline "></i> </a></li>
-                        <li><a href="#"> <i class="bi bi-instagram text-secondary underline "></i>  </a></li>
-                        <li><a href="#"> <i class="bi bi-twitter text-secondary underline "></i> </a></li>
-                        <li><a href="#"> <i class="bi bi-youtube text-secondary underline "></i> </a></li>
-        
-                       </ul>
-                  <div class="row mb-3">
-                    <div class="col-6 col-md-2 mb-3">
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Audio and Subtitles</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Media Center</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Privacy</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Contact Us</a></li>
-                      </ul>
-                    </div>
-              
-                    <div class="col-6 col-md-2 mb-3">
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Audio Description</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Investor Relations</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Legal Notices</a></li>
-                      </ul>
-                    </div>
-              
-                    <div class="col-6 col-md-2 mb-3">
-                      <ul class="nav flex-column">
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Help Center</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Jobs</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Cookie Preferences</a></li>
-                      </ul>
-                    </div>
-              
+
+        <footer class=" py-5 ">
+            <div class="">
+                <ul class="d-flex icons-footer">
+                    <li><a href="#"> <i class="bi bi-facebook  text-secondary underline "></i> </a></li>
+                    <li><a href="#"> <i class="bi bi-instagram text-secondary underline "></i> </a></li>
+                    <li><a href="#"> <i class="bi bi-twitter text-secondary underline "></i> </a></li>
+                    <li><a href="#"> <i class="bi bi-youtube text-secondary underline "></i> </a></li>
+
+                </ul>
+                <div class="row mb-3">
                     <div class="col-6 col-md-2 mb-3">
                         <ul class="nav flex-column">
-                          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Gift Cards</a></li>
-                          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Term of Use</a></li>
-                          <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Corporate  Information</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Audio
+                                    and Subtitles</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Media
+                                    Center</a></li>
+                            <li class="nav-item mb-3"><a href="#"
+                                    class="nav-link p-0 text-secondary underline">Privacy</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Contact
+                                    Us</a></li>
                         </ul>
-                      </div>
-                  </div>
-                   <a href="#" class="footer-button text-secondary  border border-secondary">Service Code</a>
-                  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-3 text-secondary ">
-                    <p>© 2023 Company, Inc. All rights reserved.</p>
-             
-                  </div>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Audio
+                                    Description</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Investor
+                                    Relations</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Legal
+                                    Notices</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Help
+                                    Center</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Jobs</a>
+                            </li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Cookie
+                                    Preferences</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Gift
+                                    Cards</a></li>
+                            <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-secondary underline">Term of
+                                    Use</a></li>
+                            <li class="nav-item mb-3"><a href="#"
+                                    class="nav-link p-0 text-secondary underline">Corporate Information</a></li>
+                        </ul>
+                    </div>
                 </div>
-                </footer>
-    
+                <a href="#" class="footer-button text-secondary  border border-secondary">Service Code</a>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-3 text-secondary ">
+                    <p>© 2023 Company, Inc. All rights reserved.</p>
+
+                </div>
+            </div>
+        </footer>
+
         <!-- scrivere sempre qui sopra, sotto è la chiusura container -->
     </div>
-<!-- fine page-1 -->
- <!-- inizio page-2  -->
- <div class="bg-container" id="page-2">
-    <nav class="navbar ">
-        <div class="navbar-brand img-container m-0" id="logo">
-            <img src="assets/netflix_logo.png" alt="Logo"   class="d-inline-block align-text-top w-100 m-0 ">
-        </div>
-    </nav>
-    <div class="spacing">
-        <h2>
-            Edit Profile
-        </h2>
-        <div class="general-container"> <!-- contenitore da dopo edit profile -->
-            <div class="flex-img-text"> <!-- flex per immagine e scrittura -->
-                <div class="img-icon">
-                    <img src="assets/avatar.png" alt=""     >
-                    <i class="bi bi-pencil-square"></i> <!--position absolute-->
-                </div>
+    <!-- fine page-1 -->
+    <!-- inizio page-2  -->
+    <div class="bg-container" id="page-2">
+        <nav class="navbar ">
+            <div class="navbar-brand img-container m-0" id="logo">
+                <img src="assets/netflix_logo.png" alt="Logo" class="d-inline-block align-text-top w-100 m-0 ">
+            </div>
+        </nav>
+        <div class="spacing">
+            <h2>
+                Edit Profile
+            </h2>
+            <div class="general-container"> <!-- contenitore da dopo edit profile -->
+                <div class="flex-img-text"> <!-- flex per immagine e scrittura -->
+                    <div class="img-icon">
+                        <img src="assets/avatar.png" alt="">
+                        <i class="bi bi-pencil-square"></i> <!--position absolute-->
+                    </div>
 
-                <div class="containers"> <!--margin bottom e gap fra i due div  -->
-                    <div class="container-1">
-                        <div class="name-profile">
-                            <p>
-                                Strive Student
-                            </p>
-                        </div>
-                        <div class="language">
-                            <p>
-                                Language:
-                            </p>
-                            <select name="Language" id="Language">
-                                <option value="English">English</option>
-                                <option value="Italian">Italian</option>
-                                <option value="French">French</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="container-2">
-                        <h5 >
-                            Maturity Settings:
-                        </h5>
-                        <a href="#">
-                            ALL MATURITY RATINGS
-                        </a>
-                        <p>
-                            Show titles of <span class="text-white">all maturity ratings</span> for this profile
-                        </p>
-                        <button class="edit">
-                            EDIT
-                        </button>
-                    </div>
-                    <div class="container-3">
-                        <h5>
-                            Autoplay controls
-                        </h5>
-                        <div class="section-checkbox">
-                            <div class="checkbox">
-                                <i class="bi bi-square quadrato"></i>
-                                <i class="bi bi-check2 check hidden"></i>
+                    <div class="containers"> <!--margin bottom e gap fra i due div  -->
+                        <div class="container-1">
+                            <div class="name-profile">
                                 <p>
-                                    Autoplay next episode in a series on all devices
+                                    Strive Student
                                 </p>
                             </div>
+                            <div class="language">
+                                <p>
+                                    Language:
+                                </p>
+                                <select name="Language" id="Language">
+                                    <option value="English">English</option>
+                                    <option value="Italian">Italian</option>
+                                    <option value="French">French</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="container-2">
+                            <h5>
+                                Maturity Settings:
+                            </h5>
+                            <a href="#">
+                                ALL MATURITY RATINGS
+                            </a>
+                            <p>
+                                Show titles of <span class="text-white">all maturity ratings</span> for this profile
+                            </p>
+                            <button class="edit">
+                                EDIT
+                            </button>
+                        </div>
+                        <div class="container-3">
+                            <h5>
+                                Autoplay controls
+                            </h5>
                             <div class="section-checkbox">
                                 <div class="checkbox">
                                     <i class="bi bi-square quadrato"></i>
@@ -364,29 +372,37 @@
                                         Autoplay next episode in a series on all devices
                                     </p>
                                 </div>
-                            </div>
+                                <div class="section-checkbox">
+                                    <div class="checkbox">
+                                        <i class="bi bi-square quadrato"></i>
+                                        <i class="bi bi-check2 check hidden"></i>
+                                        <p>
+                                            Autoplay next episode in a series on all devices
+                                        </p>
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                
+                <div class="container-button">
+                    <button class="save">
+                        SAVE
+                    </button>
+                    <button class="cancel">
+                        CANCEL
+                    </button>
+                    <button class="delete-profile">
+                        DELETE PROFILE
+                    </button>
+                </div>
             </div>
-            <div class="container-button">
-                <button class="save">
-                    SAVE
-                </button>
-                <button class="cancel">
-                    CANCEL
-                </button>
-                <button class="delete-profile">
-                    DELETE PROFILE
-                </button>
-            </div>
+
         </div>
-       
-    </div>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
