@@ -58,6 +58,8 @@ function checkbox() {
 }
 checkbox();
 
+
+
 function openPopupAfterDelay() {
   setTimeout(function () {
     let popup = document.createElement("div");
