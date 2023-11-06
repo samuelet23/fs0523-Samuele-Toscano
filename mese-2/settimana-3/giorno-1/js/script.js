@@ -52,12 +52,14 @@ class Pet {
     createInput(placeholderText) {
       const input = document.createElement("input");
       input.placeholder = placeholderText;
+      input.classList.add('input')
       return input;
     }
   
     createButton(buttonText) {
       const button = document.createElement("button");
       button.textContent = buttonText;
+      button.classList.add('button')
       return button;
     }
   
