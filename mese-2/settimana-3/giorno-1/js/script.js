@@ -1,3 +1,4 @@
+
 class User {
   constructor(fn, ln, a, l) {
     this.firstName = fn;
@@ -37,25 +38,32 @@ class Pet {
       this.speciesInput = this.createInput("Insert the Species");
       this.breedInput = this.createInput("Insert the Breed");
       this.button = this.createButton("Crea Animale");
-  
-      this.form.appendChild(this.petNameInput);
-      this.form.appendChild(this.ownerNameInput);
-      this.form.appendChild(this.speciesInput);
-      this.form.appendChild(this.breedInput);
-      this.form.appendChild(this.button);
-  
+      this.appendInputButton(this.form);
+    
       this.button.addEventListener("click", () => {
         this.createAnimalList();
       });
     }
-  
+    
+    ownerCompare(animal) {
+      return this.ownerName === animal.ownerName;
+    }
+
     createInput(placeholderText) {
       const input = document.createElement("input");
       input.placeholder = placeholderText;
       input.classList.add('input')
       return input;
     }
-  
+    appendInputButton(){
+        
+        this.form.append(this.petNameInput);
+        this.form.append(this.ownerNameInput);
+        this.form.append(this.speciesInput);
+        this.form.append(this.breedInput);
+        this.form.append(this.button);
+    
+    }
     createButton(buttonText) {
       const button = document.createElement("button");
       button.textContent = buttonText;
@@ -91,18 +99,14 @@ class Pet {
       this.breedInput.value = "";
     }
   
-    ownerCompare(animal) {
-      return this.ownerName === animal.ownerName;
-    }
   }
   
  
 let animal = new Pet ('pet')
-let animal1 = new Pet ('pet2')
-
 
 let animale = new Pet("animale", "Rossi", "dog", "labrador");
 let animale2 = new Pet("animale2", "Francesco", "dog", "labrador");
+
 if (animale.ownerCompare(animale2)) {
     console.log(' sono la stessa persona');
 }
