@@ -7,6 +7,7 @@ fetch(" https://striveschool-api.herokuapp.com/books")
 
         let temp = document.getElementById("template");
         let clon = temp.content.cloneNode(true);
+
         //creo le variabili del clone
         let imgCard = clon.querySelector("#card-img");
         let title = clon.querySelector("#title");
@@ -37,8 +38,8 @@ fetch(" https://striveschool-api.herokuapp.com/books")
 
           });
         });
-
-        document.body.appendChild(clon);
+        let target = document.getElementById("target");
+        target.appendChild(clon);
       }
 
       showContent();
