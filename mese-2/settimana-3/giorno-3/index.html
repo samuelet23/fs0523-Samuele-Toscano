@@ -9,25 +9,32 @@
 <body>
     <div class="album py-5 bg-light">
         <div class="container">
-        <template id="template">
+            <template id="template">
+                <ul id="carrello">
+                </ul>
           <div class="row" id="card">
             <div class="col-md-4">
-              <div class="card mb-4 box-shadow" >
+              <div class="card md-4 box-shadow" >
                 <img src="" alt="" id="card-img">
                 <div class="card-body">
-                  <p class="card-text" id="title"> ciao <!--inserire titolo--></p>
+                  <p class="card-text" id="title">  <!--inserire titolo--></p>
                   <p class="card-text" id="text"><!--inserire prezzo--></p>
                   
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary" id="scarta">scarta</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="compraOra"> Compra Ora</button>
+                      <button type="button" class="btn btn-sm btn-outline-danger" id="scarta">scarta</button>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
+
         </template>
+        <template id="template2">
+        </template>
+        
       </div>
       <script src="js/script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
