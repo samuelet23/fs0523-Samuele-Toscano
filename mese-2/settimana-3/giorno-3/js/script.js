@@ -1,7 +1,6 @@
 fetch(" https://striveschool-api.herokuapp.com/books")
   .then((res) => res.json())
   .then((res) => {
-    console.log(res);
     res.forEach((libro) => {
       function showContent() {
         //select first template
