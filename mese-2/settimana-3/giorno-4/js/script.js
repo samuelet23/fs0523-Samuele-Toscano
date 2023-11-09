@@ -5,7 +5,9 @@ let loadImg = document.querySelector("#loadImages");
 let loadImgSecondary= document.querySelector("#loadImagesSecondary");
 let allImgs= document.querySelectorAll('.img-card')
 let text = document.querySelectorAll('.id-card');
-console.log(text);
+let form = document.querySelector('#form1')
+let btnSearch = document.querySelector('#buttonSearch');
+console.log(form.value);
 
 // pizza fetch
 fetch(apiUrl, {
@@ -16,7 +18,6 @@ fetch(apiUrl, {
 })
 .then((response) => response.json())
 .then((imgs) => {  
-    console.log(imgs);
     loadImg.addEventListener('click', ()=> {
 
         allImgs.forEach((e, j) => {
@@ -64,4 +65,19 @@ fetch(apiUrl2, {
   }
   buttonHide();
 
-  //add id card
+  // fetch barra di ricerca 
+  btnSearch.addEventListener('click', ()=> {
+  fetch(` https://api.pexels.com/v1/search?query= ${form.value}`, {
+    headers: {
+      "Content-Type": "application/json",
+      'Authorization': apiKey,
+    },
+  })
+  .then((response) => response.json())
+  .then((imgs) => {  
+
+          allImgs.forEach((e, j) => {
+              e.src = imgs.photos[j].src.original;
+          });
+      })
+  })
