@@ -31,6 +31,27 @@ fetch(" https://striveschool-api.herokuapp.com/books")
         compraOra.forEach((button, index) => {
           button.addEventListener("click", () => {
             let bookTitle = `Stai acquistando ${libro.title} e costerà ${libro.price}€`;
+            let carrello = document.getElementById("carrello");
+            carrello.innerHTML = "";
+            if (cart.length === 0) {
+              carrello.innerText = "Il carrello è vuoto";
+            }
+            //crea ad ogni nuovo elemento aggiunto al carrello un li 
+            cart.forEach((item) => {
+              let li = document.createElement("li");
+              li.textContent = item;
+              carrello.appendChild(li);
+    
+              //   creo il bottone elimina del carrello 
+              let deleteButtonCart= document.createElement("button");
+              deleteButtonCart.textContent = "Elimina dal carrello"
+              li.appendChild(deleteButtonCart);
+              deleteButtonCart.addEventListener("click", () => {
+                let index = cart.indexOf(item);
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+              });
+            });
             cart.push(bookTitle);
 
             // Aggiorna il carrello nel localStorage
