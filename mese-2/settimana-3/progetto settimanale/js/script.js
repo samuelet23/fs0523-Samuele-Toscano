@@ -1,46 +1,41 @@
+
 const url = 'https://striveschool-api.herokuapp.com/api/product/' 
 
 const apiKey = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGI0MTMyNWM5NzAwMTg3ZjlmODQiLCJpYXQiOjE2OTk2MTM1MDUsImV4cCI6MTcwMDgyMzEwNX0.EleY-akp27wd1gI_iPcvaBIkdNA-eUjGENd5ShkRgj4"
 
-
-function selectTemplate() {
-    let temp = document.getElementsByTagName("template")[0];
-    let clon = temp.content.cloneNode(true); 
-    return clon;
-}
-
-
-function selectProduct() {
-    let clon = selectTemplate()
-    let allCard = clon.querySelectorAll('.card-entire');
-    let imgCard = clon.querySelectorAll('.img-card');
-    let nameCard= clon.querySelectorAll('.name-product');
-    let description = clon.querySelectorAll('.description-product');
-    let price = clon.querySelectorAll('.price-product');
-    let modifica = clon.querySelectorAll('.modifica-product');
-    let scopri = clon.querySelectorAll('.scopri-product');
+async function selectProduct() {
+     
     let homePage = document.querySelector('#homePageProdotti');
-    //asign element
-    getProducts(url)
+    let title = document.querySelector('.title-page');
+    title.innerText= 'PRODOTTI DISPONIBILI'
+     await getProducts(url)
     .then(res => res.json())
     .then(products => {
         products.forEach(prodotto => {
-            let cardClone = clon.cloneNode(true);
-            allCard.forEach((e, i) => {
-                imgCard[i].src = prodotto.imageUrl;
-                nameCard[i].innerText = prodotto.name;
-                description[i].innerText = prodotto.description;
-                price[i].innerText = prodotto.price; 
+                let temp = document.getElementsByTagName("template")[0];
+                let clon = temp.content.cloneNode(true);
+                
+                let imgCard = clon.querySelector('.img-card');
+                let nameCard= clon.querySelector('.name-product');
+                let description = clon.querySelector('.description-product');
+                let price = clon.querySelector('.price-product');
+                let scopri = clon.querySelector('.scopri-product');
+                let modifica = clon.querySelector('.modifica-product');
 
-                homePage.appendChild(cardClone);
-            })
+                modifica.href = 'newProduct.html?id=' +  prodotto._id   
+                imgCard.src = prodotto.imageUrl;
+                nameCard.innerText = prodotto.name;
+                description.innerText = prodotto.description;
+                price.innerText = prodotto.price + '€'; 
+                scopri.href = 'product-page.html?id=' +  prodotto._id   
+                modifica.href = 'product-page.html?id=' +  prodotto._id           
+                homePage.appendChild(clon);
+            
         });
     })
     
 }
 selectProduct()
-
-
 
 
 
