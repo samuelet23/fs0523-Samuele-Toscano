@@ -33,14 +33,41 @@ async function productPageGenerate(productId) {
                 description.innerText = product.description;
                 price.innerText = product.price + '€'; 
 
-                elimina.href = deleteProduct(url + productId)
+               elimina.addEventListener('click', () => {
+                let conferma = Swal.fire({
+                  title: "Sei sicuro/a di voler eliminare questo prodotto?",
+                  showDenyButton: true,
+                  showCancelButton: true,
+                  denyButtonText: `ELimina`,
+                  confirmButtonText: "Non eliminare"
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    deleteProduct(url, id, product)
+                    Swal.fire("Prodotto eliminato correttamente")
+                    location.href = 'index.html';
+                    
+                  } else if (result.isDenied) {
+                    Swal.fire("Non hai eliminato questo prodotto");
+                  }
+                });
+                });
 
                 homePage.appendChild(clon);
-        });
-}
+              })
 
-
+            }
 productPageGenerate(id)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -57,37 +84,20 @@ return  products;
 getProducts(url)
 
 //Crea un prodotto
-async function createProduct(url) {
-  await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: apiKey,
-    },
-    body: JSON.stringify(productModel),
-  });
-}
-//aggiorna un prodotto
-async function updateProduct(url) {
-  await fetch(url, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: apiKey,
-    },
-    body: JSON.stringify(productModel),
-  });
-}
+
+
+
+
 
 //elimina un prodotto
-async function deleteProduct(url) {
+async function deleteProduct(url, id, oggetto) {
   await fetch(url + id, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
       Authorization: apiKey,
     },
-    body: JSON.stringify(id),
+    body: JSON.stringify(oggetto),
     
   });
 }
