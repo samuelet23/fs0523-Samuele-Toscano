@@ -31,10 +31,6 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -45,45 +41,55 @@
     <h2 class="title-homePage text-center pb-4 border-bottom border-dark mb-5 title-page-product"> CREA UN NUOVO PRODOTTO </h2>
     <form class="row g-3 ">
       <div class="col-md-4">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" value="" required>
+      <label for="name" class="form-label">Name <span class="text-muted">(obbligatori)</span> </label>
+      <input type="text" class="form-control" id="name"  >
       <div class="">
         
       </div>
     </div>
     <div class="col-md-4">
-      <label for="description" class="form-label">Desciption</label>
-      <input type="text" class="form-control" id="description" value="" required>
+      <label for="description" class="form-label">Desciption<span class="text-muted">(obbligatori)</span> </label>
+      <input type="text" class="form-control" id="description"  >
       <div class="">
         
       </div>
     </div>
     <div class="col-md-4">
-      <label for="brand" class="form-label">Brand</label>
-      <input type="text" class="form-control" id="brand" value="" required>
+      <label for="color" class="form-label">Color<span class="text-muted">(facoltativo)</span> </label>
+      <input type="text" class="form-control" id="color"  >
       <div class="">
         
       </div>
     </div>
     <div class="col-md-4">
-      <label for="imageUrl" class="form-label">Image Url</label>
-      <input type="text" class="form-control" id="imageUrl" value="" required>
+      <label for="brand" class="form-label">Brand <span class="text-muted">(obbligatori)</span> </label>
+      <input type="text" class="form-control" id="brand"  >
+      <div class="">
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="imageUrl" class="form-label">Image Url s<span class="text-muted">(obbligatori)</span> </label>
+      <input type="text" class="form-control" id="imageUrl">
       <div class="">
         
       </div>
     </div>
     <div class="col-md-6">
-      <label for="price" class="form-label">Price</label>
-      <input type="text" class="form-control " id="price" aria-describedby="validationServer03Feedback" required>
+      <label for="price" class="form-label">Price <span class="text-muted">(obbligatori)</span> </label>
+      <input type="number" class="form-control " id="price" aria-describedby="validationServer03Feedback" >
       <div class="">
         
       </div>
     </div>
     <div class="col-4">
-      <button class="btn btn-success" type="submit">Create Product</button>
+      <button class="btn btn-success create" type="submit"></button>
     </div>
-    <div class="col-4 offset-4">
-      <button class="btn btn-danger" type="submit">Delete Product</button>
+    <div class="col-4 ">
+      <button class="btn btn-warning reset" type="submit">Reset Product</button>
+    </div>
+    <div class="col-4 ">
+      <button class="btn btn-danger elimina" type="submit">delete Product</button>
     </div>
   </form>
 </div>

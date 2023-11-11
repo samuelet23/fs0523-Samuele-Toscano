@@ -4,7 +4,7 @@ let id = urlApi.get('id');
 const url = 'https://striveschool-api.herokuapp.com/api/product/' 
 const apiKey = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGI0MTMyNWM5NzAwMTg3ZjlmODQiLCJpYXQiOjE2OTk2MTM1MDUsImV4cCI6MTcwMDgyMzEwNX0.EleY-akp27wd1gI_iPcvaBIkdNA-eUjGENd5ShkRgj4"
 
-
+setTimeout( () =>{
 async function productPageGenerate(productId) {
     let homePage = document.querySelector('#pageProdotto');
     let title = document.querySelector('.title-page-product');
@@ -34,12 +34,13 @@ async function productPageGenerate(productId) {
                 price.innerText = product.price + '€'; 
 
                elimina.addEventListener('click', () => {
-                let conferma = Swal.fire({
+               
+                Swal.fire({
                   title: "Sei sicuro/a di voler eliminare questo prodotto?",
                   showDenyButton: true,
                   showCancelButton: true,
-                  denyButtonText: `ELimina`,
-                  confirmButtonText: "Non eliminare"
+                  denyButtonText: `Non eliminare`,
+                  confirmButtonText: "Elimina"
                 }).then((result) => {
                   if (result.isConfirmed) {
                     deleteProduct(url, id, product)
@@ -57,17 +58,7 @@ async function productPageGenerate(productId) {
 
             }
 productPageGenerate(id)
-
-
-
-
-
-
-
-
-
-
-
+}, 2000);
 
 
 
@@ -82,10 +73,6 @@ async function getProducts(url) {
 return  products;
 }
 getProducts(url)
-
-//Crea un prodotto
-
-
 
 
 
@@ -102,4 +89,10 @@ async function deleteProduct(url, id, oggetto) {
   });
 }
 
-
+// funzione per far comparire la pagina dopo 2 secondi 
+function delayedLoading() {
+  setTimeout(function () {
+      document.querySelector('.text-center').remove();
+  }, 2000);
+}
+delayedLoading()

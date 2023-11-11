@@ -3,9 +3,13 @@ const url = 'https://striveschool-api.herokuapp.com/api/product/'
 const apiKey = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGI0MTMyNWM5NzAwMTg3ZjlmODQiLCJpYXQiOjE2OTk2MTM1MDUsImV4cCI6MTcwMDgyMzEwNX0.EleY-akp27wd1gI_iPcvaBIkdNA-eUjGENd5ShkRgj4"
 const urlApi = new URLSearchParams(location.search);
 const id = urlApi.get('id');
-console.log(id);
 
 
+
+
+
+
+setTimeout( () =>{
 async function selectProduct() {
      
     let homePage = document.querySelector('#homePageProdotti');
@@ -17,7 +21,9 @@ async function selectProduct() {
     .then(res => res.json())
     .then(products => {
         products.forEach(prodotto => {
-                let temp = document.getElementsByTagName("template")[0];
+
+             
+            let temp = document.getElementsByTagName("template")[0];
                 let clon = temp.content.cloneNode(true);
                 
                 let imgCard = clon.querySelector('.img-card');
@@ -32,16 +38,17 @@ async function selectProduct() {
                 description.innerText = prodotto.description;
                 price.innerText = prodotto.price + '€'; 
                 scopri.href = 'product-page.html?id=' +  prodotto._id   
-                modifica.href = 'product-page.html?id=' +  prodotto._id   
+                modifica.href = 'newProduct.html?id=' +  prodotto._id   
                
 
                 homePage.appendChild(clon);
+            })  
             
-        });
-    })
-    
-}
-selectProduct()
+        })
+        
+    }
+    selectProduct()
+}, 2000);
 
 
 
@@ -57,7 +64,11 @@ return products
 }
 getProducts(url)
 
+// funzione per far comparire la pagina dopo 2 secondi 
 
-
-
-
+function delayedLoading() {
+    setTimeout(function () {
+        document.querySelector('.text-center').remove();
+    }, 2000);
+}
+delayedLoading()
