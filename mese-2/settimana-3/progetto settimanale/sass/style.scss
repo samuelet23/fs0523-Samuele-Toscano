@@ -2,5 +2,109 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "variables";
 @import "mixin";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
 
+//generic
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-montserrat;
+}
 
+.second-font {
+  font-family: $font-roboto;
+}
+
+//nav-bar
+.navbar {
+  background-color: $primary;
+}
+.navbar-toggler {
+  color: $white;
+}
+.logo {
+  max-width: 70px;
+  border: 1px solid $white;
+  border-radius: 100%;
+}
+.nav-item:hover {
+  color: white;
+}
+//home page
+.title-homePage {
+  font-size: 61px;
+  text-transform: uppercase;
+  color: $primary;
+  font-weight: bold;
+  border-bottom: 1px solid $primary;
+}
+.card-entire {
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 12px 30px #d05941;
+  margin-bottom: 50px;
+}
+
+//product page
+#pageProdotto {
+  @extend .card-entire;
+}
+.title-page-product {
+  @extend .title-homePage;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+}
+
+.name-product {
+  font-size: 40px;
+  font-weight: bold;
+  color: $dark;
+}
+
+.price-product {
+  color: rgb(34, 222, 34);
+  font-weight: bold;
+  font-size: 33px;
+  max-width: 147px;
+  padding: 0 7px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+//newProduct Page
+.title-page-product {
+  @extend .title-homePage;
+}
+
+// buttons
+$primary: $primary;
+$color2: #5cc1ff;
+$color3: #e8130b;
+$color4: green;
+
+.button {
+  @include button-styles($primary);
+}
+
+.button2 {
+  @include button-styles($color2);
+}
+
+.button3 {
+  @include button-styles($color3);
+}
+
+.button4 {
+  @include button-styles($primary);
+}
+
+.button5 {
+  @include button-styles($color4);
+}

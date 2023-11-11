@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Modify Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Modify Products</title>
 </head>
+
 <body>
 
-<header id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse show" id="navbarColor02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="newProduct.html">Generate New Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">edit a product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-            </ul>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a href="index.html"><img src="imgs/logo.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarColor02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newProduct.html">Create New Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newProduct.html">Edit a product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="my-5">
+    <div class="container mt-5 ">
+      <h2 class=" text-center pb-4  mb-5 title-page-product"> CREA UN NUOVO PRODOTTO </h2>
+      <form class="row g-3 ">
+        <div class="col-md-4 col-lg-4 col-xl-6">
+          <label for="name" class="form-label second-font">Name <span class="text-muted">(obbligatori)</span> </label>
+          <input type="text" class="form-control" id="name">
+          <div class="">
+
           </div>
         </div>
-      </nav>
-</header>
+        <div class="col-md-4 col-lg-4 col-xl-6">
+          <label for="description" class="form-label second-font">Desciption<span
+              class="text-muted">(obbligatori)</span> </label>
+          <input type="text" class="form-control" id="description">
+          <div class="">
 
-<main class="my-5">
-  <div class="container mt-5 ">
-    <h2 class="title-homePage text-center pb-4 border-bottom border-dark mb-5 title-page-product"> CREA UN NUOVO PRODOTTO </h2>
-    <form class="row g-3 ">
-      <div class="col-md-4">
-      <label for="name" class="form-label">Name <span class="text-muted">(obbligatori)</span> </label>
-      <input type="text" class="form-control" id="name"  >
-      <div class="">
-        
-      </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-6">
+          <label for="color" class="form-label second-font">Color<span class="text-muted">(facoltativo)</span> </label>
+          <input type="text" class="form-control" id="color">
+          <div class="">
+
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-6">
+          <label for="brand" class="form-label second-font">Brand <span class="text-muted">(obbligatori)</span> </label>
+          <input type="text" class="form-control" id="brand">
+          <div class="">
+
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-6">
+          <label for="imageUrl" class="form-label second-font">Image Url s<span class="text-muted">(obbligatori)</span>
+          </label>
+          <input type="text" class="form-control" id="imageUrl">
+          <div class="">
+
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-6">
+          <label for="price" class="form-label second-font">Price <span class="text-muted">(obbligatori)</span> </label>
+          <input type="number" class="form-control " id="price" aria-describedby="validationServer03Feedback">
+          <div class="">
+
+          </div>
+        </div>
+        <div class="col-4">
+          <button class="button5 create"> </button>
+        </div>
+        <div class="col-4 ">
+          <button class="button4 reset">reset product </button>
+        </div>
+        <div class="col-4 ">
+          <button class="button3 elimina">Delete product </button>
+        </div>
+      </form>
     </div>
-    <div class="col-md-4">
-      <label for="description" class="form-label">Desciption<span class="text-muted">(obbligatori)</span> </label>
-      <input type="text" class="form-control" id="description"  >
-      <div class="">
-        
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="color" class="form-label">Color<span class="text-muted">(facoltativo)</span> </label>
-      <input type="text" class="form-control" id="color"  >
-      <div class="">
-        
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="brand" class="form-label">Brand <span class="text-muted">(obbligatori)</span> </label>
-      <input type="text" class="form-control" id="brand"  >
-      <div class="">
-        
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="imageUrl" class="form-label">Image Url s<span class="text-muted">(obbligatori)</span> </label>
-      <input type="text" class="form-control" id="imageUrl">
-      <div class="">
-        
-      </div>
-    </div>
-    <div class="col-md-6">
-      <label for="price" class="form-label">Price <span class="text-muted">(obbligatori)</span> </label>
-      <input type="number" class="form-control " id="price" aria-describedby="validationServer03Feedback" >
-      <div class="">
-        
-      </div>
-    </div>
-    <div class="col-4">
-      <button class="btn btn-success create" type="submit"></button>
-    </div>
-    <div class="col-4 ">
-      <button class="btn btn-warning reset" type="submit">Reset Product</button>
-    </div>
-    <div class="col-4 ">
-      <button class="btn btn-danger elimina" type="submit">delete Product</button>
-    </div>
-  </form>
-</div>
-</main>
+  </main>
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/newProduct.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/newProduct.js"></script>
 </body>
+
 </html>
