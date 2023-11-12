@@ -4,9 +4,12 @@ const apiKey =
 const urlApi = new URLSearchParams(location.search);
 const id = urlApi.get("id");
 
+
 setTimeout(() => {
   async function selectProduct() {
     let homePage = document.querySelector("#homePageProdotti");
+    let btnSearch = document.querySelector("#searchBar");
+    let searchTerm = document.querySelector("#searchBarValue");
     let title = document.querySelector(".title-page");
     title.innerText = "PRODOTTI DISPONIBILI";
 
@@ -30,11 +33,25 @@ setTimeout(() => {
           scopri.href = "product-page.html?id=" + prodotto._id;
           modifica.href = "newProduct.html?id=" + prodotto._id;
          
-
+          
+       
           homePage.appendChild(clon);
+
+          localStorage.setItem("products", JSON.stringify(products));
         });
+        //button Search Bar
+        btnSearch.addEventListener("click", () => {
+          const searchTermValue = searchTerm.value.trim();  
+          const foundProduct = products.find((prodotto) => prodotto.name.trim() === searchTermValue);
+          if (foundProduct) {
+            location.href = "product-page.html?id=" + foundProduct._id;
+            searchTerm.value = "";
+          } else {
+            Swal.fire("Prodotto non trovato");
+          }
       });
-  }
+  })
+}
   selectProduct();
 }, 2000);
 

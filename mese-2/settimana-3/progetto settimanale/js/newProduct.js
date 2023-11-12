@@ -5,6 +5,7 @@ const url = "https://striveschool-api.herokuapp.com/api/product/";
 const apiKey =
   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGI0MTMyNWM5NzAwMTg3ZjlmODQiLCJpYXQiOjE2OTk2MTM1MDUsImV4cCI6MTcwMDgyMzEwNX0.EleY-akp27wd1gI_iPcvaBIkdNA-eUjGENd5ShkRgj4";
 
+  
 //variabili formPage
 let title = document.querySelector('.title-page-product')
 title.innerHTML='CREATE NEW PRODUCT';
@@ -114,6 +115,8 @@ async function formGenerated(productId) {
       price.value = product.price;
       title.innerHTML = 'EDIT YOUR PRODUCT'
       elimina.style.display = 'block';
+      btnSearch.style.display = "none"
+      searchTerm.style.display = "none"
 
       // controlla se questo parametro facoltativo esiste o meno
       if (product.color === undefined) {
@@ -255,3 +258,5 @@ setTimeout(() => {
   
   showFooter()
 },3000)
+
+

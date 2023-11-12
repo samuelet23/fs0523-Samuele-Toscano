@@ -4,6 +4,7 @@ const url = "https://striveschool-api.herokuapp.com/api/product/";
 const apiKey =
   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGI0MTMyNWM5NzAwMTg3ZjlmODQiLCJpYXQiOjE2OTk2MTM1MDUsImV4cCI6MTcwMDgyMzEwNX0.EleY-akp27wd1gI_iPcvaBIkdNA-eUjGENd5ShkRgj4";
 
+
 setTimeout(() => {
   async function productPageGenerate(productId) {
     let homePage = document.querySelector("#pageProdotto");
