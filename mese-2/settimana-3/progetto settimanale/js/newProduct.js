@@ -14,9 +14,9 @@ let brand = document.querySelector("#brand");
 let imageUrl = document.querySelector("#imageUrl");
 let price = document.querySelector("#price");
 let color = document.querySelector("#color");
-
 // bottoni
 let elimina = document.querySelector(".elimina");
+elimina.style.display= 'none';
 let reset = document.querySelector(".reset");
 let create = document.querySelector(".create");
 create.innerHTML = "Create Product";
@@ -44,6 +44,7 @@ elimina.addEventListener("click", (e) => {
   ) {
     return Swal.fire("Compila tutti i campi  per eliminare un prodotto!");
   }
+  console.log(product);
   Swal.fire({
     title: "Sei sicuro/a di voler eliminare questo prodotto?",
     showDenyButton: true,
@@ -112,6 +113,7 @@ async function formGenerated(productId) {
       imageUrl.value = product.imageUrl;
       price.value = product.price;
       title.innerHTML = 'EDIT YOUR PRODUCT'
+      elimina.style.display = 'block';
 
       // controlla se questo parametro facoltativo esiste o meno
       if (product.color === undefined) {
@@ -130,6 +132,7 @@ async function formGenerated(productId) {
           imageUrl: imageUrl.value,
           price: price.value,
           color: color.value,
+          
         };
 
         if (
@@ -243,3 +246,12 @@ function svuotaFormn() {
 reset.addEventListener("click", () => {
   svuotaFormn();
 });
+//ritarda la visione del footer
+setTimeout(() => {
+  function showFooter() {
+    let ritardoFooter = document.querySelector('#footer');
+    ritardoFooter.classList.remove('hidden');
+  }
+  
+  showFooter()
+},3000)

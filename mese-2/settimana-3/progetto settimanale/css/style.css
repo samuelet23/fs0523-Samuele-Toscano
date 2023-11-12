@@ -66,6 +66,10 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar {
   background-color: #fd7e14;
 }

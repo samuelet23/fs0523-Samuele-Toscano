@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  
   <title>Basket Shop</title>
 </head>
 
@@ -26,16 +27,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="newProduct.html">Create New Product</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Scegli il tuo Prodotto
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                <li><a class="dropdown-item" href="#">Shorts</a></li>
-                <li><a class="dropdown-item" href="#">Basket Ball</a></li>
-              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
@@ -62,6 +53,24 @@
     </div>
   </main>
 
+  <footer class="py-3 my-4 bg-dark hidden" id="footer">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+      <li class="nav-item"><a href="#header" class="nav-link px-2 text-white">Features</a></li>
+      <li class="nav-item"><a href="newProduct.html" class="nav-link px-2 text-white">Create new Product</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+    </ul>
+    <p class="text-center text-white">© 2022 Amazing Hoopers, Inc</p>
+  </footer>
+
+
+
+
+
+
+
+
   <template>
     <div class="card col-12 col-md-4 offset-md-1 col-lg-3 offset-lg-1 my-3 card-entire p-0">
       <img src="" class="card-img-top img-card" alt="">
@@ -72,9 +81,6 @@
 
         <a class="button scopri-product mb-2">Find more</a>
         <a class="button2 modifica-product">Edit product</a>
-
-
-
       </div>
     </div>
   </template>

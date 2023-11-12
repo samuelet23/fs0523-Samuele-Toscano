@@ -86,3 +86,12 @@ function delayedLoading() {
   }, 2000);
 }
 delayedLoading();
+//ritarda la visione del footer
+setTimeout(() => {
+  function showFooter() {
+    let ritardoFooter = document.querySelector('#footer');
+    ritardoFooter.classList.remove('hidden');
+  }
+  
+  showFooter()
+},3000)

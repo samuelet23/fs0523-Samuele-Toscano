@@ -23,7 +23,6 @@ setTimeout(() => {
           let price = clon.querySelector(".price-product");
           let scopri = clon.querySelector(".scopri-product");
           let modifica = clon.querySelector(".modifica-product");
-          console.log(prodotto._id);
           imgCard.src = prodotto.imageUrl;
           nameCard.innerText = prodotto.name;
           description.innerText = prodotto.description;
@@ -52,10 +51,20 @@ async function getProducts(url) {
 getProducts(url);
 
 // funzione per far comparire la pagina dopo 2 secondi
-
 function delayedLoading() {
   setTimeout(function () {
     document.querySelector(".text-center").remove();
   }, 2000);
 }
 delayedLoading();
+//show footer
+setTimeout(() => {
+  function showFooter() {
+    let ritardoFooter = document.querySelector('#footer');
+    ritardoFooter.classList.remove('hidden');
+  }
+  
+  showFooter()
+},3000)
+
+
