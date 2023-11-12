@@ -115,8 +115,7 @@ async function formGenerated(productId) {
       price.value = product.price;
       title.innerHTML = 'EDIT YOUR PRODUCT'
       elimina.style.display = 'block';
-      btnSearch.style.display = "none"
-      searchTerm.style.display = "none"
+    
 
       // controlla se questo parametro facoltativo esiste o meno
       if (product.color === undefined) {
