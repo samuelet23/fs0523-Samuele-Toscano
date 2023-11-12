@@ -24,24 +24,33 @@
             <li class="nav-item">
               <a class="nav-link " aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="newProduct.html">Create New Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="newProduct.html">Edit a product</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Scegli il tuo Prodotto
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                <li><a class="dropdown-item" href="#">Shorts</a></li>
+                <li><a class="dropdown-item" href="#">Basket Ball</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" id="searchBarValue"  placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" id="searchBar" type="submit">Search</button>
+          </form>
         </div>
-      </div>
-    </nav>
+      
+       
+ 
   </header>
 
   <main class="my-5">
     <div class="container mt-5 ">
-      <h2 class=" text-center pb-4  mb-5 title-page-product"> CREA UN NUOVO PRODOTTO </h2>
+      <h2 class=" text-center pb-4  mb-5 title-page-product">  </h2>
       <form class="row g-3 ">
         <div class="col-md-4 col-lg-4 col-xl-6">
           <label for="name" class="form-label second-font">Name <span class="text-muted">(obbligatori)</span> </label>

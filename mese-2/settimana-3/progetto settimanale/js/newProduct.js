@@ -6,6 +6,8 @@ const apiKey =
   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGI0MTMyNWM5NzAwMTg3ZjlmODQiLCJpYXQiOjE2OTk2MTM1MDUsImV4cCI6MTcwMDgyMzEwNX0.EleY-akp27wd1gI_iPcvaBIkdNA-eUjGENd5ShkRgj4";
 
 //variabili formPage
+let title = document.querySelector('.title-page-product')
+title.innerHTML='CREATE NEW PRODUCT';
 let nameProduct = document.querySelector("#name");
 let description = document.querySelector("#description");
 let brand = document.querySelector("#brand");
@@ -52,7 +54,7 @@ elimina.addEventListener("click", (e) => {
     if (result.isConfirmed) {
       deleteProduct(url, id, product);
       Swal.fire("Prodotto eliminato correttamente");
-      location.href = "newProduct.html";
+      location.href = "index.html";
     } else if (result.isDenied) {
       Swal.fire("Non hai eliminato questo prodotto");
       svuotaFormn();
@@ -109,6 +111,7 @@ async function formGenerated(productId) {
       brand.value = product.brand;
       imageUrl.value = product.imageUrl;
       price.value = product.price;
+      title.innerHTML = 'EDIT YOUR PRODUCT'
 
       // controlla se questo parametro facoltativo esiste o meno
       if (product.color === undefined) {
@@ -144,7 +147,7 @@ async function formGenerated(productId) {
             `Inserisci un URL valido per l'immagine! I formati accettati sono "JPG" "GIF" e "PNG"`
           );
         }
-
+        console.log(productUpdate);
         Swal.fire({
           title: "Sei sicuro/a di voler modificare questo prodotto?",
           showDenyButton: true,
@@ -175,9 +178,8 @@ async function formGenerated(productId) {
           }
         });
       });
-    });
+    })
 }
-formGenerated(id);
 
 // Aggiornare oggetto (PUT)
 async function updateProduct(url, id, oggetto) {
@@ -190,6 +192,7 @@ async function updateProduct(url, id, oggetto) {
     body: JSON.stringify(oggetto),
   });
 }
+formGenerated(id)
 
 //crea un prodotto tramite il form (POST)
 async function createProduct(url, oggetto) {
@@ -213,6 +216,8 @@ async function getProducts(url) {
   });
   return products;
 }
+getProducts(url);
+
 
 //elimina un prodotto (DELETE)
 async function deleteProduct(url, id, oggetto) {

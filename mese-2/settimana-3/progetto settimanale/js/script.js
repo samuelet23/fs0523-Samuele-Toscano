@@ -23,13 +23,14 @@ setTimeout(() => {
           let price = clon.querySelector(".price-product");
           let scopri = clon.querySelector(".scopri-product");
           let modifica = clon.querySelector(".modifica-product");
-
+          console.log(prodotto._id);
           imgCard.src = prodotto.imageUrl;
           nameCard.innerText = prodotto.name;
           description.innerText = prodotto.description;
           price.innerText = prodotto.price + "€";
           scopri.href = "product-page.html?id=" + prodotto._id;
           modifica.href = "newProduct.html?id=" + prodotto._id;
+         
 
           homePage.appendChild(clon);
         });
