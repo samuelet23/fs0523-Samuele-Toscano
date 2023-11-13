@@ -221,7 +221,7 @@ async function getProducts(url) {
   });
   return products;
 }
-getProducts(url);
+
 
 
 //elimina un prodotto (DELETE)
