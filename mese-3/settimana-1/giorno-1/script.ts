@@ -73,6 +73,9 @@ function checkNumber(): string | undefined {
     return ` Il giocatore 2 ha azzeccato il numero`;
   } else if (number1 === random && number2 === random) {
     return `entrambi i giocatori hanno indovinato il numero `;
+  } else if (number1 == number2 && number1 != random ){
+    return ` I giocatori non hanno indovinato il numero ma ci sono andati vicini uguali `;
+
   }
 
   return Math.abs(number1 - random) < Math.abs(number2 - random)

@@ -58,6 +58,9 @@ function checkNumber() {
     else if (number1 === random && number2 === random) {
         return `entrambi i giocatori hanno indovinato il numero `;
     }
+    else if (number1 === number2) {
+        return ` I giocatori non hanno indovinato il numero ma ci sono andati vicini uguali `;
+    }
     return Math.abs(number1 - random) < Math.abs(number2 - random)
         ? ` Il giocatore 1 ci è andato più vicino`
         : ` Il giocatore 2 ci è andato più vicino`;
