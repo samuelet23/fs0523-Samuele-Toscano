@@ -77,5 +77,5 @@ function checkNumber(): string | undefined {
 
   return Math.abs(number1 - random) < Math.abs(number2 - random)
     ? ` Il giocatore 1 ci è andato più vicino`
-    : ` Il giocatore 2 ci è andato più vicino`;
-}
+    : ` Il giocatore 2 ci è andato più vicino`
+ }
