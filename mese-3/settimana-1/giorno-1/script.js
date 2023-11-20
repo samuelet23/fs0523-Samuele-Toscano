@@ -17,14 +17,14 @@ let random;
 //inizializzazione bottoni 
 btn1 === null || btn1 === void 0 ? void 0 : btn1.addEventListener("click", (e) => {
     e.preventDefault();
-    number1 = parseFloat((input1 === null || input1 === void 0 ? void 0 : input1.value) || "0");
+    number1 = parseInt((input1 === null || input1 === void 0 ? void 0 : input1.value) || "0");
     let p1 = document.createElement("p");
     p1.innerText = `Number 1: ${number1}`;
     form === null || form === void 0 ? void 0 : form.appendChild(p1);
 });
 btn2 === null || btn2 === void 0 ? void 0 : btn2.addEventListener("click", (e) => {
     e.preventDefault();
-    number2 = parseFloat((input2 === null || input2 === void 0 ? void 0 : input2.value) || "0");
+    number2 = parseInt((input2 === null || input2 === void 0 ? void 0 : input2.value) || "0");
     let p2 = document.createElement("p");
     p2.innerText = `Number 2: ${number2}`;
     form2 === null || form2 === void 0 ? void 0 : form2.appendChild(p2);

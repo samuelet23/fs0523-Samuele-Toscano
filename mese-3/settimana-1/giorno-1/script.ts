@@ -28,7 +28,7 @@ let random: number | undefined;
 //inizializzazione bottoni 
 btn1?.addEventListener("click", (e) => {
   e.preventDefault();
-  number1 = parseFloat(input1?.value || "0");
+  number1 = parseInt(input1?.value || "0");
   let p1 = document.createElement("p");
   p1.innerText = `Number 1: ${number1}`;
   form?.appendChild(p1);
@@ -36,7 +36,7 @@ btn1?.addEventListener("click", (e) => {
 
 btn2?.addEventListener("click", (e) => {
   e.preventDefault();
-  number2 = parseFloat(input2?.value || "0");
+  number2 = parseInt(input2?.value || "0");
   let p2 = document.createElement("p");
   p2.innerText = `Number 2: ${number2}`;
   form2?.appendChild(p2);
