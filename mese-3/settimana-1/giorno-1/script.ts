@@ -1,3 +1,4 @@
+//costanti
 const form: HTMLFormElement | null = document.querySelector("#form");
 const form2: HTMLFormElement | null = document.querySelector("#form2");
 const form3: HTMLFormElement | null = document.querySelector("#form3");
@@ -10,7 +11,7 @@ const btnCheck: HTMLElement | null = document.getElementById("btnCheck");
 const resultDiv: HTMLElement | null = document.getElementById("result");
 
 
-
+//variabili da riutilizzare
 let input1: HTMLInputElement | null = <HTMLInputElement>(
   document.getElementById("input1")
 );
@@ -22,6 +23,9 @@ let number1: number | undefined;
 let number2: number | undefined;
 let random: number | undefined;
 
+
+
+//inizializzazione bottoni 
 btn1?.addEventListener("click", (e) => {
   e.preventDefault();
   number1 = parseFloat(input1?.value || "0");

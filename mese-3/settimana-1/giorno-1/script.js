@@ -1,4 +1,5 @@
 "use strict";
+//costanti
 const form = document.querySelector("#form");
 const form2 = document.querySelector("#form2");
 const form3 = document.querySelector("#form3");
@@ -7,11 +8,13 @@ const btn2 = document.getElementById("btnPlayer2");
 const btnRandom = document.getElementById("btnRandom");
 const btnCheck = document.getElementById("btnCheck");
 const resultDiv = document.getElementById("result");
+//variabili da riutilizzare
 let input1 = (document.getElementById("input1"));
 let input2 = (document.getElementById("input2"));
 let number1;
 let number2;
 let random;
+//inizializzazione bottoni 
 btn1 === null || btn1 === void 0 ? void 0 : btn1.addEventListener("click", (e) => {
     e.preventDefault();
     number1 = parseFloat((input1 === null || input1 === void 0 ? void 0 : input1.value) || "0");
