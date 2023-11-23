@@ -1,25 +1,4 @@
-
-interface Clothes {
-    
-        id:number,
-        codprod:number,
-        collezione:string,
-        capo:string,
-        modello:number,
-        quantita:number,
-        colore:string,
-        prezzoivaesclusa:number,
-        prezzoivainclusa:number,
-        disponibile:string,
-        saldo:number
-
-
-        getsaldocapo():number 
-        getacquistocapo():number
-    
-    }
-
-class Dress implements Clothes{
+class Dress {
 
     constructor(
      public id:number,
@@ -36,7 +15,7 @@ class Dress implements Clothes{
     ){}
 
     getsaldocapo(): number {
-      return   this.prezzoivainclusa * (this.saldo / 100)
+      return  this.prezzoivainclusa * (this.saldo / 100)
     }
 
     getacquistocapo(): number {
@@ -46,16 +25,21 @@ class Dress implements Clothes{
 }
 
 
-async function getClothes():Promise <void> {
+async function getClothes():Promise <Dress[]> {
     let res: Response  = await fetch('Abbigliamento.json')
-    let data: Clothes[] = await res.json()
-    return data.forEach((e:Clothes) => {
-      let newClass = new Dress (e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo)
-     console.log(newClass.getsaldocapo());
-     console.log(newClass.getacquistocapo())
-    
+    let data: Dress[] = await res.json()
+    let arrDress: Dress[] = data.map((e:Dress) => {
+       return new Dress (e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo)
+     
     })
+
+    return arrDress
+   
+     
+    
 }
 
-console.log(getClothes());
+getClothes().then((result)=>{
+    console.log(result);
+});
 
