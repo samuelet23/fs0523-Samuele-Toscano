@@ -28,15 +28,9 @@ class Dress {
 async function getClothes():Promise <Dress[]> {
     let res: Response  = await fetch('Abbigliamento.json')
     let data: Dress[] = await res.json()
-    let arrDress: Dress[] = data.map((e:Dress) => {
+    return data.map((e:Dress) => {
        return new Dress (e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo)
-     
     })
-
-    return arrDress
-   
-     
-    
 }
 
 getClothes().then((result)=>{

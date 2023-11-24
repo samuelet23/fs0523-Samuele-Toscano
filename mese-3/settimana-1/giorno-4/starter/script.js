@@ -33,10 +33,9 @@ function getClothes() {
     return __awaiter(this, void 0, void 0, function* () {
         let res = yield fetch('Abbigliamento.json');
         let data = yield res.json();
-        let arrDress = data.map((e) => {
+        return data.map((e) => {
             return new Dress(e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo);
         });
-        return arrDress;
     });
 }
 getClothes().then((result) => {
