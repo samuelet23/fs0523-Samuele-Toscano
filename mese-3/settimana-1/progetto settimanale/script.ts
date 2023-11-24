@@ -9,12 +9,12 @@ interface ISim {
   chiamata(min: number): void;
   azzeraChiamate(): void;
 }
-
-type Chiamata ={
+type Chiamata = {
     id: number; 
     durata: number; 
     dataOra: number
 }
+
 
 class SmartPhone implements ISim {
         carica = 0;
@@ -65,6 +65,7 @@ class SmartPhone implements ISim {
 let cell: SmartPhone = new SmartPhone();
 
 
+console.log('cell');
 
 cell.ricarica(50) //ricarica 50
 console.log(cell.numero404()); //controllo il credito disponibille
@@ -75,16 +76,14 @@ cell.chiamata(10) //effettuo una chiamata di 10 minuti  ( che mi costerà €2)
 console.log(cell.numero404()); // ricontrollo il credito disponibile vedendo che è sceso di altri €2 (arrivando a €47)
 cell.azzeraChiamate() //azzero le chiamate
 console.log(cell.getNumeroChiamate()); //controllo se le chiamate sono state azzerate correttamente
-cell.chiamata(111)
-cell.chiamata(12)
-cell.chiamata(13)
+
 console.log(cell.mostraRegistroChiamate());//mostra registro delle chiamate
 console.log(cell.filtraChiamatePerDataOra(12));//filtra in base all'orario desiderato
 
 console.log("-----------------------------------------------------");
 
 let cell1:SmartPhone = new SmartPhone ()
-
+console.log('cell1');
 cell1.ricarica(5)  //ricarica 5
 console.log(cell1.numero404());  //controllo il credito disponibille
 cell1.chiamata(20) //effettuo una chiamata di 20 minuti ( che mi costerà €4)
@@ -94,15 +93,13 @@ cell1.chiamata(30) //effettuo una chiamata di 30 minuti  ( che mi costerà €5)
 console.log(cell1.numero404()); // ricontrollo il credito disponibile vedendo che è sceso di altri €5(arrivando a -€4)
 cell1.azzeraChiamate()  //azzerro le chiamate
 console.log(cell1.getNumeroChiamate());//controllo se le chiamate sono state azzerate
-cell.chiamata(14)
-cell.chiamata(15)
-cell.chiamata(16)
-console.log(cell.mostraRegistroChiamate());//mostra registro delle chiamate
-console.log(cell.filtraChiamatePerDataOra(10));//filtra in base all'orario desiderato
+console.log(cell1.mostraRegistroChiamate());//mostra registro delle chiamate
+console.log(cell1.filtraChiamatePerDataOra(10));//filtra in base all'orario desiderato
 
 console.log("-----------------------------------------------------");
-
 let cell2:SmartPhone = new SmartPhone ()
+
+console.log('cell2');
 cell2.ricarica(10) //ricarica di 10
 console.log(cell2.numero404()); //controllo il credito disponibille
 cell2.chiamata(40) //effettuo una chiamata di 40 minuti ( che mi costerà €8)
@@ -112,8 +109,8 @@ cell2.chiamata(15) //effettuo una chiamata di 15 minuti  ( che mi costerà €3)
 console.log(cell2.numero404()); // ricontrollo il credito disponibile vedendo che è sceso di altri €3 (arrivando a -€1)
 cell2.azzeraChiamate() //azzero le chiamate
 console.log(cell2.getNumeroChiamate()); //controllo se le chiamate sono state azzerate correttamente
-cell.chiamata(17)
-cell.chiamata(18)
-cell.chiamata(19)
-console.log(cell.mostraRegistroChiamate()); //mostra registro delle chiamate
-console.log(cell.filtraChiamatePerDataOra(11)); //filtra in base all'orario desiderato
+
+console.log(cell2.mostraRegistroChiamate()); //mostra registro delle chiamate
+console.log(cell2.filtraChiamatePerDataOra(14)); //filtra in base all'orario desiderato
+
+
