@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <title>Phone</title>
+</head>
+
+<body>
+    <div class="container-welcomePage" >
+        <h1 class="montserrat text-white"> IL TUO SMARTPHONE ALTERNATIVO </h1>
+        <p class="testo-iniziale roboto"> clicca l'icona per aprire il tuo smartphone</p>
+        <i class="bi bi-arrow-down-circle-fill arrown-down"></i>
+        <img src="assets/logo phone.png" id="logo-phone" alt="logo">
+
+    </div>
+
+
+   
+
+    <div id="targetButton"></div>
+    <div id="targetChiama"></div>
+    <div id="targetEliminaChiamate"></div>
+    <div id="targetRicarica"></div>
+    <div id="targetCreditoResiduo"></div>
+    <div id="targetChiamateEffetuata"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <template id="chiama">
+        <div class="chiama-page">
+            <div class="avanti-indietro">
+                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
+                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+            </div>
+            <div class="header-chiamaPage">
+                <h2 class="montserrat">
+                    Benvenuto nel servizio <span> CHIAMA </span>
+                </h2>
+                <p class="roboto mb-0">
+                    Qui potrai effetuare chiamate in tutta Italia,
+                </p>
+                <p class="roboto mb-0">
+                    ricorda che il costo delle chiamate è di <span>0.20€</span> a minuto
+                </p>
+            </div>
+            <div id="numeroGenerato" class="roboto ">
+    
+            </div>
+            <div class="container text-center">
+                <div class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
+                    <div class="col">
+                        <div class="cell-number roboto"> 1 </div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">2</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">3</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">4</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">5</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">6</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">7</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">8</div>
+                    </div>
+                    <div class="col">
+                        <div class="cell-number roboto">9</div>
+                    </div>
+                </div>
+            </div>
+            <i class="bi bi-telephone-fill call roboto"></i>
+        </div>
+    </template>
+
+    <template id="eliminaChiamate">
+        <div class="elimina-page">
+            <div class="avanti-indietro">
+                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
+                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+            </div>
+        </div>
+    </template>
+
+    <template id="ricarica">
+        <div class="ricarica-page">
+            <div class="avanti-indietro">
+                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
+                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+            </div>
+        </div>
+    </template>
+
+
+    <template id="creditoResiduo">
+        <div class="creditoResiduo-page">
+            <div class="avanti-indietro">
+                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
+                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+            </div>
+        </div>
+    </template>
+
+    <template id="chiamateEffettuate">
+        <div class="chiamateEffetuate-page">
+            <div class="avanti-indietro">
+                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
+                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+            </div>
+        </div>
+    </template>
+
+    <template id="templateIniziale">
+       
+        <div class=" btn-container">
+            <div class="avanti-indietro">
+                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
+                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+            </div>
+            <a class="starting-btn azzurro montserrat" id="chiama1"> Chiama</a>
+            <a class="starting-btn red montserrat" id="eliminaChiamate1"> Elimina le chiamate </a>
+            <a class="starting-btn montserrat" id="effettuaRicarica1">Effetua una ricarica</a>
+            <a class="starting-btn yellow montserrat" id="creditoResiduo1"> Scopri il tuo credito residuo</a>
+            <a class="starting-btn purple montserrat" id="chiamateEffetuate1"> Scopri quante chiamate hai effettuato</a>
+        </div>
+    </template>
+    templ
+
+    <script src="ts/template.js sr"></script>
+    <script src="ts/script.js"></script>
+</body>
+
+</html>
