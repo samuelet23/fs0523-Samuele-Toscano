@@ -49,8 +49,8 @@
     <template id="chiama">
         <div class="chiama-page">
             <div class="avanti-indietro">
-                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
-                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+                <a><i class="bi bi-arrow-left-circle-fill arrow  arrowChiama"></i></a>
+                
             </div>
             <div class="header-chiamaPage">
                 <h2 class="montserrat">
@@ -102,59 +102,51 @@
     </template>
 
     <template id="eliminaChiamate">
-        <div class="elimina-page">
-            <div class="avanti-indietro">
-                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
-                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+        <div class="elimina-page position-relative">
+            <div class="avanti-indietro position-absolute top-0 start-0 text-white">
+                <a><i class="bi bi-arrow-left-circle-fill  arrow arrowEliminaChiamate"></i></a>
             </div>
         </div>
     </template>
 
     <template id="ricarica">
-        <div class="ricarica-page">
-            <div class="avanti-indietro">
-                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
-                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+        <div class="ricarica-page position-relative">
+            <div class="avanti-indietro position-absolute top-0 start-0 text-white">
+                <a><i class="bi bi-arrow-left-circle-fill  arrow arrowRicarica"></i></a>
             </div>
         </div>
     </template>
 
 
     <template id="creditoResiduo">
-        <div class="creditoResiduo-page">
-            <div class="avanti-indietro">
-                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
-                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+        <div class="creditoResiduo-page position-relative">
+            <div class="avanti-indietro position-absolute top-0 start-0 text-white">
+                <a><i class="bi bi-arrow-left-circle-fill  arrow arrowCreditoResiduo"></i></a>
             </div>
         </div>
     </template>
 
     <template id="chiamateEffettuate">
-        <div class="chiamateEffetuate-page">
-            <div class="avanti-indietro">
-                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
-                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
+        <div class="chiamateEffetuate-page position-relative">
+            <div class="avanti-indietro position-absolute top-0 start-0 text-white">
+               <a> <i class="bi bi-arrow-left-circle-fill  arrow arrowChiamateEffetuate"></i></a>
             </div>
         </div>
     </template>
 
     <template id="templateIniziale">
        
-        <div class=" btn-container">
-            <div class="avanti-indietro">
-                <i class="bi bi-arrow-left-circle-fill  arrowChiama"></i>
-                <i class="bi bi-arrow-right-circle-fill  arrowChiama"></i>
-            </div>
-            <a class="starting-btn azzurro montserrat" id="chiama1"> Chiama</a>
-            <a class="starting-btn red montserrat" id="eliminaChiamate1"> Elimina le chiamate </a>
+    <div class=" btn-container position-relative">
+        <a class="starting-btn azzurro montserrat" id="chiama1"> Chiama</a>
+        <a class="starting-btn red montserrat" id="eliminaChiamate1"> Elimina le chiamate </a>
             <a class="starting-btn montserrat" id="effettuaRicarica1">Effetua una ricarica</a>
             <a class="starting-btn yellow montserrat" id="creditoResiduo1"> Scopri il tuo credito residuo</a>
             <a class="starting-btn purple montserrat" id="chiamateEffetuate1"> Scopri quante chiamate hai effettuato</a>
         </div>
     </template>
-    templ
 
-    <script src="ts/template.js sr"></script>
+
+    <script src="ts/template.js"></script>
     <script src="ts/script.js"></script>
 </body>
 

@@ -13,32 +13,73 @@ function selectPage(targetSelector: string, clonSelector: string): void {
       }
     }
   }
-  function goBack():void  {
-    window.history.back();
-}
-function goAhead():void {
-    window.history.forward();  
-}
-let arrowRight = document.querySelector('bi-arrow-right-circle-fill')
-arrowRight?.addEventListener('click', goAhead)
 
-let arrrowLeft = document.querySelector('.bi-arrow-left-circle-fill')
-arrrowLeft?.addEventListener('click', goBack)
+
 
 //funzioni welcome page to button Page
 
 function selectButton(targetSelector: string, clonSelector: string, buttonSelectors: { id: string, target: string, clon: string }[]): void {
     const target: HTMLDivElement | null = document.querySelector(targetSelector);
+
     if (target) {
         let clon = selectTemplate(clonSelector);
 
         buttonSelectors.forEach(buttonInfo => {
             const btn = clon?.querySelector<HTMLButtonElement>(buttonInfo.id);
             btn?.addEventListener("click", () => {
-                target?.classList.add("d-none");
+                target?.classList.toggle("d-none");
                 selectPage(buttonInfo.target, buttonInfo.clon);
+                let chiama= document.querySelector('#targetChiama');
+                let eliminaChiamate= document.querySelector('#eliminaChiamate');
+                let ricarica= document.querySelector('#ricarica');
+                let creditoResiduo= document.querySelector('#creditoResiduo');
+                let chiamateEffettuate= document.querySelector('#chiamateEffettuate');
+
+                let arrowChiama =document.querySelector('.arrowChiama')
+                let arrowEliminaChiamate =document.querySelector('.arrowEliminaChiamate')
+                let arrowRicarica =document.querySelector('.arrowRicarica')
+                let arrowCreditoResiduo =document.querySelector('.arrowCreditoResiduo')
+                let arrowChiamateEffetuate =document.querySelector('.arrowChiamateEffetuate')
+                console.log(arrowChiama, arrowChiamateEffetuate, arrowCreditoResiduo, arrowEliminaChiamate, arrowRicarica);
+                
+                arrowChiama?.addEventListener('click', () => {
+        
+                    chiama?.classList.add('d-none');
+                    target?.classList.remove("d-none");
+
+                    console.log(arrowChiama);
+                });
+                arrowEliminaChiamate?.addEventListener('click', () => {
+        
+                    eliminaChiamate?.classList.add('d-none');
+                    target?.classList.remove("d-none");
+
+                    console.log(arrowChiama);
+                });
+                arrowRicarica?.addEventListener('click', () => {
+        
+                    ricarica?.classList.add('d-none');
+                    target?.classList.remove("d-none");
+
+                    console.log(arrowChiama);
+                });
+                arrowCreditoResiduo?.addEventListener('click', () => {
+        
+                    creditoResiduo?.classList.add('d-none');
+                    target?.classList.remove("d-none");
+
+                    console.log(arrowChiama);
+                });
+                arrowChiamateEffetuate?.addEventListener('click', () => {
+        
+                    chiamateEffettuate?.classList.add('d-none');
+                    target?.classList.remove("d-none");
+
+                    console.log(arrowChiama);
+                });
             });
         });
+     
 
         if (clon) {
             target.appendChild(clon);
@@ -46,36 +87,17 @@ function selectButton(targetSelector: string, clonSelector: string, buttonSelect
     }
 }
 
+
 // Esempio di utilizzo
 function appaerButton(): void {
     const logo = document.getElementById("logo-phone");
     const welcomePage: HTMLDivElement | null = document.querySelector(".container-welcomePage");
 
-    if (!logo) {
-        console.error("Logo non trovato.");
-        return;
-    }
-
-    if (!welcomePage) {
-        console.error("Pagina di benvenuto non trovata.");
-        return;
-    }
-
-    console.log(welcomePage);
-    console.log(logo);
-
-    logo.addEventListener("click", () => {
-        console.log("Logo cliccato");
+    logo?.addEventListener("click", () => {
 
         if (welcomePage) {
             welcomePage.style.display = "none";
-            console.log("Pagina di benvenuto nascosta.");
-        } else {
-            alert('non è selezionato');
         }
-
-        console.log(welcomePage);
-
         const targetSelector = "#targetButton";
         const clonSelector = "#templateIniziale";
         const buttonSelectors = [

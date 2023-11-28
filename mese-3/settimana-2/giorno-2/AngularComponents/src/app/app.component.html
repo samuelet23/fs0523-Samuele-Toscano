@@ -1,0 +1,30 @@
+<nav class=" mb-5">
+  <div class="container-fluid mb-3">
+
+    <div id="navbarNav ">
+      <a class=""></a>
+      <div class="d-flex ">
+          <a class="text-dark mx-2 text-decoration-none" aria-current="page"
+          [routerLinkActiveOptions]="{exact:true}"
+          routerLinkActive="active"
+          routerLink="/" >
+          Home
+        </a>
+          <a class="text-dark mx-2 text-decoration-none " routerLinkActive="active"
+          routerLink="/active-post" >
+          Active Posts
+        </a>
+          <a class="text-dark mx-2 text-decoration-none" routerLinkActive="active"
+          routerLink="/un-active-post" >
+          Unactive Posts
+         </a>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary mx-2" routerLink ="/active-post">Vai a post attivi</button>
+  <button type="button" class="btn btn-primary mx-2" routerLink ="/un-active-post">Vai a post inattivi</button>
+</nav>
+
+
+<router-outlet></router-outlet>
+

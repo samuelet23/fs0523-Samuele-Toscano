@@ -125,11 +125,7 @@ left: 30%;
 
   /* CHIAMA PAGE  */
 
-.chiama-page{
-color: white;
-background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
-padding-bottom: 5rem;
-}
+
   .header-chiamaPage{
     display: flex;
     flex-direction: column;
@@ -181,6 +177,59 @@ padding-bottom: 5rem;
     cursor: pointer;
   }
 
+  /* HOVER ARROW */
   .arrowChiama:hover{
     color: #00f8ff;
+    cursor: pointer;
   }
+  .arrowButtonPage:hover{
+    color: #434343;
+    cursor: pointer;
+  }
+  .arrowEliminaChiamate:hover{
+    color: red;
+    cursor: pointer;
+  }
+  .arrowRicarica:hover{
+    color:#31ff00;
+    cursor: pointer;
+  }
+  .arrowCreditoResiduo:hover{
+color: yellow;
+cursor: pointer;
+
+  }
+  .arrowChiamateEffetuate:hover{
+    color: #e800ff;
+    cursor: pointer;
+  }
+  /* BACKGROUND PAGE */
+  .chiama-page{
+    color: white;
+    background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
+    padding-bottom: 5rem;
+    }
+    .elimina-page{
+      color: white;
+      background: linear-gradient(115deg, rgb(0, 0, 0) 5.8%, rgb(178, 14, 14) 112.6%);
+      padding-bottom: 5rem;
+      height: 100vh;
+    }
+    .ricarica-page{
+      color: white;
+      background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+      padding-bottom: 5rem;
+      height: 100vh;
+    }
+    .creditoResiduo-page{
+      color: white;
+      background: radial-gradient(circle at 10% 20%, rgb(228, 118, 0) 0%, rgb(247, 189, 2) 90%);
+      padding-bottom: 5rem;
+      height: 100vh;
+    }
+    .chiamateEffetuate-page{
+      color: white;
+      background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+      padding-bottom: 5rem;
+      height: 100vh;
+    }
