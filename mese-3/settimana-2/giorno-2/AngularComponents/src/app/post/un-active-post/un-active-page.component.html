@@ -3,6 +3,7 @@
     <h3 class="card-title">{{ post.title}}</h3>
     <p class="card-text fs-4">{{post.secondTitle}} </p>
     <p>{{post.description}}</p>
-    <button  class="btn btn-primary">Abilita</button>
+    <p>{{post.attivo}}</p>
+    <button  class="btn btn-primary" (click)="post.attivo = !post.attivo">Abilita</button>
   </div>
 </div>
