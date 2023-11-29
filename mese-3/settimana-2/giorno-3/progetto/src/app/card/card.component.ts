@@ -13,17 +13,5 @@ export class CardComponent {
 @Input() className:string = ''
 
 @Input() posts:iPosts[] = []
-checktype(){
-  return this.posts.forEach((post)=>{
-    if (post.type === 'news') {
-      return
-    } else if (post.type === 'education') {
-      return
-    }else if (post.type === 'politic') {
-      return
-    }
-
-  })
-
 }
-}
+

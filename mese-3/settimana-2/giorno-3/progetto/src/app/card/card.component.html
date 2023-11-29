@@ -1,4 +1,8 @@
-<div class="card p-3 "
+<div class="card p-3 my-2" [ngClass]="{
+ 'bg-dark text-white': post.type === 'politic',
+  'bg-warning ': post.type === 'education',
+  'bg-danger ': post.type === 'news'
+}"
 *ngFor="let post of posts">
     <h2 class="card-title">{{post.title}}</h2>
     <h5 class="card-text">{{post.secondTitle}}</h5>
