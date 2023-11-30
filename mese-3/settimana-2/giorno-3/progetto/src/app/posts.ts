@@ -5,4 +5,5 @@ export interface iPosts {
   description:string
   attivo:boolean;
   type: string;
+  author: string;
 }

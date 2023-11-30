@@ -1,5 +1,5 @@
-<div class="container">
-  <app-card testo="Disabilita" className="btn-warning" [posts] ="posts" >
-
+<div class="container" *ngFor="let post of posts">
+  <app-card [post]="post">
+    <a (click)="toggleStatus(post)" class="btn btn-primary"> Disabilita </a>
   </app-card>
 </div>

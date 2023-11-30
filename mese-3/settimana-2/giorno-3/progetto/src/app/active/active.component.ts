@@ -10,8 +10,16 @@ import { iPosts } from '../posts';
 export class ActiveComponent {
 
   posts:iPosts[] = []
-  constructor(private postsvc:PostService){}
+
+  constructor(private postsvc:PostService, ){}
    ngOnInit(){
+    this.updatePosts()
+  }
+  updatePosts(){
     this.posts = this.postsvc.getPostAttivi()
-}
+  }
+  toggleStatus(post:iPosts){
+    this.postsvc.togglePost(post)
+    this.updatePosts()
+  }
 }

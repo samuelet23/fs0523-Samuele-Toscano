@@ -13,7 +13,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:true,
-      type:'news'
+      type:'news',
+      author: 'lorem'
     },
     {
       id: 1,
@@ -21,7 +22,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:false,
-      type:'politic'
+      type:'politic',
+      author: 'lorem'
     },
     {
       id: 2,
@@ -29,7 +31,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:true,
-      type:'news'
+      type:'news',
+      author: 'lorem'
     },
     {
       id: 3,
@@ -37,7 +40,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:false,
-      type:'education'
+      type:'education',
+      author: 'lorem'
     },
     {
       id: 4,
@@ -45,7 +49,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:false,
-      type:'politic'
+      type:'politic',
+      author: 'lorem'
     },
     {
       id: 5,
@@ -53,7 +58,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:true,
-      type:'news'
+      type:'news',
+      author: 'lorem'
     },
     {
       id: 6,
@@ -61,7 +67,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:true,
-      type:'education'
+      type:'education',
+      author: 'lorem'
     },
     {
       id: 7,
@@ -69,7 +76,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:false,
-      type:'politic'
+      type:'politic',
+      author: 'lorem ipsum'
     },
     {
       id: 8,
@@ -77,7 +85,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:true,
-      type:'news'
+      type:'news',
+      author: 'lorem'
     },
     {
       id: 9,
@@ -85,7 +94,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:false,
-      type:'education'
+      type:'education',
+      author: 'lorem'
     },
     {
       id: 10,
@@ -93,7 +103,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:false,
-      type:'politic'
+      type:'politic',
+      author: 'lorem'
     },
     {
       id: 11,
@@ -101,7 +112,8 @@ export class PostService {
       secondTitle:'Aliquip sunt adipisicing tempor labore nulla in dolor. Ut incididunt ullamco fugiat deserunt veniam veniam non. Labore veniam incididunt laboris velit et reprehenderit ullamco. Sit nulla est deserunt nisi culpa.',
       description:'Dolore tempor laborum laborum eu eu labore. Id aliqua veniam sunt in. Consectetur cillum quis excepteur duis velit. Et labore nisi duis laborum veniam dolore magna. Aute consequat cillum et non eiusmod mollit.',
       attivo:true,
-      type:'news'
+      type:'news',
+      author: 'lorem'
     },
   ]
   getAll(){
@@ -114,10 +126,19 @@ export class PostService {
   getPostInattivi(){
     return this.posts.filter(p => !p.attivo)
   }
-  updatePost(obj: iPosts){
-    return obj
+
+  togglePost(post:iPosts){
+    this.posts = this.posts.map( p => {
+      if (p.id == post.id) {
+        p.attivo = !p.attivo
+      }
+      return p
+  })
+  }
+  getById(postId: number): iPosts | undefined {
+    return this.posts.find(post => post.id === postId);
   }
 
-
-
 }
+
+

@@ -3,10 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ActiveComponent } from './active/active.component';
 import { InactiveComponent } from './inactive/inactive.component';
+import { DettaglioPostComponent } from './dettaglio-post/dettaglio-post.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path:'',
+    pathMatch:'full',
+    redirectTo : '/home'
+  },
+  {
+    path: 'home',
     component: HomeComponent,
     title:'Home Page'
   },
@@ -20,6 +26,19 @@ const routes: Routes = [
     component: InactiveComponent,
     title:'Inactive Page'
   },
+  {
+    path:' dettaglio-post/:id',
+    component: DettaglioPostComponent,
+    title: 'Dettaglio Post'
+  },
+  {
+    path:'**',//è la pagina non found
+    component: HomeComponent
+  }
+
+
+
+
 
 ];
 

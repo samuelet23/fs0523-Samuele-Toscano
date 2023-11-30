@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PostService } from '../post.service';
 import { iPosts } from '../posts';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,12 @@ import { iPosts } from '../posts';
 })
 export class HomeComponent {
   posts:iPosts[] = []
-  constructor(private postsvc:PostService){}
+  id:number = 0
+  constructor(private postsvc:PostService, private router:Router, public  route :ActivatedRoute){}
+
   ngOnInit(){
     this.posts = this.postsvc.posts
+
+  }
   }
 
-}

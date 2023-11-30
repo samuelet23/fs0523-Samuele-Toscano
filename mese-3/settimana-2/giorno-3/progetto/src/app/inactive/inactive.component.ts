@@ -10,7 +10,15 @@ import { iPosts } from '../posts';
 export class InactiveComponent {
    posts:iPosts[] = []
   constructor(private postsvc:PostService){}
+
   ngOnInit(){
+    this.updatePosts()
+  }
+  updatePosts(){
     this.posts = this.postsvc.getPostInattivi()
+  }
+  toggleStatus(post:iPosts){
+    this.postsvc.togglePost(post)
+    this.updatePosts()
   }
 }

@@ -1,7 +1,6 @@
-import { iPosts } from './../posts';
+import { iPosts } from '../posts';
 import { Component, ElementRef, Input, Output, ViewChild } from '@angular/core';
 import { PostService } from '../post.service';
-
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -9,9 +8,8 @@ import { PostService } from '../post.service';
 })
 export class CardComponent {
 
-@Input() testo = ''
-@Input() className:string = ''
+@Input() post!:iPosts;
 
-@Input() posts:iPosts[] = []
+
 }
 

@@ -8,6 +8,8 @@ import { ActiveComponent } from './active/active.component';
 import { InactiveComponent } from './inactive/inactive.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CardComponent } from './card/card.component';
+import { ColoraTestoDirective } from './colora-testo.directive';
+import { DettaglioPostComponent } from './dettaglio-post/dettaglio-post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CardComponent } from './card/card.component';
     ActiveComponent,
     InactiveComponent,
     NavBarComponent,
-    CardComponent
+    CardComponent,
+    ColoraTestoDirective,
+    DettaglioPostComponent,
   ],
   imports: [
     BrowserModule,
