@@ -25,8 +25,11 @@ export class ModificaComponent {
     //usa questo per leggere il parametro id nell'url
     this.route.params.subscribe((params:any) => {
 
-      this.todoSvc.getById(params.id).then(res => this.todo = res)
-      this.dataLoaded = false;
+      this.todoSvc.getById(params.id).then(res => {
+        this.dataLoaded = false;
+        this.todo = res
+      })
+
     })
     }
     modifica(){

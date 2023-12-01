@@ -2,11 +2,6 @@
   "Todo": [
     {
       "completed": true,
-      "title": "mangiare",
-      "id": 2
-    },
-    {
-      "completed": true,
       "title": "spesa",
       "id": 3
     },
@@ -31,8 +26,8 @@
       "id": 7
     },
     {
-      "completed": false,
-      "title": "mangiare ai gatti",
+      "completed": true,
+      "title": "mangiare ai gatt10",
       "id": 8
     },
     {
