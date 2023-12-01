@@ -1,63 +1,23 @@
 {
   "Todo": [
     {
-      "completed": true,
-      "title": "spesa",
+      "completed": false,
+      "title": "ciao",
+      "id": 1
+    },
+    {
+      "completed": false,
+      "title": "ciao",
+      "id": 2
+    },
+    {
+      "completed": false,
       "id": 3
     },
     {
-      "completed": true,
-      "title": "spesa231100",
+      "completed": false,
+      "title": "spesa",
       "id": 4
-    },
-    {
-      "completed": true,
-      "title": "spesa",
-      "id": 5
-    },
-    {
-      "completed": true,
-      "title": "spesa",
-      "id": 6
-    },
-    {
-      "completed": true,
-      "title": "spesa",
-      "id": 7
-    },
-    {
-      "completed": true,
-      "title": "mangiare ai gatt10",
-      "id": 8
-    },
-    {
-      "completed": false,
-      "title": "cenare",
-      "id": 9
-    },
-    {
-      "completed": false,
-      "title": "ancora spesa",
-      "id": 10
-    },
-    {
-      "completed": false,
-      "title": "sempre spesa",
-      "id": 11
-    },
-    {
-      "completed": false,
-      "title": "comprare",
-      "id": 12
-    },
-    {
-      "completed": false,
-      "title": "comprare roba ",
-      "id": 13
-    },
-    {
-      "completed": false,
-      "id": 14
     }
   ]
 }

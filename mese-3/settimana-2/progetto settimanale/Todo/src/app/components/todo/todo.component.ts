@@ -24,19 +24,14 @@ export class TodoComponent {
   mostra() {
     this.loading = true;
     this.todosvc.addToDo(this.todo).then(res => {
-      this.loading = false;
       this.todoCreate = res;
       this.todo = {
         completed: false
       };
-      this.todos.push(res);
+      this.todos.unshift(res);
     });
   }
 
-
-  getNotCompleteTodo(){
-
-  }
 
 
   toggleComplete(lista:ITodo){

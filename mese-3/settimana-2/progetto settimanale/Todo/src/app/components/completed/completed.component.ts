@@ -26,6 +26,12 @@ export class CompletedComponent implements OnInit { // Implementa l'interfaccia 
       alert('il tuo task è stato eliminato correttamente')
     });
   }
+  toggleComplete(lista:ITodo){
+    lista.completed = !lista.completed;
+    this.todosvc.updateTodo(lista).then(res=>{
+      this.todos=this.todos.filter(t=>t.completed)
+    })
+  }
 
 }
 

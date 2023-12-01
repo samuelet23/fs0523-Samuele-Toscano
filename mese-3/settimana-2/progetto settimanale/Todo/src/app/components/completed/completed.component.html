@@ -1,4 +1,4 @@
-<div *ngIf="!todos.length" >
+<div *ngIf="!todos.length" class="container-loading">
  <p class="loading">La pagina sta caricando...</p>
 </div>
 <div *ngIf="todos.length" class="container-page">
@@ -7,6 +7,7 @@
 <div *ngFor="let t of todos" class="container">
   <p class="todo">{{ t.title }}</p>
   <div class="btn-container">
+    <a class="button green" (click)="toggleComplete(t)">Non Completato</a>
     <a (click)="elimina(t.id)" class="button red">Elimina</a>
   </div>
 </div>
