@@ -20,18 +20,13 @@ export class CompletedComponent implements OnInit { // Implementa l'interfaccia 
     this.todosvc.getAll().then(todos => this.todos = todos.filter(todo => todo.completed));
   }
 
-  delete(id: number | undefined): void {
-    if (!id) {
-      return;
-    }
-
+  delete(id: number){
     this.todosvc.deleteTodo(id).then(() => {
       this.todos = this.todos.filter(todo => todo.id !== id);
-      alert(`Task con id ${id} eliminata`);
     });
   }
 
 }
 
 
-// this.todos = todos.filter(t => t.completed);
+

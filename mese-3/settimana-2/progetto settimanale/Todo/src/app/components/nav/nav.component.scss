@@ -1,16 +1,27 @@
 #nav-bar {
 margin-top:10px ;
 }
+.nav-item{
+  background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
+  padding: 9px;
+  border-radius: 100%;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+.nav-item:hover{
+  border: none;
+}
 .flex{
   display: flex;
-  justify-content: center;
-  column-gap: 50px;
+  justify-content: space-between;
 }
 .linkPage{
-  color: rgb(0, 0, 0);
+  color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 .linkPage:hover{
   text-decoration: underline;
-  color: green;
+  color: white;
+  text-shadow: 2px 2px 5px solid;
 }

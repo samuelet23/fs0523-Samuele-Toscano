@@ -26,12 +26,12 @@
       "id": 5
     },
     {
-      "completed": false,
+      "completed": true,
       "title": "spesa",
       "id": 6
     },
     {
-      "completed": false,
+      "completed": true,
       "title": "spesa",
       "id": 7
     },
@@ -64,6 +64,10 @@
       "completed": false,
       "title": "comprare roba ",
       "id": 13
+    },
+    {
+      "completed": false,
+      "id": 14
     }
   ]
 }

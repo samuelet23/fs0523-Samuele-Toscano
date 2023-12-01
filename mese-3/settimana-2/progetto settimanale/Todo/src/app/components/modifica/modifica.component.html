@@ -1,9 +1,11 @@
 <div *ngIf="dataLoaded" >
   Salvataggio in corso
 </div>
-<div *ngIf="!dataLoaded">
-  <input type="text" placeholder="{{ todo.title }}" [(ngModel)]="todo.title" name="title" required>
+
+
+<div *ngIf="!dataLoaded" class="container-form">
+  <input type="text" placeholder="{{ todo.title }}" [(ngModel)]="todo.title" name="title" required class="input">
   <button class="btn " (click)="modifica()">Modifica</button>
 </div>
-<div>
+
 

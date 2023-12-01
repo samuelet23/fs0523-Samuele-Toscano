@@ -1,9 +1,13 @@
-<div *ngIf="!todos.length">
-  Caricamento in corso
+<div *ngIf="!todos.length" >
+ <p class="loading">La pagina sta caricando...</p>
 </div>
-
-<div *ngFor="let t of todos">
-  <p>-{{ t.title }}</p>
-  <button (click)="delete(t.id)">Elimna </button>
+<div *ngIf="todos.length" class="container-page">
+  <h2 class="page-title"> TASK COMPLETATI </h2>
+</div>
+<div *ngFor="let t of todos" class="container">
+  <p class="todo">{{ t.title }}</p>
+  <div class="btn-container">
+    <a (click)=" delete(t.id)" class="button red">Elimna </a>
+  </div>
 </div>
 

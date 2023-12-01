@@ -1,20 +1,24 @@
 <div class="container-form">
-  <input type="text" placeholder="Inserisci il tuo task" [(ngModel)]="todo.title" name="title" required>
+  <input type="text" placeholder="Inserisci il tuo task" [(ngModel)]="todo.title" name="title" required class="input">
   <button class="btn " (click)="mostra()"><app-plus></app-plus></button>
 </div>
 
 
 
 <div *ngIf="!todos.length" >
-  Salvataggio in corso
+  <p class="loading"> La pagina sta caricando...</p>
 </div>
 
-
+<div *ngIf="todos.length" >
+  <h2 class="page-title"> TASK COMPLETATI</h2>
+</div>
 <div *ngFor="let t of todos" class="container-todo">
-  <div (click)="toggleComplete(t)">
-    <p>-{{ t.title }}</p>
-    <a>Completato</a>
-    <a [routerLink]="'/modifica/' + t.id">Modifica</a>
+  <div (click)="toggleComplete(t)" class="container-button-title">
+    <p class="todo">{{ t.title }}</p>
+    <div class="container-button">
+      <a class="button green">Completato</a>
+      <a [routerLink]="'/modifica/' + t.id" class="button yellow">Modifica</a>
+    </div>
   </div>
 </div>
 

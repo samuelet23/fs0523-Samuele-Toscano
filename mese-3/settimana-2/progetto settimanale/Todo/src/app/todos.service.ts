@@ -47,6 +47,9 @@ return await fetch(`${this.todoUrl}/${id}`,{
   }
 }).then(res => res.json())
 }
+
+
+
 getTodoCompletati(lista: ITodo[]){
   return lista.filter(p => p.completed)
 }
