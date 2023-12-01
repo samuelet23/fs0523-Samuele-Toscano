@@ -9,16 +9,25 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './dettaglio-post.component.scss'
 })
 export class DettaglioPostComponent {
-  posts:iPosts[] = []
-  constructor(public route: ActivatedRoute,private postsvc: PostService){}
+  post!:iPosts;
+  constructor(public route: ActivatedRoute,public postsvc: PostService){}
 
-  ngOnInit(){
+  ngOnInit() {
     this.route.params.subscribe((params: any) => {
-      const postId = params.id; // Ottieni l'id del post dai parametri della route
-      this.postsvc.getById(postId)
-      console.log(params.id);
+      this.postsvc.getById(params.id)
+        .then((foundPost: iPosts | undefined) => {
+          console.log(foundPost);
 
-
-})
+          if (foundPost !== undefined) {
+            this.post = foundPost;
+          }
+        })
+        .catch((error) => {
+          console.error('Error fetching post:', error);
+        });
+    });
   }
+
+
+
 }

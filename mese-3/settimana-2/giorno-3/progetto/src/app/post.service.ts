@@ -135,10 +135,14 @@ export class PostService {
       return p
   })
   }
-  getById(postId: number): iPosts | undefined {
+
+
+  getById(postId: number) {
     return this.posts.find(post => post.id === postId);
   }
 
+
 }
+
 
 

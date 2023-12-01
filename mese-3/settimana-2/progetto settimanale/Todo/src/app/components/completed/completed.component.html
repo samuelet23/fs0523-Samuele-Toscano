@@ -1,0 +1,9 @@
+<div *ngIf="!todos.length">
+  Caricamento in corso
+</div>
+
+<div *ngFor="let t of todos">
+  <p>-{{ t.title }}</p>
+  <button (click)="delete(t.id)">Elimna </button>
+</div>
+

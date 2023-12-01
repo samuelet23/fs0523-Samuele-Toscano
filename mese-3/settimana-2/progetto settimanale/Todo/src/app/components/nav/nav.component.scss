@@ -1,0 +1,16 @@
+#nav-bar {
+margin-top:10px ;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+.linkPage{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.linkPage:hover{
+  text-decoration: underline;
+  color: green;
+}

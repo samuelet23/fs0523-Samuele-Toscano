@@ -1,0 +1,9 @@
+<div *ngIf="dataLoaded" >
+  Salvataggio in corso
+</div>
+<div *ngIf="!dataLoaded">
+  <input type="text" placeholder="{{ todo.title }}" [(ngModel)]="todo.title" name="title" required>
+  <button class="btn " (click)="modifica()">Modifica</button>
+</div>
+<div>
+

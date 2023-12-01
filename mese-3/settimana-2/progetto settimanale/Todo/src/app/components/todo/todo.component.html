@@ -1,0 +1,20 @@
+<div class="container-form">
+  <input type="text" placeholder="Inserisci il tuo task" [(ngModel)]="todo.title" name="title" required>
+  <button class="btn " (click)="mostra()"><app-plus></app-plus></button>
+</div>
+
+
+
+<div *ngIf="!todos.length" >
+  Salvataggio in corso
+</div>
+
+
+<div *ngFor="let t of todos" class="container-todo">
+  <div (click)="toggleComplete(t)">
+    <p>-{{ t.title }}</p>
+    <a>Completato</a>
+    <a [routerLink]="'/modifica/' + t.id">Modifica</a>
+  </div>
+</div>
+

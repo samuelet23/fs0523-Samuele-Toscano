@@ -27,7 +27,7 @@ const routes: Routes = [
     title:'Inactive Page'
   },
   {
-    path:' dettaglio-post/:id',
+    path:'home/dettaglio-post/:id',
     component: DettaglioPostComponent,
     title: 'Dettaglio Post'
   },
