@@ -7,7 +7,7 @@
 <div *ngFor="let t of todos" class="container">
   <p class="todo">{{ t.title }}</p>
   <div class="btn-container">
-    <a (click)=" delete(t.id)" class="button red">Elimna </a>
+    <a (click)="elimina(t.id)" class="button red">Elimina</a>
   </div>
 </div>
 

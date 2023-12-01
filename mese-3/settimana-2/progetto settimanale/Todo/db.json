@@ -1,11 +1,6 @@
 {
   "Todo": [
     {
-      "id": 0,
-      "title": "Titolo della pagina",
-      "completed": true
-    },
-    {
       "completed": true,
       "title": "mangiare",
       "id": 2
