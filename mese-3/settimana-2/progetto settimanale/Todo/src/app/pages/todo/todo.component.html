@@ -1,0 +1,17 @@
+<div class="container-form" *ngIf="!dataLoaded">
+  <input type="text" placeholder="Inserisci il tuo task" [(ngModel)]="todo.title" name="title" required class="input">
+  <button class="btn " (click)="mostra()"><app-plus></app-plus></button>
+</div>
+
+
+<div *ngIf="!dataLoaded" >
+  <app-title>INSERISCI UN NUOVO TASK</app-title>
+</div>
+<app-todo-card
+  *ngFor="let t of todos"
+  [todo]="t"
+  (toggleComplete)="toggleComplete($event)"
+  (elimina)="elimina($event)"
+></app-todo-card>
+
+<app-loading [dataLoaded]="dataLoaded" [todos]="todos"></app-loading>

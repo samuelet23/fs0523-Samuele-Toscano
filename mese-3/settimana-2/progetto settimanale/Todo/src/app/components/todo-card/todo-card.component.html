@@ -1,0 +1,8 @@
+<div class="container-todo">
+  <p class="todo">{{ todo?.title }}</p>
+  <div class="container-button">
+    <a class="button blue" (click)="toggleComplete.emit(todo)">Completato</a>
+    <a [routerLink]="'/modifica/' + todo?.id" class="button modifica">Modifica</a>
+    <a (click)="elimina.emit(todo?.id)" class="button red">Elimina</a>
+  </div>
+</div>

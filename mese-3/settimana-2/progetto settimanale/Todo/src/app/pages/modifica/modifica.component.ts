@@ -15,7 +15,7 @@ export class ModificaComponent {
     private todoSvc:TodosService,
     private router: Router
     ){}
-    dataLoaded = true;
+    dataLoaded:boolean = true;
     todo:Partial<ITodo> = {
       completed: false
     }

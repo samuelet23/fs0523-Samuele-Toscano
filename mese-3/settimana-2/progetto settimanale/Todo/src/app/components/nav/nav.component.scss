@@ -5,11 +5,11 @@ margin-top:10px ;
   background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
   padding: 9px;
   border-radius: 100%;
-  border: 1px solid black;
   text-transform: uppercase;
+  border: none;
 }
 .nav-item:hover{
-  border: none;
+  border: 1px solid black;
 }
 .flex{
   display: flex;
@@ -21,7 +21,5 @@ margin-top:10px ;
   text-decoration: none;
 }
 .linkPage:hover{
-  text-decoration: underline;
-  color: white;
   text-shadow: 2px 2px 5px solid;
 }

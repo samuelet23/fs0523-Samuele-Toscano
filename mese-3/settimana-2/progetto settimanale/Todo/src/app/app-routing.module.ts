@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TodoComponent } from './components/todo/todo.component';
-import { CompletedComponent } from './components/completed/completed.component';
-import { ModificaComponent } from './components/modifica/modifica.component';
+import { TodoComponent } from './pages/todo/todo.component';
+import { CompletedComponent } from './pages/completed/completed.component';
+import { ModificaComponent } from './pages/modifica/modifica.component';
 
 const routes: Routes = [
   {

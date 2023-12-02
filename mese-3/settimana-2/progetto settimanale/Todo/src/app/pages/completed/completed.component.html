@@ -1,0 +1,12 @@
+<app-loading [dataLoaded]="dataLoaded" [todos]="todos"></app-loading>
+
+<div *ngIf="todos.length" class="container-page">
+  <app-title>TASK COMPLETATI </app-title>
+</div>
+
+<app-todo-card
+  *ngFor="let t of todos"
+  [todo]="t"
+  (toggleComplete)="toggleComplete($event)"
+  (elimina)="elimina($event)">
+</app-todo-card>

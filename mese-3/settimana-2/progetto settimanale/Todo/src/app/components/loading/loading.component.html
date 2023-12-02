@@ -1,0 +1,7 @@
+<!-- loading.component.html -->
+<div *ngIf="!dataLoaded" class="container-loading">
+  <p class="loading" *ngIf="!todos.length">Non ci sono task disponibili</p>
+</div>
+<div *ngIf="dataLoaded" class="container-loading">
+  <p class="loading">La pagina sta caricando...</p>
+</div>
