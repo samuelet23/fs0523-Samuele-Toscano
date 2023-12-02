@@ -7,19 +7,23 @@ import { ModificaComponent } from './pages/modifica/modifica.component';
 const routes: Routes = [
   {
     path: '',
-    component: TodoComponent
+    component: TodoComponent,
+    title: 'Home Page'
   },
   {
     path: 'completed',
-    component: CompletedComponent
+    component: CompletedComponent,
+    title:'Task Completati'
   },
   {
     path:'modifica/:id',
-    component:ModificaComponent
+    component:ModificaComponent,
+    title:'Modifica Task'
   },
   {
     path:'**',
-    component:TodoComponent
+    component:TodoComponent,
+    title: 'Home Page'
   }
 ];
 
