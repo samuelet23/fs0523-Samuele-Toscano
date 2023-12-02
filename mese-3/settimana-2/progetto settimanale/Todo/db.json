@@ -1,23 +1,26 @@
 {
   "Todo": [
     {
-      "completed": false,
-      "title": "ciao",
+      "completed": true,
+      "title": "basket",
       "id": 1
     },
     {
       "completed": false,
-      "title": "ciao",
+      "title": "basket",
+      "id": 1
+    },
+    {
+      "completed": false,
+      "title": "Inserire come task qualcosa di lungo così da  testare se realmente ciil css",
       "id": 2
     },
     {
       "completed": false,
+      "title": "andare a fare la spesa",
       "id": 3
-    },
-    {
-      "completed": false,
-      "title": "spesa",
-      "id": 4
     }
+
+
   ]
 }

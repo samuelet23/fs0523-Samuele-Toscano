@@ -3,9 +3,12 @@
 </div>
 
 
-<div *ngIf="!dataLoaded" class="container-form">
-  <input type="text" placeholder="{{ todo.title }}" [(ngModel)]="todo.title" name="title" required class="input">
-  <button class="btn " (click)="modifica()">Modifica</button>
+<div *ngIf="!dataLoaded" class="container-form column">
+  <div class="container-button">
+    <input type="text" placeholder="{{ todo.title }}" [(ngModel)]="todo.title" name="title" required class="input">
+    <button class="btn modifica " (click)="modifica()">Modifica</button>
+  </div>
+  <p class="descrizione "> Stai modificando: <span class="title">"{{todo.title}}"</span></p>
 </div>
 
 

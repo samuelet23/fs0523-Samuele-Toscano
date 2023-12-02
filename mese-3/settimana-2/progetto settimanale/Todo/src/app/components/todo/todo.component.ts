@@ -22,6 +22,10 @@ export class TodoComponent {
   }
 
   mostra() {
+    if (!this.todo || !this.todo.title || this.todo.title.trim() === '') {
+      alert('Inserisci il tuo task');
+      return;
+    }
     this.loading = true;
     this.todosvc.addToDo(this.todo).then(res => {
       this.todoCreate = res;

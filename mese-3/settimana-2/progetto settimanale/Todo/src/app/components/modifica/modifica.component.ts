@@ -33,6 +33,10 @@ export class ModificaComponent {
     })
     }
     modifica(){
+      if (!this.todo || !this.todo.title || this.todo.title.trim() === '') {
+        alert('Inserisci il tuo task');
+        return;
+      }
       this.todoSvc.updateTodo(this.todo).then( res => {
         this.router.navigate(['/']);
       })
