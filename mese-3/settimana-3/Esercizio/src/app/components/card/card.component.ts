@@ -8,10 +8,16 @@ import { iProduct } from '../../iproduct';
   styleUrl: './card.component.scss'
 })
 export class CardComponent  {
- constructor(private cardService: ProductsService){}
 
- products:iProduct[]=[]
+constructor(private cardService: ProductsService){}
 
+products:iProduct[]=[]
+preferiti:iProduct[]=[]
+
+salva(nuovoProdotto: iProduct) {
+  this.preferiti.push(nuovoProdotto);
+
+}
 
  ngOnInit(){
   this.cardService.getAll().subscribe((response:any) => {
