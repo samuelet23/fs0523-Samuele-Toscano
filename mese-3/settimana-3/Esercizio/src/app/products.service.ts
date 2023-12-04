@@ -18,6 +18,21 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
 
+  aggiornaSubject() {
+    this.subject.next(this.preferiti);
+  }
+  salva(nuovoProdotto: iProduct) {
+    this.preferiti.push(nuovoProdotto);
+    this.aggiornaSubject();
+    console.log(this.preferiti);
+
+  }
+  aggiungi(nuovoProdotto: iProduct) {
+    this.carrello.push(nuovoProdotto);
+    this.aggiornaSubject();
+    console.log(this.carrello);
+
+  }
 
   getAll():Observable<iProduct[]>{
     return this.http.get<iProduct[]>(this.apiUrl)
