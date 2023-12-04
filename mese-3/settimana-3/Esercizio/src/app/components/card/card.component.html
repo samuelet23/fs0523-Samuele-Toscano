@@ -1,0 +1,18 @@
+<div class="card m-3 border border-black" *ngFor="let p of products">
+  <img src="{{ p.images[0] }}" class="card-img-top " alt="">
+  <div class="card-body" class="p-3">
+    <h5 class="card-title">{{ p.title }}</h5>
+    <p class="card-text">{{ p.description }}</p>
+    <p class="card-text">Brand: {{ p.brand }}</p>
+  </div>
+  <div class="p-3">
+    <p class="card-text">Price: {{ p.price }}</p>
+    <p>Rating: {{ p.rating }}</p>
+  </div>
+  <div>
+
+   <app-heart></app-heart>
+    <app-plus></app-plus>
+  </div>
+
+</div>
