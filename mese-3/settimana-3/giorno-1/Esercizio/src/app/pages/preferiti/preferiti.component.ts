@@ -14,7 +14,7 @@ export class PreferitiComponent {
 
 
   ngOnInit(){
-    this.productSvc.preferiti$.subscribe((nuoviPreferiti) => {
+    this.productSvc.subject.subscribe((nuoviPreferiti) => {
       this.preferiti = nuoviPreferiti;
     });
   }

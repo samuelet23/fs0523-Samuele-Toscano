@@ -12,7 +12,7 @@ export class ProductsService {
   carrello: iProduct[]= []
 
   subject:Subject<iProduct[]> = new Subject()
-  preferiti$ = this.subject.asObservable();
+
 
 
   constructor(private http: HttpClient) { }
