@@ -27,7 +27,7 @@ export class RegistrazioneComponent {
   }
 
   registrati() {
-    console.log(this.form);
+    console.log(this.form.valid);
     if (this.form.valid) {
       return alert('Registration successful!');
     } else {

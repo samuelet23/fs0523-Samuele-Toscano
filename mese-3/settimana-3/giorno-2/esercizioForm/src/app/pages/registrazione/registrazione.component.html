@@ -56,6 +56,6 @@ formControlName="username" placeholder="inserisci il tuo username">
 
 
 
-<button class="btn btn-success my-3"  (click)="registrati()"> ISCRIVITI </button>
+<button [disabled]="form.invalid"  class="btn btn-success my-3"  (click)="registrati()"> ISCRIVITI </button>
 
 </form>
