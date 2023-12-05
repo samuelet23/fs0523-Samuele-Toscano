@@ -15,7 +15,7 @@ formControlName="cognome" placeholder="inserisci il tuo cognome">
 <input type="password" class="form-control my-3"
 formControlName="password" placeholder="crea una password">
 <div class="alert alert-danger d-flex align-items-center" role="alert" *ngIf="isBoth('password')">
-  Inserisci una passowrd
+  Inserisci una password
 </div>
 
 <input type="password " class="form-control my-3"
@@ -26,14 +26,11 @@ formControlName="confermaPassword" placeholder="conferma password">
 
 <select name="genere" id="genere" class="my-3" >
   <option >genere</option>
-
   <option value="Uomo">Uomo</option>
   <option value="Donna">Donna</option>
   <option value="Preferisco non dirlo">Preferisco non dirlo </option>
 </select>
-<div class="alert alert-danger d-flex align-items-center" role="alert" *ngIf="isValid('genere')">
- Scegli un genere
-</div>
+
 
 <input type="text" class="form-control my-3"
        formControlName="immagineProfilo" placeholder="inserisci l'url della tua immagine">
@@ -59,6 +56,6 @@ formControlName="username" placeholder="inserisci il tuo username">
 
 
 
-<button class="btn btn-success my-3"  (click)="iscriviti(form)"> ISCRIVITI </button>
+<button class="btn btn-success my-3"  (click)="registrati()"> ISCRIVITI </button>
 
 </form>
