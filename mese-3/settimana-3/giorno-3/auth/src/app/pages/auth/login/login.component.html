@@ -1,0 +1,10 @@
+<form class="container" >
+  <h5>Login</h5>
+
+    <input type="email" [(ngModel)]="userRegister.email"
+    name="email" class="form-control" placeholder="Email">
+    <input type="password" [(ngModel)]="userRegister.password"
+    name="password" class="form-control" placeholder="Password">
+    <button (click)="save()" class="btn btn-primary">Login</button>
+  </form>
+

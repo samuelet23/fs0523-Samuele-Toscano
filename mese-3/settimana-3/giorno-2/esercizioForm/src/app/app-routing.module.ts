@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
-import { RegistrazioneComponent } from './pages/registrazione/registrazione.component';
+import { LoginComponent } from './pages/autenticazione/login/login.component';
+import { RegistrazioneComponent } from './pages/autenticazione/registrazione/registrazione.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component:LoginComponent,
+    path:'',
+    redirectTo: '/autenticazione',
+    pathMatch: 'full'
+
   },
-  {
-    path:'registrazione',
-    component:RegistrazioneComponent,
-  }
+
+  { path: 'autenticazione', loadChildren: () => import('./pages/autenticazione/autenticazione.module').then(m => m.AutenticazioneModule) }
 ];
 
 @NgModule({
