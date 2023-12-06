@@ -1,0 +1,21 @@
+<form class="container" (ngSubmit)="submit(form)" #form="ngForm">
+  <div class="mb-3" >
+    <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="username"
+    #username="ngModel" ngModel required name="username">
+    <div class="alert alert-danger d-flex align-items-center" role="alert" *ngIf="isEmpty(username)">
+      Inserisci il tuo username
+  </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password"
+    #password="ngModel" required ngModel name="password">
+    <div class="alert alert-danger d-flex align-items-center" role="alert" *ngIf="isEmpty(password)">
+      Inserisci una password
+  </div>
+  </div>
+  <button  [disabled]="form.invalid" class="btn btn-success" (click)="submit(form)">Invia</button>
+</form>
+
