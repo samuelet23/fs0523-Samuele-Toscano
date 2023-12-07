@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder,FormGroup,Validators  } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../../../auth.service';
+import { IRegister } from '../../../Modules/i-register';
 
 
 @Component({
@@ -10,11 +12,16 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
   formSubmitted = false;
-  registerUser: any = {};
+  registerUser: IRegister = {
+    email: '',
+    password: '',
+    nome: '',
+    username: ''
+  };
 
   registrationForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private router:Router) {
+  constructor(private fb: FormBuilder, private router: Router, private authSvc:AuthService) {
     this.registrationForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(4)]],
@@ -22,27 +29,24 @@ export class RegisterComponent {
       username: ['', Validators.required]
     });
   }
-
-  isChecked(input: string) {
-    return this.formSubmitted && this.validateInput(input);
+  isChecked(input:string) {
+    return this.registrationForm.get(input)!.invalid && (this.registrationForm.get(input)!.dirty || this.registrationForm.get(input)!.touched) ;
   }
 
-  validateInput(input: string) {
-    const control = this.registrationForm.get(input);
-    return this.formSubmitted && control && control.invalid && (control.dirty || control.touched);
-  }
+
+
   registrati(): void {
     this.formSubmitted = true;
 
     if (this.registrationForm.valid) {
-      this.router.navigate(['/auth/login'])
-    } else {
-      const passwordControl = this.registrationForm.get('password');
-      if (passwordControl && passwordControl.errors && passwordControl.errors['minlength']) {
-        console.error('La password deve essere lunga almeno 4 caratteri.');
-      }
-    }
-  }
+      this.formSubmitted = true;
+      this.authSvc.register(this.registerUser)
+      .subscribe(data => {
+        console.log(data);
 
-
+          this.router.navigate(['/auth/login'])
+  })
 }
+  }
+}
+
