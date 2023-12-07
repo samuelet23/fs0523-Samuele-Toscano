@@ -1,4 +1,18 @@
 {
-    "users": []
-
+  "users": [
+    {
+      "email": "zenifaguxu@mailinator.com",
+      "password": "$2a$10$Wzk8xm2yvUsWNbWg6xsM1uHIMF.cr/qmHtMBo0icKXocxVKiiiG4O",
+      "nome": "Aliqua Dolor conseq",
+      "username": "zuwilomaj",
+      "id": 1
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$ThwOL5e.UOO0Wjhe3VdDc.1REwe6t8s2sPvonbNFhqKUljevVhqeK",
+      "nome": "samuele",
+      "username": "toscano",
+      "id": 2
+    }
+  ]
 }

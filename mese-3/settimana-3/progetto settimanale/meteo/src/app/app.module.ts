@@ -7,6 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthComponent } from './pages/auth/auth.component';
 import { NavAuthComponent } from './pages/components/nav-auth/nav-auth.component';
+import { FormsModule } from '@angular/forms';
+import { AuthModule } from './pages/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NavAuthComponent } from './pages/components/nav-auth/nav-auth.component
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
