@@ -1,1 +1,39 @@
-<p>welcome works!</p>
+<div class="container">
+
+<a (click)="logout()"> LOGOUT </a>
+
+<form class="d-flex my-3" role="search">
+  <input
+    class="form-control me-2"
+    type="search"
+    placeholder="Cerca un città"
+    aria-label="Search"
+    [(ngModel)]="city"
+    (input)="onSearchInput()"
+    name="searchTerm"
+  />
+  <div *ngIf="suggerimenti.length > 0" class="suggerimenti">
+    <ul>
+      <li *ngFor="let ricerca of suggerimenti" (click)="selectSuggestion(ricerca)">
+        {{ ricerca }}
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-outline-success" type="submit" (click)="creaCard()" >Cerca</button>
+</form>
+
+
+<div *ngIf="isCliccked">
+
+  <div class="card text-bg-dark">
+    <img src="" class="card-img" alt="">
+    <div class="card-img-overlay">
+    <h5 class="card-title"></h5>
+    <p class="card-text"></p>
+    <p class="card-text"><small></small></p>
+  </div>
+</div>
+
+</div>
+
+</div>

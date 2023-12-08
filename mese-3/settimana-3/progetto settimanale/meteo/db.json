@@ -1,25 +1,18 @@
 {
   "users": [
     {
-      "email": "zenifaguxu@mailinator.com",
-      "password": "$2a$10$Wzk8xm2yvUsWNbWg6xsM1uHIMF.cr/qmHtMBo0icKXocxVKiiiG4O",
-      "nome": "Aliqua Dolor conseq",
-      "username": "zuwilomaj",
+      "email": "mario@rossi.it",
+      "password": "$2a$10$bh50S5V35m7xirYI.5xwwOBuqFsjd3Af0rEIyge/BgLM/nwb32x5.",
+      "nome": "mario",
+      "username": "mario23",
       "id": 1
     },
     {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$ThwOL5e.UOO0Wjhe3VdDc.1REwe6t8s2sPvonbNFhqKUljevVhqeK",
+      "email": "samueletoscano@hotmail.com",
+      "password": "$2a$10$nW0C2XTYv1ra6rh3SqI5l.buJmLmO.GsNs6hFD9j3VaERtG9V89ZO",
       "nome": "samuele",
-      "username": "toscano",
+      "username": "samu23",
       "id": 2
-    },
-    {
-      "email": "buqozys@mailinator.com",
-      "password": "$2a$10$3VNCQ2B/yOvsiqYvhM9lZuNc.ULp4dsY1MTdNL8.U10GIh0tdJ976",
-      "nome": "Sed at nemo rem null",
-      "username": "wororufy",
-      "id": 3
     }
   ]
 }

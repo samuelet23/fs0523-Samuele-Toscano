@@ -12,7 +12,6 @@ import { FormBuilder, FormControl, FormGroup, MinLengthValidator, NgForm, Valida
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  showEmailAlert: any;
 
 
 
@@ -21,8 +20,8 @@ export class LoginComponent {
 @ViewChild('form', {static:true}) form!:NgForm
 
 loginUser:Ilogin ={
-  email: 'mario@rossi.it',
-  password: 'ciao'
+  email: '',
+  password: ''
 }
 
 loginForm!: FormGroup;
@@ -32,7 +31,7 @@ regex: RegExp  = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 ngOnInit() {
   this.loginForm = this.fb.group({
     email: ['', [Validators.required, Validators.email, this.emailCheck]],
-    password: ['', Validators.required, MinLengthValidator]
+    password: ['', [Validators.required, Validators.minLength(4)]]
   });
 }
 
@@ -50,17 +49,26 @@ isChecked(input:string) {
   return this.loginForm.get(input)!.invalid && (this.loginForm.get(input)!.dirty || this.loginForm.get(input)!.touched) ;
 }
 
+
 submit() {
 
-  this.authSvc.login(this.loginUser).subscribe(
-    (data) => {
+  this.authSvc.login(this.loginUser).subscribe(data => {
       Swal.fire("Il tuo login è avvenuto con successo!");
-      this.router.navigate(['/welcome']);
+        this.router.navigate(['/welcome']);
+
     },
     (error) => {
-      console.error(error);
+      if (error.status === 401) {
+        Swal.fire("Non sei registrato, registrati adesso");
+        this.router.navigate(['/auth/register']);
     }
-  );
+    Swal.fire(error.error)
+
+  })
 
 }
+
+
+
+
 }

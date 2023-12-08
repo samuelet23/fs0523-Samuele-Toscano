@@ -1,9 +1,10 @@
+<app-nav-auth></app-nav-auth>
 <form [formGroup]="loginForm" (ngSubmit)="submit()">
   <div class="container">
     <h3 class="text-center">EFFETTUA IL LOGIN</h3>
 
     <div class="col-auto my-2">
-      <input type="email" class="form-control" placeholder="Email" formControlName="email">
+      <input type="email" class="form-control" placeholder="Email" formControlName="email" [(ngModel)]="this.loginUser.email">
       <div *ngIf="isChecked('email')">
         <div class="alert alert-danger my-1" role="alert">
           Scrivi l'email nel formato corretto
@@ -12,10 +13,10 @@
     </div>
 
     <div class="col-auto my-2">
-      <input type="password" class="form-control" placeholder="Password" formControlName="password">
+      <input type="password" class="form-control" placeholder="Password" formControlName="password" [(ngModel)]="this.loginUser.password">
       <div *ngIf="isChecked('password')">
         <div class="alert alert-danger my-1" role="alert">
-          È richiesta una password
+         La password deve essere almeno di 4 caratteri
         </div>
       </div>
     </div>
