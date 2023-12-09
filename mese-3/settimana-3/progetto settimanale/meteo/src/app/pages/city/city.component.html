@@ -1,1 +1,13 @@
-<p>city works!</p>
+<h2>Stai guardando il meteo di {{meteo.name}}</h2>
+<div class="card text-bg-dark city-card">
+  <h5 class="card-title">{{ meteo.name }}</h5>
+  <p class="card-text">{{ meteo.weather[0].description }}</p>
+  <p class="card-text"><small>Temperatura: {{ meteo.main.temp }}°C</small></p>
+  <p class="card-text"><small>Temperatura Percepita {{ meteo.main.feels_like }}°C</small></p>
+  <p class="card-text"><small>Temperatura minima: {{ meteo.main.temp_min }}°C</small></p>
+  <p class="card-text"><small>Temperatura massima : {{ meteo.main.temp_max }}°C</small></p>
+  <p class="card-text"><small>Umidità {{ meteo.main.humidity }}%</small></p>
+  <p class="card-text"><small>Wind Speed: {{ meteo.wind.speed }} m/s</small></p>
+ <p>Torna alla <a routerLink="/welcome">Welcome Page</a></p>
+</div>
+

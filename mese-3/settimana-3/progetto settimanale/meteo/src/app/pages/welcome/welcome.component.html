@@ -1,39 +1,39 @@
 <div class="container">
 
-<a (click)="logout()"> LOGOUT </a>
+  <a (click)="logout()"> LOGOUT </a>
 
-<form class="d-flex my-3" role="search">
-  <input
-    class="form-control me-2"
-    type="search"
-    placeholder="Cerca un città"
-    aria-label="Search"
-    [(ngModel)]="city"
-    (input)="onSearchInput()"
-    name="searchTerm"
-  />
-  <div *ngIf="suggerimenti.length > 0" class="suggerimenti">
-    <ul>
-      <li *ngFor="let ricerca of suggerimenti" (click)="selectSuggestion(ricerca)">
-        {{ ricerca }}
-      </li>
-    </ul>
+  <form class="d-flex my-3" role="search" (ngSubmit)="creaCard()">
+    <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Cerca una città"
+      aria-label="Search"
+      [(ngModel)]="city"
+      (input)="onSearchInput()"
+      name="searchTerm"
+    />
+    <div *ngIf="suggerimenti.length > 0" class="suggerimenti">
+      <ul>
+        <li *ngFor="let ricerca of suggerimenti" (click)="selectSuggestion(ricerca)">
+          {{ ricerca }}
+        </li>
+      </ul>
+    </div>
+    <button class="btn btn-outline-success" type="submit">Cerca</button>
+    <a routerLink="/preferiti"><i class="bi bi-heart"></i></a>
+
+  </form>
+
+  <div *ngIf="isCliccked">
+    <div class="card text-bg-dark city-card">
+
+        <h5 class="card-title">{{ meteo.name }}</h5>
+        <p class="card-text">{{ meteo.weather[0].description }}</p>
+        <p class="card-text"><small>Temperatura: {{ meteo.main.temp }}°C</small></p>
+        <p>Scopri di più su {{meteo.name}} <a [routerLink]="'/city/' + meteo.id" ><i class="bi bi-eye-fill"></i></a></p>
+        <p (click)="add()">Aggiungi ai preferiti <a routerLink="/preferiti" ><i class="bi bi-heart"></i> </a></p>
+
   </div>
-  <button class="btn btn-outline-success" type="submit" (click)="creaCard()" >Cerca</button>
-</form>
 
-
-<div *ngIf="isCliccked">
-
-  <div class="card text-bg-dark">
-    <img src="" class="card-img" alt="">
-    <div class="card-img-overlay">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
-    <p class="card-text"><small></small></p>
-  </div>
-</div>
-
-</div>
 
 </div>

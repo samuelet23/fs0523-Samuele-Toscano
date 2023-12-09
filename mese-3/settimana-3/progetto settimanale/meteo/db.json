@@ -1,18 +1,57 @@
 {
   "users": [
     {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$bh50S5V35m7xirYI.5xwwOBuqFsjd3Af0rEIyge/BgLM/nwb32x5.",
-      "nome": "mario",
-      "username": "mario23",
-      "id": 1
-    },
-    {
       "email": "samueletoscano@hotmail.com",
-      "password": "$2a$10$nW0C2XTYv1ra6rh3SqI5l.buJmLmO.GsNs6hFD9j3VaERtG9V89ZO",
+      "password": "$2a$10$vrMlRtW1uz12f18yJzZBB.BTNtcXWCZimF26wgVZ4I5sh70dO/eTW",
       "nome": "samuele",
-      "username": "samu23",
-      "id": 2
+      "username": "samue",
+      "id": 1
+    }
+  ],
+  "preferiti": [
+    {
+      "coord": {
+        "lon": -0.0855,
+        "lat": 51.5214
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 285.13,
+        "feels_like": 284.42,
+        "temp_min": 283.71,
+        "temp_max": 285.99,
+        "pressure": 990,
+        "humidity": 78
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 10.8,
+        "deg": 250,
+        "gust": 18.01
+      },
+      "clouds": {
+        "all": 75
+      },
+      "dt": 1702132765,
+      "sys": {
+        "type": 2,
+        "id": 2075535,
+        "country": "GB",
+        "sunrise": 1702108410,
+        "sunset": 1702137107
+      },
+      "timezone": 0,
+      "id": 6690594,
+      "name": "Old Street",
+      "cod": 200
     }
   ]
 }

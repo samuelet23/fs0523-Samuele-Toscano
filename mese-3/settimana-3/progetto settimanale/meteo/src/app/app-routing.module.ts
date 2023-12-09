@@ -8,7 +8,8 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 const routes: Routes = [
   {
     path:'',
-    component:WelcomeComponent
+    component:WelcomeComponent,
+    canActivate:[AuthGuard]
   },
   { path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
     canActivate:[AuthGuard]
     },
   {
-     path: 'city',
+     path: 'city/:id',
    loadChildren: () => import('./pages/city/city.module').then(m => m.CityModule),
   canActivate:[AuthGuard]
  },

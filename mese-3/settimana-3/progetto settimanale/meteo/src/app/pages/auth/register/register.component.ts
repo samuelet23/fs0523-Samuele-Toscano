@@ -24,18 +24,20 @@ export class RegisterComponent {
   registrationForm!: FormGroup;
 
   constructor(private fb: FormBuilder, private router: Router, private authSvc:AuthService) {
-    this.registrationForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(4)]],
-      nome: ['', Validators.required],
-      username: ['', Validators.required]
-    });
+
   }
   isChecked(input:string) {
     return this.registrationForm.get(input)!.invalid && (this.registrationForm.get(input)!.dirty || this.registrationForm.get(input)!.touched) ;
   }
 
-
+ngOnInit(){
+  this.registrationForm = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.minLength(4)]],
+    nome: ['', Validators.required],
+    username: ['', Validators.required]
+  });
+}
 
   registrati(): void {
     this.formSubmitted = true;
