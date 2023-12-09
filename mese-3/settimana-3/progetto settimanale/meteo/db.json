@@ -11,46 +11,45 @@
   "preferiti": [
     {
       "coord": {
-        "lon": -0.0855,
-        "lat": 51.5214
+        "lon": 9.1895,
+        "lat": 45.4643
       },
       "weather": [
         {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
+          "id": 701,
+          "main": "Mist",
+          "description": "mist",
+          "icon": "50d"
         }
       ],
       "base": "stations",
       "main": {
-        "temp": 285.13,
-        "feels_like": 284.42,
-        "temp_min": 283.71,
-        "temp_max": 285.99,
-        "pressure": 990,
-        "humidity": 78
+        "temp": 278.21,
+        "feels_like": 276.06,
+        "temp_min": 276.85,
+        "temp_max": 280.29,
+        "pressure": 1016,
+        "humidity": 88
       },
-      "visibility": 10000,
+      "visibility": 5000,
       "wind": {
-        "speed": 10.8,
-        "deg": 250,
-        "gust": 18.01
+        "speed": 2.57,
+        "deg": 250
       },
       "clouds": {
         "all": 75
       },
-      "dt": 1702132765,
+      "dt": 1702134003,
       "sys": {
         "type": 2,
-        "id": 2075535,
-        "country": "GB",
-        "sunrise": 1702108410,
-        "sunset": 1702137107
+        "id": 2012644,
+        "country": "IT",
+        "sunrise": 1702104658,
+        "sunset": 1702136406
       },
-      "timezone": 0,
-      "id": 6690594,
-      "name": "Old Street",
+      "timezone": 3600,
+      "id": 3173435,
+      "name": "Milan",
       "cod": 200
     }
   ]

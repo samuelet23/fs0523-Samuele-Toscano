@@ -4,6 +4,7 @@ import { AuthService } from '../../auth.service';
 import { HttpClient } from '@angular/common/http';
 import { MeteoService } from '../../meteo.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-welcome',
@@ -14,7 +15,7 @@ export class WelcomeComponent {
   isCliccked: boolean = false;
   city: string = '';
   suggerimenti: string[] = [];
-  meteo!: IProduct;
+  meteo!: IProduct
   constructor(
     private http: HttpClient,
     private authSvc: AuthService,
@@ -31,6 +32,7 @@ export class WelcomeComponent {
     this.meteoSvc.getLocalName(this.city).subscribe(
       (suggerimenti) => {
         this.suggerimenti = suggerimenti;
+
       },
       (error) => {
         console.error('Errore durante la richiesta di suggerimenti:', error);
@@ -65,7 +67,7 @@ export class WelcomeComponent {
 
   add() {
     this.meteoSvc.addFavourtie(this.meteo).subscribe((data) => {
-      this.route.navigate(['/preferiti']);
+      Swal.fire(`Hai aggiunto ${this.meteo.name} ai preferiti con successo`);
     });
   }
 

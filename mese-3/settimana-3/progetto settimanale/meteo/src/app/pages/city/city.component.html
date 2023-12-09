@@ -11,3 +11,16 @@
  <p>Torna alla <a routerLink="/welcome">Welcome Page</a></p>
 </div>
 
+<h5> Come sarà il meteo di {{meteo.name}} nei prossimi 5 giorni? </h5>
+
+<div class="card text-bg-dark city-card">
+  <h5 class="card-title">{{ meteoFive.city.name }}</h5>
+  <p class="card-text">{{ meteoFive.list[0].weather[0].description }}</p>
+  <p class="card-text"><small>Temperatura: {{ meteoFive.list[0].main.temp }}°C</small></p>
+  <p class="card-text"><small>Temperatura Percepita {{ meteoFive.list[0].main.feels_like }}°C</small></p>
+  <p class="card-text"><small>Temperatura minima: {{ meteoFive.list[0].main.temp_min }}°C</small></p>
+  <p class="card-text"><small>Temperatura massima : {{ meteoFive.list[0].main.temp_max }}°C</small></p>
+  <p class="card-text"><small>Umidità {{ meteoFive.list[0].main.humidity }}%</small></p>
+  <p class="card-text"><small>Wind Speed: {{ meteoFive.list[0].wind.speed }} m/s</small></p>
+  <p>Torna alla <a routerLink="/welcome">Welcome Page</a></p>
+</div>
