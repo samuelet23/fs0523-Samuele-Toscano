@@ -16,6 +16,11 @@ export class MeteoService {
 
 
 
+getCityMeteo(lat:number, lon:number):Observable<IProduct>{
+  const apiProd = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${environment.apiKey}`;
+       return  this.http.get<IProduct>(apiProd)
+}
+
   getLocalName(query: string): Observable<string[]> {
     const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${environment.apiKey}`;
     return this.http.get<Isearch[]>(apiUrl).pipe(
@@ -48,4 +53,14 @@ const apiUrl= `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${
 return this.http.get<IProduct>(apiUrl)
 }
 
+
+addFavourtie(obj:IProduct):Observable<IProduct>{
+  return this.http.post<IProduct>(environment.prefeUrl, obj)
+}
+getFavourite():Observable<IProduct[]>{
+  return this.http.get<IProduct[]>(environment.prefeUrl)
+}
+deleteFavourite(id:number):Observable<IProduct>{
+  return this.http.delete<IProduct>(`${environment.prefeUrl}/${id}` )
+}
 }
