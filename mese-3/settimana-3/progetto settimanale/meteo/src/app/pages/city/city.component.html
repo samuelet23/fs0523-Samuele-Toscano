@@ -1,26 +1,36 @@
-<h2>Stai guardando il meteo di {{meteo.name}}</h2>
+<h2>Stai guardando il meteo di {{ meteo.name }}</h2>
 <div class="card text-bg-dark city-card">
   <h5 class="card-title">{{ meteo.name }}</h5>
   <p class="card-text">{{ meteo.weather[0].description }}</p>
-  <p class="card-text"><small>Temperatura: {{ meteo.main.temp }}°C</small></p>
-  <p class="card-text"><small>Temperatura Percepita {{ meteo.main.feels_like }}°C</small></p>
-  <p class="card-text"><small>Temperatura minima: {{ meteo.main.temp_min }}°C</small></p>
-  <p class="card-text"><small>Temperatura massima : {{ meteo.main.temp_max }}°C</small></p>
+  <p class="card-text"><small>Temperatura: {{ meteo.main.temp | number:'1.0-0' }}°C</small></p>
+  <p class="card-text"><small>Temperatura Percepita {{ meteo.main.feels_like | number:'1.0-0' }}°C</small></p>
+  <p class="card-text"><small>Temperatura minima: {{ meteo.main.temp_min | number:'1.0-0' }}°C</small></p>
+  <p class="card-text"><small>Temperatura massima : {{ meteo.main.temp_max | number:'1.0-0' }}°C</small></p>
   <p class="card-text"><small>Umidità {{ meteo.main.humidity }}%</small></p>
   <p class="card-text"><small>Wind Speed: {{ meteo.wind.speed }} m/s</small></p>
- <p>Torna alla <a routerLink="/welcome">Welcome Page</a></p>
-</div>
-
-<h5> Come sarà il meteo di {{meteo.name}} nei prossimi 5 giorni? </h5>
-
-<div class="card text-bg-dark city-card">
-  <h5 class="card-title">{{ meteoFive.city.name }}</h5>
-  <p class="card-text">{{ meteoFive.list[0].weather[0].description }}</p>
-  <p class="card-text"><small>Temperatura: {{ meteoFive.list[0].main.temp }}°C</small></p>
-  <p class="card-text"><small>Temperatura Percepita {{ meteoFive.list[0].main.feels_like }}°C</small></p>
-  <p class="card-text"><small>Temperatura minima: {{ meteoFive.list[0].main.temp_min }}°C</small></p>
-  <p class="card-text"><small>Temperatura massima : {{ meteoFive.list[0].main.temp_max }}°C</small></p>
-  <p class="card-text"><small>Umidità {{ meteoFive.list[0].main.humidity }}%</small></p>
-  <p class="card-text"><small>Wind Speed: {{ meteoFive.list[0].wind.speed }} m/s</small></p>
   <p>Torna alla <a routerLink="/welcome">Welcome Page</a></p>
 </div>
+
+
+ <h5> Come sarà il meteo di {{meteo.name}} nei prossimi 5 giorni? </h5>
+
+
+ <div class="card text-bg-dark city-card">
+  <h5 class="card-title">{{ meteoFive.city.name }}</h5>
+
+  <div *ngFor="let day of meteoFive.list; let i = index">
+    <div *ngIf="estraiOra(day.dt_txt) === '12'">
+      <p class="card-text"><strong>Data:</strong> {{ day.dt_txt | date:'dd-MM / HH:mm' }}</p>
+      <p class="card-text"><strong>Condizioni meteo:</strong> {{ day.weather[0].description }}</p>
+      <p class="card-text"><strong>Temperatura:</strong> {{ day.main.temp | number:'1.0-0' }}°C</p>
+      <p class="card-text"><strong>Umidità:</strong> {{ day.main.humidity }}%</p>
+      <p class="card-text"><strong>Wind Speed:</strong> {{ day.wind.speed }} m/s</p>
+      <hr>
+    </div>
+  </div>
+
+  <p>Torna alla <a routerLink="/welcome">Welcome Page</a></p>
+</div>
+
+
+

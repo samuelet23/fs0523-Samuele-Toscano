@@ -1,0 +1,48 @@
+.sfondo {
+  background: url("../../../assets/mockup/background home.jpg") center center fixed no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  height: 100vh;
+}
+
+.container-titolo {
+  margin: 0px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 200px;
+}
+
+.home-btn {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(249, 181, 82, 0.7019607843);
+  color: white;
+  text-decoration: none;
+}
+
+.tracking-in-expand {
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=home.component.css.map */

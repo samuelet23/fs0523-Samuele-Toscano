@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct } from '../../Modules/i-product';
 import { MeteoService } from '../../meteo.service';
-import { IForecast } from '../../Modules/i-forecast';
+import { IForecast, List } from '../../Modules/i-forecast';
+import { LiteralArray } from '@angular/compiler';
 
 @Component({
   selector: 'app-city',
@@ -16,22 +17,28 @@ meteo!: IProduct;
 meteoFive !:IForecast;
 
   ngOnInit(){
-    this.route.params.subscribe((params:any) => {
 
+
+    this.route.params.subscribe((params:any) => {
 
       this.meteoSvc.getById(params.id).subscribe((res =>{
         return this.meteo = res;
 
       }))
 
-      this.meteoSvc.getById5Days(params.id).subscribe((res =>{
-        console.log(res);
+      this.meteoSvc.getById5Days(params.id).subscribe((response) => {
+        console.log(response);
 
-        return  this.meteoFive = res
-      }))
+        this.meteoFive = response;
+      });
+    })
 
-
-      })
-    }
   }
 
+estraiOra(date: string): string {
+  return date.split(' ')[1].split(':')[0];
+}
+
+
+
+}

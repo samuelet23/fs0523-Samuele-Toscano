@@ -3,7 +3,7 @@
 
   <h5 class="card-title">{{ m.name }}</h5>
   <p class="card-text">{{ m.weather[0].description }}</p>
-  <p class="card-text"><small>Temperatura: {{ m.main.temp }}°C</small></p>
+  <p class="card-text"><small>Temperatura: {{ m.main.temp | number:'1.0-0' }}°C</small></p>
   <p>Scopri di più su {{m.name}} <a [routerLink]="'/city/' + m.id" ><i class="bi bi-eye-fill"></i></a></p>
   <p (click)="delete(m.id, m.name)">Rimuovi dai preferiti <a routerLink="/preferiti" ><i class="bi bi-x-circle-fill text-danger"></i></a></p>
 
