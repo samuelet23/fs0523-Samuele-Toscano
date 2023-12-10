@@ -16,44 +16,30 @@ export class WelcomeComponent {
   city: string = '';
   suggerimenti: string[] = [];
   meteo!: IProduct
+  meteoCt!: IProduct
+  meteoMil!: IProduct
+
+
   constructor(
-    private http: HttpClient,
-    private authSvc: AuthService,
     private meteoSvc: MeteoService,
-    private route: Router
   ) {}
 
-  onSearchInput() {
-    if (this.city.trim() === '') {
-      this.suggerimenti = [];
-      return;
-    }
+    ngOnInit(){
 
-    this.meteoSvc.getLocalName(this.city).subscribe(
-      (suggerimenti) => {
-        this.suggerimenti = suggerimenti;
+  this.meteoSvc.getCityMeteo(37.5023612, 15.0873718).subscribe((res)=> {
+    return this.meteoCt = res
+  })
+  this.meteoSvc.getCityMeteo(45.4641943, 9.1896346).subscribe((res)=> {
+    return this.meteoMil = res
+  })
 
-      },
-      (error) => {
-        console.error('Errore durante la richiesta di suggerimenti:', error);
-      }
-    );
-  }
-  selectSuggestion(suggestion: string) {
-    this.city = suggestion;
-    this.suggerimenti = [];
-  }
 
-  creaCard() {
-    this.isCliccked = true;
-    this.meteoSvc.getLatLon(this.city).subscribe((obj) => {
-      obj.map((data) => {
-        this.meteoSvc.getCityMeteo(data.lat, data.lon).subscribe((res) => {
-          return (this.meteo = res);
-        });
-      });
-    });
-  }
+
+}
+
+
+
+
 
   getById() {
     this.meteoSvc.getLatLon(this.city).subscribe((obj) => {
@@ -71,7 +57,5 @@ export class WelcomeComponent {
     });
   }
 
-  logout() {
-    this.authSvc.logout();
-  }
+
 }

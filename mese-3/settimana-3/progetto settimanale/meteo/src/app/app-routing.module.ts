@@ -27,7 +27,7 @@ const routes: Routes = [
       loadChildren: () => import('./pages/preferiti/preferiti.module').then(m => m.PreferitiModule),
       canActivate:[AuthGuard]
      },
-  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) }
+  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
 ];
 
 @NgModule({

@@ -21,6 +21,7 @@ import { AuthModule } from './pages/auth/auth.module';
     HttpClientModule,
     FormsModule,
     AuthModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,6 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
-$primo: #f9b552b3;
 
 input.ng-dirty.ng-invalid{
   border: 1px solid red;
@@ -19,4 +18,10 @@ input.ng-dirty.ng-invalid{
 a{
   color: #f9b552b3;
 
+}
+
+.sfondo {
+  background: url('./assets/mockup/background\ home.jpg') center center fixed no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }

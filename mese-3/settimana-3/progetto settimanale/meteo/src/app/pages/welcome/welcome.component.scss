@@ -1,25 +1,6 @@
-.suggerimenti {
-  position: absolute;
-  top: 83px;
-  z-index: 1;
-  background-color: #fff;
-  border: 1px solid #ccc;
+.sfondo{
+  height: 100%;
 }
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  padding: 5px;
-  cursor: pointer;
-}
-
-li:hover {
-  background-color: #f2f2f2;
-}
-.city-card{
-  z-index: 2;
+.cardCt{
+  background-color: #f9b552b3;
 }
