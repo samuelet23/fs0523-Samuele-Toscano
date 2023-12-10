@@ -1,3 +1,17 @@
 input.ng-touched.ng-valid {
-  border: 1px solid rgb(8, 164, 8);
+  border: 1px solid rgba(249, 181, 82, 0.7019607843);
+}
+
+.btn {
+  background-color: rgba(249, 181, 82, 0.7019607843);
+  color: black;
+  border: none;
+}
+
+.btn:hover {
+  border: black;
+}
+
+.text {
+  color: rgba(249, 181, 82, 0.7019607843);
 }/*# sourceMappingURL=register.component.css.map */

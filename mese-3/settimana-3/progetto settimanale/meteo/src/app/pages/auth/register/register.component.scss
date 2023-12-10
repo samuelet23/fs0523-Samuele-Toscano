@@ -1,3 +1,15 @@
 input.ng-touched.ng-valid{
-  border: 1px solid rgb(8, 164, 8);
+  border: 1px solid #f9b552b3
+}
+.btn {
+  background-color: #f9b552b3;
+  color: black;
+  border: none;
+}
+.btn:hover{
+  border: black;
+}
+
+.text{
+  color: #f9b552b3;
 }

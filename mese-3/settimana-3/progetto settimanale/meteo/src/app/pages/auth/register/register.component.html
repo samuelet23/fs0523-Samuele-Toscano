@@ -1,6 +1,6 @@
 <app-nav-auth></app-nav-auth>
 <div class="container">
-  <h3 class="text-center">REGISTRATI</h3>
+  <h3 class="text-center text mt-4">REGISTRATI</h3>
   <form class="g-3" (ngSubmit)="registrati()" [formGroup]="registrationForm">
     <div class="col-auto my-2">
       <input type="email" class="form-control" placeholder="Email" formControlName="email" [(ngModel)]="registerUser.email">
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="col-auto my-3 text-center">
-      <button type="submit" class="btn btn-success mb-3" [disabled]="registrationForm.invalid">Registrati</button>
+      <button type="submit" class="btn  mb-3" [disabled]="registrationForm.invalid">Registrati</button>
     </div>
   </form>
 </div>
