@@ -22,7 +22,7 @@ getCityMeteo(lat:number, lon:number):Observable<IProduct>{
 }
 
 getLocalName(query: string): Observable<string[]> {
-  const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=3&lang=it&appid=${environment.apiKey}&units=metric`;
+  const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&lang=it&appid=${environment.apiKey}&units=metric`;
 
   return this.http.get<Isearch[]>(apiUrl).pipe(
     concatMap((response) => {
@@ -58,7 +58,6 @@ getById5Days(id:number):Observable<IForecast>{
 
 
 addFavourtie(obj: IProduct): Observable<IProduct> {
-  console.log('Dati inviati:', obj);
   return this.http.post<IProduct>(environment.prefeUrl, obj);
 }
 

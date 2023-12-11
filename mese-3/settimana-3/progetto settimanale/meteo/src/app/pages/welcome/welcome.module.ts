@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    WelcomeComponent,
   ],
   imports: [
     CommonModule,

@@ -1,13 +1,13 @@
-<a routerLink="/welcome">torna indietro</a>
-<div class="card text-bg-dark city-card" *ngFor="let m of meteo">
+<div class="card m-3 card text-white text-center p-0" *ngFor="let m of meteo">
+  <h5 class="card-title bottom"> {{ m.name }} è una delle tue città preferite </h5>
+  <p class="card-text bottom"> Oggi a {{m.name}}: {{ m.weather[0].description }}</p>
+  <p class="card-text bottom"><small>La temperatura: {{ m.main.temp | number:'1.0-0' }}°C</small></p>
+  <div class="d-flex btn-group justify-content-around m-2 bottom">
+    <p class="btn-add">Scopri di più su {{m.name}} <a [routerLink]="'/city/' + m.id" ><i class="bi bi-eye-fill"></i></a></p>
+    <p class="btn-add" (click)="delete(m.id, m.name)">Rimuovi dai preferiti <a routerLink="/preferiti" ><i class="bi bi-x-circle-fill text-danger"></i></a></p>
+  </div>
 
-  <h5 class="card-title">{{ m.name }}</h5>
-  <p class="card-text">{{ m.weather[0].description }}</p>
-  <p class="card-text"><small>Temperatura: {{ m.main.temp | number:'1.0-0' }}°C</small></p>
-  <p>Scopri di più su {{m.name}} <a [routerLink]="'/city/' + m.id" ><i class="bi bi-eye-fill"></i></a></p>
-  <p (click)="delete(m.id, m.name)">Rimuovi dai preferiti <a routerLink="/preferiti" ><i class="bi bi-x-circle-fill text-danger"></i></a></p>
-
-
+  <a  class="btn-add back" routerLink="/welcome">torna indietro</a>
 </div>
 
 

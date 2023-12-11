@@ -4,6 +4,7 @@ import { MeteoService } from '../../meteo.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { IProduct } from '../../Modules/i-product';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-auth',
@@ -13,6 +14,7 @@ import { IProduct } from '../../Modules/i-product';
 export class AuthComponent {
   isIn!:boolean;
   isCliccked: boolean = false;
+  isFull:boolean = false;
   city: string = '';
   suggerimenti: string[] = [];
   meteo!: IProduct
@@ -41,6 +43,8 @@ ngOnInit(){
   onSearchInput() {
     if (this.city.trim() === '') {
       this.suggerimenti = [];
+      this.isCliccked =  true
+      this.isFull =true
       return;
     }
 
@@ -70,7 +74,11 @@ ngOnInit(){
       });
     });
   }
-
+  add() {
+    this.meteoSvc.addFavourtie(this.meteo).subscribe((data) => {
+      Swal.fire(`Hai aggiunto ${this.meteo.name} ai preferiti con successo`);
+    });
+  }
   logout() {
     this.authSvc.logout();
   }

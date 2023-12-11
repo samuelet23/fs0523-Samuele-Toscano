@@ -8,11 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthComponent } from './pages/auth/auth.component';
 import { FormsModule } from '@angular/forms';
 import { AuthModule } from './pages/auth/auth.module';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { WelcomeModule } from './pages/welcome/welcome.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import { AuthModule } from './pages/auth/auth.module';
     NgbModule,
     HttpClientModule,
     FormsModule,
-    AuthModule
+    AuthModule,
+    WelcomeModule
 
   ],
   providers: [],

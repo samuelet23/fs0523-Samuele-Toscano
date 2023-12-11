@@ -21,7 +21,10 @@ a{
 }
 
 .sfondo {
+  min-height: 100vh;
+  height: 100%;
   background: url('./assets/mockup/background\ home.jpg') center center fixed no-repeat;
   background-size: cover;
-  opacity: 0.9;
+  background: url('./assets/mockup/background\ home.jpg') center center fixed no-repeat;
+  background-size: cover;
 }

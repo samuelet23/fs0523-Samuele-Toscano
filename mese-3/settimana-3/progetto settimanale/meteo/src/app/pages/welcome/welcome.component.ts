@@ -12,7 +12,6 @@ import Swal from 'sweetalert2';
   styleUrl: './welcome.component.scss',
 })
 export class WelcomeComponent {
-  isCliccked: boolean = false;
   city: string = '';
   suggerimenti: string[] = [];
   meteo!: IProduct
@@ -29,17 +28,10 @@ export class WelcomeComponent {
   this.meteoSvc.getCityMeteo(37.5023612, 15.0873718).subscribe((res)=> {
     return this.meteoCt = res
   })
-  this.meteoSvc.getCityMeteo(45.4641943, 9.1896346).subscribe((res)=> {
-    return this.meteoMil = res
-  })
 
 
 
 }
-
-
-
-
 
   getById() {
     this.meteoSvc.getLatLon(this.city).subscribe((obj) => {
