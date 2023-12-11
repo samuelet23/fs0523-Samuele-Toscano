@@ -43,11 +43,15 @@ export class WelcomeComponent {
     });
   }
 
-  add() {
-    this.meteoSvc.addFavourtie(this.meteo).subscribe((data) => {
-      Swal.fire(`Hai aggiunto ${this.meteo.name} ai preferiti con successo`);
-    });
-  }
 
+  add() {
+    if (this.meteoCt) {
+      this.meteoSvc.addFavourtie(this.meteoCt).subscribe((data) => {
+        Swal.fire(`Hai aggiunto ${this.meteo.name} ai preferiti con successo`);
+      });
+    } else {
+      console.error('Errore: this.meteo è undefined. Assicurati di inizializzarlo correttamente.');
+    }
+  }
 
 }

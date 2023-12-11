@@ -10,9 +10,9 @@
       <h5 class="card-title">{{ meteoCt.name | uppercase }} </h5>
         <p class="card-text">Temperatura: {{ meteoCt.main.temp }}°C</p>
         <p class="card-text">Oggi a {{meteoCt.name}}: {{ meteoCt.weather[0].description }}</p>
-        <p (click)="add()" class="btn-add">Aggiungi ai preferiti <i class="bi bi-heart"></i></p>
-        <p class="btn-add">Scopri di più su {{meteoCt.name}} <a [routerLink]="'/city/' + meteoCt.id" ><i class="bi bi-eye-fill"></i></a></p>
-        <p  class="card-text"><small class="text-body-white">Last updated 3 mins ago</small></p>
+        <p (click)="add()" class="btn-add pointer">Aggiungi ai preferiti <i class="bi bi-heart"></i></p>
+        <p class="btn-add pointer">Scopri di più su {{meteoCt.name}} <a [routerLink]="'/city/' + meteoCt.id" ><i class="bi bi-eye-fill"></i></a></p>
+        <p  class="card-text "><small class="text-body-white">Last updated 3 mins ago</small></p>
       </div>
     </div>
 

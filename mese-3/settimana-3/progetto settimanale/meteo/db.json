@@ -53,10 +53,47 @@
       "cod": 200
     },
     {
-      "id": 3173436
-    },
-    {
-      "id": 3173437
+      "coord": {
+        "lon": 15.0874,
+        "lat": 37.5024
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "cielo sereno",
+          "icon": "01d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 14.82,
+        "feels_like": 13.98,
+        "temp_min": 12,
+        "temp_max": 16.85,
+        "pressure": 1018,
+        "humidity": 62
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3.6,
+        "deg": 250
+      },
+      "clouds": {
+        "all": 0
+      },
+      "dt": 1702282763,
+      "sys": {
+        "type": 2,
+        "id": 2004061,
+        "country": "IT",
+        "sunrise": 1702274637,
+        "sunset": 1702309302
+      },
+      "timezone": 3600,
+      "id": 2525068,
+      "name": "Catania",
+      "cod": 200
     }
   ]
 }
